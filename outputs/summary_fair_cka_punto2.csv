@@ -1,4 +1,0 @@
-Modelo,AUC,DP Gap,CKA,Penalización
-"Base (λ=0, Punto 1)",0.7358,0.0403,0.0122,—
-Mejor DP only (λ=5.0),0.7098,0.0022,0.0001,DP gap
-Mejor DP+CKA (λ=10.0),0.6926,0.0018,0.0001,DP gap + CKA
