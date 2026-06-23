@@ -23,15 +23,9 @@ Estos ratios se calculan con variables monetarias imputadas en bruto, no con var
 ## Archivos principales
 
 - `Taller_B4_T1.ipynb`: notebook principal final con punto 1 y punto 2.
-- `Taller_B4_T1_punto12_custom_layer.ipynb`: versión integrada recibida del equipo y usada como base para la versión final.
-- `Taller_B4_T1_punto1_custom_layer.ipynb`: versión previa centrada en el punto 1.
 - `application_train.csv`: dataset de entrada. No se versiona en Git por tamaño; debe colocarse en la raíz del proyecto o en `data/application_train.csv`.
 - `requirements.txt`: dependencias necesarias.
-- `crear_environment_windows.bat`: script para crear el entorno en Windows.
-- `crear_environment.sh`: script para crear el entorno en Linux, WSL o macOS.
-- `prompt0.txt`, `prompt1.txt`, `prompt2.txt`, `prompt3.txt`, `prompt4.txt`: prompts usados para guiar la evolución del notebook.
-- `Lectura_datos_Taller_B4_T1.ipynb`: notebook base original.
-- `Taller_B4_T1.pdf`: enunciado de la práctica.
+- `outputs/`: artefactos generados por el notebook.
 
 ## Outputs generados
 
@@ -46,49 +40,37 @@ El notebook crea la carpeta `outputs/` y guarda:
 - `outputs/comparison_base_vs_fair.csv`: comparación final entre modelo base y mejor modelo FAIR.
 - `outputs/fair_group_gaps_base_vs_fair.csv`: gaps por grupo sensible en test.
 
-## Crear el entorno en Windows
+## Crear el entorno
 
-Desde PowerShell o CMD, en la carpeta del proyecto:
-
-```bat
-crear_environment_windows.bat
-```
-
-El script crea el entorno en una ruta corta para evitar problemas de Windows Long Path con TensorFlow:
-
-```text
-C:\Users\rvill\.venvs\miax-b4-t1
-```
-
-Para activar el entorno en otra consola:
-
-```bat
-"C:\Users\rvill\.venvs\miax-b4-t1\Scripts\activate.bat"
-```
-
-Después vuelve a la carpeta del proyecto:
-
-```bat
-cd /d "C:\Users\rvill\Desktop\MIAX\4 Inteligencia Artificial Avanzada\26 - 06 - 18 Taller_B4_T1. Valero Laparra"
-```
-
-Y abre Jupyter:
-
-```bat
-jupyter notebook
-```
-
-En el notebook selecciona el kernel:
-
-```text
-Python (MIAX B4-T1)
-```
-
-## Crear el entorno en Linux, WSL o macOS
+Desde una terminal, en la carpeta del proyecto:
 
 ```bash
-bash crear_environment.sh
+python -m venv .venv
+```
+
+Activa el entorno.
+
+En Windows:
+
+```bat
+.venv\Scripts\activate
+```
+
+En Linux, WSL o macOS:
+
+```bash
 source .venv/bin/activate
+```
+
+Instala dependencias:
+
+```bat
+pip install -r requirements.txt
+```
+
+Para abrir Jupyter:
+
+```bat
 jupyter notebook
 ```
 
