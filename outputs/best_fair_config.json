@@ -1,0 +1,28 @@
+{
+  "selection_split": "validation",
+  "selection_rule": "val_auc >= base_val_auc - 0.015; then minimize val_cka_rbf and val_pearson_sq",
+  "loss_type": "CKA RBF",
+  "loss_class": "FairLossCKARBF",
+  "lambda_fair": 10.0,
+  "gamma": 0.5,
+  "validation_metrics": {
+    "auc": 0.7198094214388068,
+    "pearson_sq": 4.858275696633043e-05,
+    "cka_rbf": 0.00024045412692272095
+  },
+  "test_metrics": {
+    "auc": 0.724728188676841,
+    "pearson_sq": 0.00018016137386120363,
+    "cka_rbf": 0.0006375282655582148
+  },
+  "base_validation_metrics": {
+    "auc": 0.7339409623360783,
+    "pearson_sq": 0.011373868183406997,
+    "cka_rbf": 0.013163388065292627
+  },
+  "base_test_metrics": {
+    "auc": 0.7369281986481204,
+    "pearson_sq": 0.012360009057180332,
+    "cka_rbf": 0.015177814427387458
+  }
+}

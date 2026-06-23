@@ -1,0 +1,280 @@
+PROMPT PARA CODEX EN VS CODE
+Proyecto: Taller B4-T1 - Diseño de Redes Confiables
+Notebook base a modificar: Lectura_datos_Taller_B4_T1.ipynb
+Dataset disponible: application_train.csv
+
+OBJETIVO DE ESTA MODIFICACIÓN
+Quiero modificar el notebook base para implementar SOLO el primer punto de la práctica:
+"Arquitectura Customizada: Implementar una capa customizada que calcule internamente un Ratio de Endeudamiento combinando variables financieras de entrada y aplique una saturación o restricción matemática antes de pasarlo a capas densas".
+
+No implementes todavía:
+- FAIR loss
+- Keras Tuner / AutoML
+- Incertidumbre / varianza de predicciones
+- Curva de Pareto
+- Comparativa final base vs FAIR
+
+Déjalos solo como secciones TODO al final si lo consideras útil.
+
+REQUISITOS GENERALES
+1. Trabaja sobre una copia del notebook base, no destruyas el original.
+   Nombre sugerido del nuevo notebook:
+   Taller_B4_T1_punto1_custom_layer.ipynb
+
+2. El notebook debe quedar ejecutable de principio a fin en local o Colab, usando:
+   application_train.csv
+
+3. Mantén el enfoque docente:
+   - Celdas markdown explicando qué se hace.
+   - Código claro.
+   - Comentarios razonables.
+   - Resultados básicos de comprobación: shapes, model.summary(), métricas y curvas de entrenamiento.
+
+4. Usa TensorFlow / Keras.
+   Añade imports si faltan:
+   import tensorflow as tf
+   from tensorflow import keras
+   from tensorflow.keras import layers
+   import matplotlib.pyplot as plt
+   from sklearn.model_selection import train_test_split
+   from sklearn.preprocessing import StandardScaler
+   from sklearn.metrics import roc_auc_score, accuracy_score, confusion_matrix, classification_report
+
+COLUMNAS A USAR
+Usa solo estas columnas del CSV:
+- TARGET
+- CODE_GENDER
+- AMT_INCOME_TOTAL
+- AMT_CREDIT
+- AMT_ANNUITY
+- DAYS_BIRTH
+- EXT_SOURCE_1
+- EXT_SOURCE_2
+- EXT_SOURCE_3
+
+SIGNIFICADO
+- TARGET: variable objetivo binaria. 1 = dificultades de pago, 0 = buen pagador.
+- CODE_GENDER: variable sensible. Debe guardarse aparte para fairness/auditoría, pero NO debe usarse como entrada directa del modelo en esta primera arquitectura.
+- AMT_INCOME_TOTAL: ingresos totales.
+- AMT_CREDIT: importe del crédito.
+- AMT_ANNUITY: anualidad/cuota.
+- DAYS_BIRTH: edad en días negativos; convertir a edad positiva en años.
+- EXT_SOURCE_1, EXT_SOURCE_2, EXT_SOURCE_3: puntuaciones externas. Imputar ausentes con la mediana calculada sobre train.
+
+PREPROCESADO
+Sustituye la función actual load_home_credit_data por una versión más cuidadosa.
+
+La nueva función debe:
+1. Leer solo las columnas seleccionadas.
+2. Eliminar filas con CODE_GENDER == "XNA" porque son solo unos pocos casos y complican la variable sensible binaria.
+3. Convertir CODE_GENDER:
+   - M -> 0
+   - F -> 1
+4. Convertir DAYS_BIRTH a edad positiva en años:
+   df["AGE_YEARS"] = np.abs(df["DAYS_BIRTH"]) / 365.25
+   y eliminar DAYS_BIRTH después.
+5. Separar:
+   - y = TARGET
+   - s = CODE_GENDER, como variable sensible aparte
+   - X_model = variables de entrada sin TARGET ni CODE_GENDER
+6. Las variables de entrada del modelo deben ser:
+   - AMT_INCOME_TOTAL
+   - AMT_CREDIT
+   - AMT_ANNUITY
+   - AGE_YEARS
+   - EXT_SOURCE_1
+   - EXT_SOURCE_2
+   - EXT_SOURCE_3
+7. Crear dos ramas de entrada:
+   A) X_scaled: las 7 variables anteriores imputadas y escaladas.
+   B) X_financial_raw: solo las 3 variables financieras en bruto:
+      - AMT_INCOME_TOTAL
+      - AMT_CREDIT
+      - AMT_ANNUITY
+      Esta rama se usará para calcular ratios financieros interpretables dentro de la capa customizada.
+8. Hacer split train/test estratificado por y:
+   train_test_split(..., test_size=0.2, random_state=42, stratify=y)
+9. Imputación:
+   - Calcular medianas SOLO con train.
+   - Imputar train y test con esas medianas.
+10. Escalado:
+   - Ajustar StandardScaler SOLO con train.
+   - Transformar train y test.
+11. Devolver:
+   (X_scaled_train, X_financial_raw_train, y_train, s_train),
+   (X_scaled_test, X_financial_raw_test, y_test, s_test),
+   preprocessor
+   donde preprocessor sea un diccionario con:
+   - feature_cols
+   - financial_cols
+   - medians
+   - scaler
+
+IMPORTANTE SOBRE EL RATIO
+No calcules el ratio sobre variables escaladas.
+El ratio financiero debe calcularse sobre variables monetarias originales o imputadas, no sobre z-scores.
+Por eso usamos una rama financiera en bruto.
+
+CAPA CUSTOMIZADA
+Implementa una capa Keras llamada DebtBurdenLayer.
+
+Debe:
+1. Heredar de tf.keras.layers.Layer.
+2. Recibir un tensor con 3 columnas en este orden:
+   [AMT_INCOME_TOTAL, AMT_CREDIT, AMT_ANNUITY]
+3. Calcular:
+   annuity_income_ratio = AMT_ANNUITY / (AMT_INCOME_TOTAL + epsilon)
+   credit_income_ratio = AMT_CREDIT / (AMT_INCOME_TOTAL + epsilon)
+4. Aplicar saturación suave con tanh:
+   annuity_ratio_sat = tanh(annuity_income_ratio / annuity_tau)
+   credit_ratio_sat = tanh(credit_income_ratio / credit_tau)
+5. Usar:
+   epsilon = 1e-6
+   annuity_tau = 0.5
+   credit_tau = 5.0
+6. Devolver un tensor de shape (batch_size, 2):
+   [annuity_ratio_sat, credit_ratio_sat]
+7. Implementar get_config para que la capa sea serializable.
+
+Código orientativo para la capa:
+
+class DebtBurdenLayer(tf.keras.layers.Layer):
+    def __init__(self, annuity_tau=0.5, credit_tau=5.0, epsilon=1e-6, **kwargs):
+        super().__init__(**kwargs)
+        self.annuity_tau = annuity_tau
+        self.credit_tau = credit_tau
+        self.epsilon = epsilon
+
+    def call(self, inputs):
+        income = inputs[:, 0:1]
+        credit = inputs[:, 1:2]
+        annuity = inputs[:, 2:3]
+
+        annuity_income_ratio = annuity / (income + self.epsilon)
+        credit_income_ratio = credit / (income + self.epsilon)
+
+        annuity_ratio_sat = tf.math.tanh(annuity_income_ratio / self.annuity_tau)
+        credit_ratio_sat = tf.math.tanh(credit_income_ratio / self.credit_tau)
+
+        return tf.concat([annuity_ratio_sat, credit_ratio_sat], axis=1)
+
+    def get_config(self):
+        config = super().get_config()
+        config.update({
+            "annuity_tau": self.annuity_tau,
+            "credit_tau": self.credit_tau,
+            "epsilon": self.epsilon,
+        })
+        return config
+
+MODELO
+Construye una red funcional con dos inputs:
+
+Input 1:
+- name="scaled_features"
+- shape=(7,)
+
+Input 2:
+- name="financial_raw"
+- shape=(3,)
+
+Arquitectura:
+1. ratios = DebtBurdenLayer(name="debt_burden_layer")(financial_raw_input)
+2. concat = layers.Concatenate(name="concat_scaled_and_custom_ratios")([scaled_input, ratios])
+3. Dense(64, activation="relu")
+4. BatchNormalization opcional
+5. Dropout(0.25)
+6. Dense(32, activation="relu")
+7. Dropout(0.15)
+8. Output Dense(1, activation="sigmoid")
+
+Compilación:
+- optimizer=keras.optimizers.Adam(learning_rate=1e-3)
+- loss="binary_crossentropy"
+- metrics=[
+    keras.metrics.BinaryAccuracy(name="accuracy"),
+    keras.metrics.AUC(name="auc")
+  ]
+
+Incluye model.summary().
+
+ENTRENAMIENTO
+Entrena el modelo con:
+- validation_split=0.2
+- epochs=30 o 50
+- batch_size=1024
+- callbacks:
+  EarlyStopping(monitor="val_auc", mode="max", patience=5, restore_best_weights=True)
+  ReduceLROnPlateau(monitor="val_auc", mode="max", factor=0.5, patience=3, min_lr=1e-5)
+
+Debido al desbalance de TARGET, calcula class_weight con sklearn.utils.class_weight.compute_class_weight y úsalo en model.fit.
+
+EVALUACIÓN
+Después del entrenamiento:
+1. Evaluar en test con model.evaluate.
+2. Calcular probabilidades:
+   y_proba = model.predict([...]).ravel()
+3. Calcular:
+   - AUC test
+   - accuracy con threshold 0.5
+   - matriz de confusión
+   - classification_report
+4. Dibujar curvas:
+   - train/val loss
+   - train/val AUC
+5. Añadir una celda que muestre las primeras 10 predicciones con:
+   - y_real
+   - y_proba
+   - y_pred
+   - s_gender
+   Esto será útil para el siguiente punto de fairness.
+
+CELDAS MARKDOWN QUE QUIERO EN EL NOTEBOOK
+Incluye o actualiza celdas markdown con estos apartados:
+
+1. "Objetivo de este notebook"
+   Explicar que aquí se implementa solo el punto 1: arquitectura customizada.
+
+2. "Por qué no usamos CODE_GENDER como entrada"
+   Explicar que se guarda como variable sensible para auditoría y FAIR loss, pero se excluye del input directo del modelo.
+
+3. "Por qué calculamos ratios financieros en una capa customizada"
+   Explicar que la red incorpora conocimiento financiero previo: carga de cuota sobre ingresos y crédito sobre ingresos.
+
+4. "Por qué se usa tanh como saturación"
+   Explicar que tanh mantiene la transformación diferenciable y evita que ratios extremos dominen el entrenamiento.
+
+5. "Limitaciones de esta primera versión"
+   Indicar:
+   - Todavía no hay FAIR loss.
+   - Todavía no hay Keras Tuner.
+   - Todavía no hay incertidumbre.
+   - Esta arquitectura es la base sobre la que se construirán los siguientes puntos.
+
+COMPROBACIONES
+Añade celdas para imprimir:
+- Shape de X_scaled_train
+- Shape de X_financial_raw_train
+- Distribución de TARGET en train/test
+- Distribución de CODE_GENDER en train/test
+- Primeras filas de X_financial_raw_train
+- Salida de DebtBurdenLayer sobre 5 ejemplos para verificar que devuelve valores entre 0 y 1 aproximadamente.
+
+CRITERIOS DE ACEPTACIÓN
+El notebook se considera correcto si:
+1. Ejecuta completo sin errores.
+2. No usa CODE_GENDER como entrada directa del modelo.
+3. La capa DebtBurdenLayer aparece en model.summary().
+4. La capa devuelve dos ratios saturados.
+5. El modelo entrena y muestra curvas de loss y AUC.
+6. Hay métricas de test.
+7. El código queda preparado para añadir más adelante FAIR loss, AutoML e incertidumbre.
+
+NO HACER
+- No usar todas las columnas del dataset.
+- No usar CODE_GENDER dentro de X_scaled.
+- No calcular ratios con variables escaladas.
+- No implementar aún la función de coste FAIR.
+- No implementar aún Keras Tuner.
+- No implementar aún Monte Carlo Dropout ni incertidumbre.
+- No eliminar el notebook original.

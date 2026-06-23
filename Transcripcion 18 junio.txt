@@ -1,0 +1,5554 @@
+WEBVTT
+
+1
+00:00:01.920 --> 00:00:03.090
+Laura Pérez: Todo tuyo.
+
+2
+00:00:03.480 --> 00:00:09.900
+valero: Perfecto. Gracias a ver a ver, tenemos cosas 1
+
+3
+00:00:10.390 --> 00:00:17.510
+valero: hoy. Podemos tener invitados hoy. La semana que viene podemos tener invitados de la comunidad, que es una cosa, guay
+
+4
+00:00:17.770 --> 00:00:29.059
+valero: que se enchufe, gente que ha hecho el máster y que pueda decir cosas o ayudarnos en algo o aprender cosas nuevas, porque normalmente
+
+5
+00:00:29.400 --> 00:00:33.210
+valero: sí les invita. Les hemos invitado porque esto no lo dieron
+
+6
+00:00:33.700 --> 00:00:37.239
+valero: ellos en en su edición. Y puede ser interesante para ellos.
+
+7
+00:00:37.610 --> 00:00:47.010
+valero: Y si los invitamos más adelante será para cosas Así esas cosas. Uno cosa: 2 de logística.
+
+8
+00:00:47.440 --> 00:00:49.820
+valero: Si un jueves
+
+9
+00:00:49.950 --> 00:00:56.800
+valero: queremos hacer el taller, el Profe quiere hacer el taller en híbrido, es decir, yendo en presencial a la bolsa.
+
+10
+00:00:57.410 --> 00:01:03.010
+valero: habría gente que quisiera ir. Eso le gustaría a personas como vosotros.
+
+11
+00:01:03.860 --> 00:01:04.670
+valero: Sí.
+
+12
+00:01:05.940 --> 00:01:08.660
+Rodolfo Villena: Sí sí presencial allí en la en la bolsa. Claro.
+
+13
+00:01:08.660 --> 00:01:09.810
+valero: Sí. Vale, Pues.
+
+14
+00:01:09.810 --> 00:01:11.870
+Josep Pérez Segura: Creo que hizo una vez con Pedro.
+
+15
+00:01:13.920 --> 00:01:16.019
+valero: Pedro lo hizo una vez ¿vale?
+
+16
+00:01:16.360 --> 00:01:21.030
+valero: Y qué y cuán y cuánta gente asistió? Josep Más o menos.
+
+17
+00:01:21.420 --> 00:01:25.729
+Josep Pérez Segura: Pocos. Pero si hay personas, no siente. Puede ser que hubiera.
+
+18
+00:01:25.990 --> 00:01:33.869
+valero: Pocos, pero buenos, vale 6 o 7 S son para mí, son suficientes. ¿no? Carlos me ha pedido. Tenéis un Taller con Carlos, el 16 de julio.
+
+19
+00:01:34.290 --> 00:01:39.879
+valero: y me ha pedido que os diga si lo puede hacer yendo a la bolsa.
+
+20
+00:01:40.440 --> 00:01:42.760
+valero: Obviamente, hay Part Hay es como
+
+21
+00:01:43.470 --> 00:01:46.280
+valero: una clase normal. Es decir, la gente puede conectarse, y ya está.
+
+22
+00:01:46.450 --> 00:01:51.870
+valero: Pero veo interesante que sí, sois un grupito, y el
+
+23
+00:01:52.030 --> 00:01:56.690
+valero: prefiero hacerlo así. Es más guay hacerlo así ¿vale?
+
+24
+00:01:57.540 --> 00:02:04.580
+valero: De todas formas, igual pasamos una encuesta para asegurarnos, porque si de si más o menos. Dicen que si
+
+25
+00:02:04.750 --> 00:02:07.270
+valero: 10 y van 6 o qué
+
+26
+00:02:08.020 --> 00:02:14.740
+valero: Sí, Luego van 2. Las clases son muy tristes con 2 personas en presencial. Vale. Y si van Cero.
+
+27
+00:02:15.430 --> 00:02:21.780
+valero: se el profesor. Yo entiendo que se enfade un poco, vale
+
+28
+00:02:22.620 --> 00:02:29.540
+valero: más cosas. Y empezamos ya con cosas. De verdad vale el taller
+
+29
+00:02:30.220 --> 00:02:35.470
+valero: va. No sé si os lo habréis leído, ya vamos a abrirlo.
+
+30
+00:02:35.790 --> 00:02:41.390
+valero: Va de hacer como 4 cosas
+
+31
+00:02:42.010 --> 00:02:43.959
+valero: de los que, habéis dado ya
+
+32
+00:02:44.390 --> 00:02:52.280
+valero: mi clase este viernes pasado viernes y sábado y lo que vais a dar en la siguiente clase en este viernes y sábado
+
+33
+00:02:52.830 --> 00:02:53.590
+valero: vale
+
+34
+00:02:55.110 --> 00:03:06.899
+valero: principalmente la tarea va a ser coger unos datos que ahora veremos. Tenéis un ejemplo de lectura de los datos. Los repasaremos un poquito así por encima lo que hay jolines
+
+35
+00:03:09.150 --> 00:03:17.290
+valero: y de esos datos que son para predicción bancaria de si dan un crédito o no. Ahora estaba hablando con una persona del Banco Sabadell
+
+36
+00:03:17.510 --> 00:03:26.539
+valero: que me decía: hablábamos de de los datos de estos sobre si dan crédito o no dan crédito y tal y los créditos preconcebidos. Y estas cosas
+
+37
+00:03:27.360 --> 00:03:35.229
+valero: ese con esa data ser lo que os vamos a pedir es que haya
+
+38
+00:03:35.550 --> 00:03:41.839
+valero: alguna parte de la arquitectura customizada, es decir, hacer una capa, vosotros, una capa propi propia.
+
+39
+00:03:42.200 --> 00:03:51.729
+valero: hacer una parte de aprendizaje justo y esa parte de aprendizaje justo va a ser customizar una función de coste que lo hicimos la semana pasada
+
+40
+00:03:52.830 --> 00:04:01.060
+valero: hicimos la customización de las funciones de coste este viernes y este sábado vais a aprender a cómo diseñarlas para que sean justas. Vale
+
+41
+00:04:01.660 --> 00:04:03.650
+valero: ahora. Luego haremos un mini ejemplo.
+
+42
+00:04:03.850 --> 00:04:07.179
+valero: Intentaré hacer un mini ejemplo de función de coste justa
+
+43
+00:04:07.470 --> 00:04:12.870
+valero: para que tengáis un mini ejemplo, para que empezáis, podéis empezar a trabajar. Y este fin de semana ahondareis en eso
+
+44
+00:04:13.200 --> 00:04:21.930
+valero: vale y haremos algo de auto matem machine learning, es decir, a optimizar la arquitectura del modelo
+
+45
+00:04:22.089 --> 00:04:27.209
+valero: utilizando el que eras túnel que ya trabajamos la semana pasada. Entonces estas 3 cosas hará.
+
+46
+00:04:27.350 --> 00:04:29.209
+valero: Haremos una aplicación práctica
+
+47
+00:04:29.580 --> 00:04:38.509
+valero: y luego una parte de medir la incertidumbre de la red, es decir, predecir cuál es el error a la red de la red en la salida
+
+48
+00:04:38.790 --> 00:04:47.409
+valero: que nos ofrezca de alguna forma, Pues eso que que saber la red que va a hacer unas predicciones, pero que esas predicciones a ver qué incertidumbre tienen Okay.
+
+49
+00:04:47.570 --> 00:05:04.189
+valero: Entonces, de todo, vamos a intentar hacer ejemplitos hoy de la parte de fair learning y de incertidumbre, la parte teórica. Y haréis alguna cosa de aplicación práctica, la ahondaréis el viernes. Y el sábado qué? La idea es que hoy hagamos ejemplo de todo
+
+50
+00:05:04.720 --> 00:05:06.940
+valero: en unos datos que no son estos.
+
+51
+00:05:07.120 --> 00:05:11.120
+valero: Vamos a hacer un ejemplo en unos datos que no son estos para no daros resuelta a la tarea.
+
+52
+00:05:11.450 --> 00:05:17.219
+valero: Y entonces vosotros resolver la tarea en los datos que toca. Y la semana que viene
+
+53
+00:05:17.400 --> 00:05:19.379
+valero: haréis una presentación de 5 min
+
+54
+00:05:19.860 --> 00:05:22.790
+valero: presentando vuestros resultados. Y viendo las
+
+55
+00:05:22.960 --> 00:05:25.170
+valero: lo que os ha salido, que
+
+56
+00:05:26.210 --> 00:05:31.280
+valero: si algún grupo no puede. La semana que viene hacer la presentación de 5 min.
+
+57
+00:05:31.560 --> 00:05:34.979
+valero: ¿me tenéis que hacer un vídeo Okay entre los 3.
+
+58
+00:05:35.550 --> 00:05:45.600
+valero: No hay mucho problema, porque sabéis que los jueves, al final no tenemos tanto tiempo para hacer la presentación y hacerlo largo Y sí que os pido que sean 5 min tanto el vídeo como la presentación.
+
+59
+00:05:45.710 --> 00:05:48.329
+valero: porque iremos con poco tiempo.
+
+60
+00:05:48.550 --> 00:05:56.580
+valero: Vale y tendremos que ir rápido. Entonces, no, si algún grupo de estos, que se lía y hace 15 min, pues tendrá una peni penalización importante.
+
+61
+00:05:56.690 --> 00:05:59.860
+valero: ¿qué vale?
+
+62
+00:06:00.700 --> 00:06:06.159
+valero: Os decía todo esto para hablar de
+
+63
+00:06:06.790 --> 00:06:09.509
+valero: los datos que vamos a utilizar.
+
+64
+00:06:09.660 --> 00:06:19.400
+valero: de cómo vamos a hacer el taller y principalmente, de que la función de coste optimizada que hicimos el otro día en clase, no acabó de salir bien
+
+65
+00:06:20.100 --> 00:06:24.310
+valero: o los resultados no salían bien. Yo os decía, pues, tenéis que creer en las matemáticas
+
+66
+00:06:24.480 --> 00:06:26.530
+valero: para Sa: No sé si os acordáis
+
+67
+00:06:26.680 --> 00:06:30.030
+valero: hicimos una un ajuste para penalizar
+
+68
+00:06:30.120 --> 00:06:41.770
+valero: los errores que sean negativos y forzar a que lo haga mejor en los errores negativos y le dé un poco más igual Los retornos positivos te acordáis de esa función de coste que hicimos
+
+69
+00:06:41.850 --> 00:06:52.359
+valero: y os dice ge creer en en las matemáticas. Y esto debería converger. ¿vale? Y sacar lo que tiene que sacar. Vimos que en los ejemplos particulares funcionaba bien.
+
+70
+00:06:52.750 --> 00:06:55.860
+valero: No os acordáis en los ejemplos particulares.
+
+71
+00:06:56.230 --> 00:07:00.529
+valero: Voy a Voy a porque creo que no estamos en el mismo rollo.
+
+72
+00:07:01.970 --> 00:07:05.240
+valero: Es decir, teníamos esta situación.
+
+73
+00:07:08.810 --> 00:07:18.879
+valero: teníamos unos retornos diarios, ¿vale? Y entonces teníamos una situación en la que el modelo daba unos retornos diarios.
+
+74
+00:07:22.420 --> 00:07:24.900
+valero: El 0 está aquí.
+
+75
+00:07:25.340 --> 00:07:26.200
+valero: ¿qué
+
+76
+00:07:29.540 --> 00:07:32.929
+valero: este no va? Lo damos a mis hijos
+
+77
+00:07:34.830 --> 00:07:37.440
+valero: o 1 que vaya, Este es el 0.
+
+78
+00:07:37.610 --> 00:07:41.889
+valero: Es decir, estos son retornos positivos, y estos son retornos negativos.
+
+79
+00:07:42.730 --> 00:07:49.259
+valero: Y entonces un modelo normal, lo que hacía era coger y tener errores
+
+80
+00:07:49.640 --> 00:07:54.859
+valero: independientemente por encima o por debajo, es decir, no acierta exactamente el valor real.
+
+81
+00:07:55.560 --> 00:08:03.440
+valero: Pero vamos a poner aquí porque vamos a poner 3 colores porque real lo ponemos en azul.
+
+82
+00:08:04.560 --> 00:08:06.309
+valero: El modelo normal.
+
+83
+00:08:07.400 --> 00:08:14.620
+valero: Lo vamos a poner naranja pua. Este naranja es muy, muy fósil
+
+84
+00:08:17.660 --> 00:08:19.420
+valero: normal.
+
+85
+00:08:22.160 --> 00:08:29.879
+valero: Y entonces un modelo normal intenta predecir esos valores, pero se va aleatoriamente por encima o por debajo, Es decir, puede irse por aquí
+
+86
+00:08:30.120 --> 00:08:35.380
+valero: y en este irse por aquí y en este irse por debajo. Y en este por arriba y en este
+
+87
+00:08:36.380 --> 00:08:45.079
+valero: bueno, el modelo que hicimos nosotros la semana pasada penalizaba equivocarse cuando el azul era negativo.
+
+88
+00:08:45.590 --> 00:08:51.670
+valero: es decir, el modelo que hicimos nosotros en clase custom.
+
+89
+00:08:53.370 --> 00:08:58.410
+valero: lo que debía hacer era acertar lo mejor posible. Estos.
+
+90
+00:08:58.580 --> 00:09:00.269
+valero: que son los que están debajo.
+
+91
+00:09:00.470 --> 00:09:03.480
+valero: Y en estos de arriba se podía equivocar
+
+92
+00:09:03.820 --> 00:09:06.779
+valero: más. Le dejaba que se equivocara más
+
+93
+00:09:07.410 --> 00:09:15.629
+valero: la distancia. Esta es más grande que esta. Se equivocaba más el verde que el naranja por arriba, mientras que por abajo se equivocaba más el naranja que el
+
+94
+00:09:16.460 --> 00:09:21.260
+valero: una función de coste muy tonta. Esto es una cosa que, y
+
+95
+00:09:21.610 --> 00:09:27.520
+valero: está relacionado con una función de coste que se llama pinball, los
+
+96
+00:09:29.670 --> 00:09:36.190
+valero: que básicamente nos ayuda a decir por dónde están los errores en
+
+97
+00:09:36.930 --> 00:09:40.530
+valero: radicales por debajo. Y los errores radicales por arriba. Pero, bueno.
+
+98
+00:09:40.750 --> 00:09:52.510
+valero: no hace falta que entren detalles. Son funciones de coste, consiguieron sacar cuartiles, y esas cosas Vale, son son interesantes. Seguramente la semana pa que viene. Os explicaré perdón la semana que viene, no mañana.
+
+99
+00:09:52.690 --> 00:09:56.950
+valero: pues explicará en manual. Algo de esto vale.
+
+100
+00:09:57.260 --> 00:10:02.120
+valero: Y entonces esto, este ejemplito nos salía en
+
+101
+00:10:02.930 --> 00:10:07.789
+valero: en los retornos y salía unos resultados más o menos así. De hecho, lo que salía es que
+
+102
+00:10:08.080 --> 00:10:15.720
+valero: intentaba irse muy para abajo. Y los los verdes custom, estos en realidad tiraban muy para abajo. Vale.
+
+103
+00:10:17.230 --> 00:10:23.610
+valero: Y entonces, claro, lo que nuestra conclusión era, claro: te estás yendo para abajo, porque te he dicho que lo mejor es que aciertes para abajo.
+
+104
+00:10:23.720 --> 00:10:30.669
+valero: y eso tiene sentido. Pero por arriba lo hacía bastante mal, bueno, pero le hemos pedido eso. Entonces hace lo que lo que le hemos pedido.
+
+105
+00:10:30.820 --> 00:10:39.809
+valero: Okay no funcionó o no sacaban los números cuando calculábamos los errores, no sacaban los errores que tocaba.
+
+106
+00:10:40.240 --> 00:10:47.260
+valero: y era por 2 cosas principalmente muy tontas de programación. Vale os acordáis que, como ahora usamos
+
+107
+00:10:47.930 --> 00:10:51.449
+valero: de vez en cuando la guía para programar cosas, pues puede pasar
+
+108
+00:10:51.660 --> 00:10:53.700
+valero: que las cosas no estén bien.
+
+109
+00:10:54.190 --> 00:10:58.879
+valero: Y entonces vamos a a abrir un
+
+110
+00:11:02.140 --> 00:11:03.160
+valero: uy ché.
+
+111
+00:11:03.970 --> 00:11:05.330
+valero: No quería esto.
+
+112
+00:11:05.770 --> 00:11:09.860
+valero: Vamos a la clase, modelos custom
+
+113
+00:11:10.480 --> 00:11:13.499
+valero: scripts. Aquí os he hecho un script nuevo. Vale
+
+114
+00:11:13.880 --> 00:11:16.729
+valero: que eras Custom, lost clase, versión 2.
+
+115
+00:11:16.910 --> 00:11:21.019
+valero: Y ahora os digo, ¿Por qué 2 tonterías
+
+116
+00:11:21.820 --> 00:11:29.030
+valero: no funcionaba el otro día? Y Y lo os digo las tonterías, porque a mí estas mierdas me pasan y me han pasado antes.
+
+117
+00:11:29.440 --> 00:11:36.340
+valero: ¿vale? Y son errores muy tontos de programación que pasan y mejor que no los tengamos, No los tengáis vosotros.
+
+118
+00:11:36.820 --> 00:11:40.380
+valero: Sí, No caí el otro día, pero vale.
+
+119
+00:11:41.610 --> 00:11:57.460
+valero: estos son los datos. Los retornos vale para 3 activos. Nosotros queríamos predecir los retornos de 1 de los 3, Aquí hacíamos la función Custom Vale, donde le vendíamos primero las irreales y luego las 6 predichas por el modelo.
+
+120
+00:11:57.580 --> 00:12:12.870
+valero: Y lo que decíamos era bueno si los valores reales son mayores que 0, pues calculamos el e el error cuadrático medio si los valores reales son menores, que 0 es el error cuadrático medio multiplicado por un landa este landa.
+
+121
+00:12:13.000 --> 00:12:15.270
+valero: Lo pusimos a 10 para hacerlo muy radical.
+
+122
+00:12:15.950 --> 00:12:22.550
+valero: Entonces esto lo decía penalizo 10 veces más los errores. Cuando el irreal, el retorno real es negativo.
+
+123
+00:12:24.120 --> 00:12:30.859
+valero: Okay, ¿qué ocurre que aquí? Hay que meter primero el irreal y luego el y pre dicho
+
+124
+00:12:31.870 --> 00:12:35.190
+valero: en los ejemplos, cuando evaluábamos aquí abajo.
+
+125
+00:12:36.320 --> 00:12:38.829
+valero: cuando yo hacía la evaluación numérica
+
+126
+00:12:42.420 --> 00:12:44.159
+valero: en la versión. Otra.
+
+127
+00:12:44.580 --> 00:12:49.030
+valero: Primero metía el I a T limp predicho y luego el I real.
+
+128
+00:12:50.230 --> 00:12:58.880
+valero: En general, esto es una parida. Nos da igual normalmente a una función de coste. Me da igual meterle el y predicho y luego el irreal, o al revés.
+
+129
+00:12:59.020 --> 00:13:00.619
+valero: porque son simétricas.
+
+130
+00:13:01.230 --> 00:13:04.029
+valero: El M S. Es simétrico. Y entonces
+
+131
+00:13:04.310 --> 00:13:08.719
+valero: si yo al Ms, El M. S. E: me lo calculo.
+
+132
+00:13:08.870 --> 00:13:20.250
+valero: Sí, o me lo calculo me da igual, vale, pero esta no.
+
+133
+00:13:20.840 --> 00:13:22.350
+valero: Esta no es simétrica.
+
+134
+00:13:22.570 --> 00:13:28.130
+valero: Esta Lo que digo es que los Is estos me marcan cuál es la penalización.
+
+135
+00:13:28.730 --> 00:13:36.089
+valero: Y entonces lo que arriba, cuando la he definido, la he definido poniendo primero el I real y luego
+
+136
+00:13:37.450 --> 00:13:38.569
+valero: el impredijo.
+
+137
+00:13:38.950 --> 00:13:41.530
+valero: Vale en clase
+
+138
+00:13:41.830 --> 00:13:48.250
+valero: por hacerlo con I A o hacerlo corriendo. No recuerdo quién de los 2 tiene la culpa que mi niño, yo.
+
+139
+00:13:48.530 --> 00:13:49.420
+valero: pues
+
+140
+00:13:49.740 --> 00:13:56.209
+valero: lo hicimos al revés. Pusimos primero el y predicho y luego el irreal aquí. Y entonces, claro, los números no salían.
+
+141
+00:13:56.690 --> 00:14:01.049
+valero: Mhm: Ahora, en el ejemplo este sale ahora. Lo veremos.
+
+142
+00:14:01.310 --> 00:14:07.879
+valero: Y el segundo problema, que es aún más ra, que da aún más rabia, que es problema.
+
+143
+00:14:08.070 --> 00:14:16.450
+valero: Aizoon Ya no es que estos esto de aquí, los is de entrenamiento
+
+144
+00:14:16.660 --> 00:14:20.839
+valero: queras le gusta que tengan aquí una dimensión falsa.
+
+145
+00:14:21.670 --> 00:14:26.550
+valero: Vale nosotros, en los originales, en los datos originales.
+
+146
+00:14:28.150 --> 00:14:30.580
+valero: a ver si se está por aquí fijaros
+
+147
+00:14:30.770 --> 00:14:35.270
+valero: que no tenía la dimensión falsa, y eso
+
+148
+00:14:35.600 --> 00:14:39.260
+valero: cuando los usamos los datos normales en un modelo normal en que eras, da igual.
+
+149
+00:14:39.620 --> 00:14:45.529
+valero: ¿por qué? Porque el que eras por dentro, cuando tú se los pasas, ve que aquí falta una dimensión y se la mete
+
+150
+00:14:46.240 --> 00:14:52.999
+valero: se la ponen. Ellos vale tiene un check para facilitarte la vida. ¿qué ocurre que si tú luego
+
+151
+00:14:53.110 --> 00:14:55.130
+valero: aplicas esta función de coste
+
+152
+00:14:55.930 --> 00:14:59.690
+valero: por separado sin un modelo de que eras, es decir, Lo que hacíamos aquí abajo
+
+153
+00:15:00.330 --> 00:15:06.690
+valero: era aplicar directamente la función de coste que habíamos definido arriba, pues ocurre
+
+154
+00:15:06.880 --> 00:15:10.390
+valero: que cuando aplicamos esto eso es un problema
+
+155
+00:15:11.130 --> 00:15:13.450
+valero: y las restas no las hace como las tiene que hacer.
+
+156
+00:15:14.690 --> 00:15:20.780
+valero: No sé si digamos que este segundo problema, este era el primer problema.
+
+157
+00:15:21.700 --> 00:15:28.640
+valero: El segundo problema era que I tuviese tamaño
+
+158
+00:15:28.780 --> 00:15:34.750
+valero: n comanada o tuviese tamaño. N coma 1 Okay.
+
+159
+00:15:34.900 --> 00:15:38.459
+valero: El Bueno, el que debemos intentar usar es este de aquí abajo.
+
+160
+00:15:40.580 --> 00:15:46.360
+valero: Si usamos el de arriba, puede ser que no falle.
+
+161
+00:15:46.840 --> 00:15:52.219
+valero: Y ese error estaba, Vale, No sé si para para
+
+162
+00:15:52.430 --> 00:15:54.550
+valero: si os habéis metido mucho en Python o no.
+
+163
+00:15:54.700 --> 00:15:57.680
+valero: Para los que más os habéis metido en países, hay una cosa
+
+164
+00:15:57.840 --> 00:16:01.409
+valero: que es el forecasting que hace Ma Python
+
+165
+00:16:01.560 --> 00:16:12.990
+valero: que cuando no tiene unas dimensiones que le hacen falta, repite los datos y le da vuelta a los datos hasta rellenar esas dimensiones. Es decir, nosotros le pedimos que haga una. Resta.
+
+166
+00:16:13.100 --> 00:16:14.769
+valero: Él mira cosas y dice.
+
+167
+00:16:14.950 --> 00:16:21.840
+valero: estas 2 cosas no tienen las mismas dimensiones, pero yo me puedo apañar si repito aquí esto y le doy la vuelta. Puedo rellenar.
+
+168
+00:16:22.080 --> 00:16:23.440
+valero: pues ese es el problema.
+
+169
+00:16:23.970 --> 00:16:27.240
+valero: Eso es lo que hacía el otro día. Vale, La metíamos así.
+
+170
+00:16:27.770 --> 00:16:31.780
+valero: Y entonces él cogía y le daba la vuelta a las a las 6. Bueno.
+
+171
+00:16:32.260 --> 00:16:35.070
+valero: solucionados esos 2 problemas tontos.
+
+172
+00:16:35.350 --> 00:16:36.340
+valero: ¿qué ocurre?
+
+173
+00:16:38.110 --> 00:16:43.639
+valero: Estos son las curvas de entrenamiento y de validación para los 2 modelos. Ok.
+
+174
+00:16:43.820 --> 00:16:49.319
+valero: el modelo. Uno era el modelo. Vamos a revisar que no me equivoque.
+
+175
+00:16:51.300 --> 00:16:55.640
+valero: el modelo 2 era con Msn
+
+176
+00:16:55.950 --> 00:17:00.250
+valero: y el modelo, 1 con customización. Vale.
+
+177
+00:17:00.390 --> 00:17:05.000
+valero: Entonces el modelo Uno: el verde vale
+
+178
+00:17:05.460 --> 00:17:11.920
+valero: en el entrenamiento y el 2, el azul en entrenamiento. Esto de aquí. Lo que estamos viendo
+
+179
+00:17:12.300 --> 00:17:14.370
+valero: es el Msn.
+
+180
+00:17:15.119 --> 00:17:20.139
+valero: Y entonces vemos las curvas de entrenamiento del modelo, 1 como baja en M. C,
+
+181
+00:17:20.890 --> 00:17:23.120
+valero: pero se satura en M. S. M.
+
+182
+00:17:24.050 --> 00:17:29.040
+valero: Y el modelo 2 que lo he entrenado para M C baja por debajo del 1,
+
+183
+00:17:29.650 --> 00:17:45.280
+valero: como es lógico, Es decir, el modelo 2 lo estoy entrenando para minimizar el M. S. E. Y funciona perdón. El el modelo, 1 lo estoy utilizando para M. S. E. Y funciona mejor para el M. S. E. Que el 2. Esto lo estoy diciendo bien o no
+
+184
+00:17:47.740 --> 00:17:50.020
+valero: a ver el 2 M. S.
+
+185
+00:17:55.380 --> 00:17:59.139
+valero: Los de entrenamiento Correcto, perdón que son el azul y el verde.
+
+186
+00:18:00.290 --> 00:18:04.130
+valero: Vale el 2 en M. S. E tiene menos error que el 1.
+
+187
+00:18:04.930 --> 00:18:07.850
+valero: ¿qué esto ya pasaba el otro día.
+
+188
+00:18:08.010 --> 00:18:09.590
+valero: Lo que no nos pasaba
+
+189
+00:18:09.770 --> 00:18:15.359
+valero: era que cuando en lugar de evaluar con M. S. El M. S. E evaluase la función customizada
+
+190
+00:18:15.630 --> 00:18:24.719
+valero: funcionase mejor el modelo customizado y en este caso sí, que es así en este caso, el verde en la de abajo, el verde, fijaros va por debajo del azul.
+
+191
+00:18:25.020 --> 00:18:27.949
+valero: y en la de arriba el azul va por debajo del verde.
+
+192
+00:18:28.320 --> 00:18:36.729
+valero: Cuando evalúo la función customizada, el verde funciona bien y el azul, y el azul funciona mal y al revés.
+
+193
+00:18:37.270 --> 00:18:41.180
+valero: Además, fijaros que las curvas son más suaves
+
+194
+00:18:42.330 --> 00:18:45.259
+valero: para la función de coste tuya propia.
+
+195
+00:18:45.650 --> 00:18:51.399
+valero: Cuando yo estoy optimizando para la customizada la curva es más suave.
+
+196
+00:18:51.600 --> 00:18:55.219
+valero: ¿por qué? Porque estoy minimizando todo el rato ese Ese error.
+
+197
+00:18:56.060 --> 00:18:59.639
+valero: esta de aquí es más ruidosa porque estoy minimizando el M S. E
+
+198
+00:18:59.860 --> 00:19:11.759
+valero: que se parece al customizado porque al final es un M. S pesado. Y entonces hace un un una forma parecida, pero hay veces que funcionan peor y ti, funcionan más ruidoso okay.
+
+199
+00:19:13.090 --> 00:19:18.900
+valero: Y ahora, si miramos los números finales, vemos que
+
+200
+00:19:20.080 --> 00:19:29.929
+valero: si Cogemos el modelo de M. S. E. Y lo evaluamos en customizado. Nos da un error de 0 coma 0, Dos.
+
+201
+00:19:30.580 --> 00:19:37.939
+valero: Si cogemos el modelo customizado y lo evaluamos en customizado. Nos da un error de 0 coma 0, 1, es decir, tiene menos error.
+
+202
+00:19:38.440 --> 00:19:42.760
+valero: El modelo entrenado con la customizada sobre la función customizada.
+
+203
+00:19:43.330 --> 00:19:44.020
+valero: ¿qué
+
+204
+00:19:44.130 --> 00:19:50.339
+valero: estoy haciendo todo el lado hablando como trabalenguas, y es difícil seguirlo. No sé si s si se está siguiendo bien.
+
+205
+00:19:51.530 --> 00:19:52.660
+valero: se entiende o no.
+
+206
+00:19:54.320 --> 00:19:58.599
+valero: si es que no me lo tenías que decir, No tienes que mirar la pantalla así al infinito. Y ya está
+
+207
+00:20:00.200 --> 00:20:02.190
+valero: cristian, se entiende o no se entiende.
+
+208
+00:20:04.820 --> 00:20:06.210
+Cristian: Sí, más o menos.
+
+209
+00:20:07.110 --> 00:20:08.860
+valero: O sea, es que no. Eso es
+
+210
+00:20:10.150 --> 00:20:19.579
+valero: básicamente. La idea es si yo estoy optimizando para una función de coste, optimiza customizada. Mi modelo tiene que ser mejor en esa función de coste cuando lo evalúen. Esa función de coste
+
+211
+00:20:20.700 --> 00:20:23.180
+valero: ya está. Entonces este tiene que ser mejor que ese
+
+212
+00:20:24.810 --> 00:20:27.939
+valero: Este lo entrena para la función de coste customizada y este no.
+
+213
+00:20:28.050 --> 00:20:32.519
+valero: Pues entonces, cuando lo evalúan customizado, el de abajo tiene que funcionar más cerca del de arriba.
+
+214
+00:20:32.680 --> 00:20:33.400
+valero: Ya está.
+
+215
+00:20:34.830 --> 00:20:35.849
+valero: No tiene más.
+
+216
+00:20:36.530 --> 00:20:46.140
+valero: Esa es la idea en general, y ahora funcionan bien los números. El otro día estábamos un poco. Estaba un poco esto con esos 2 fallos tontos, ¿vale?
+
+217
+00:20:46.490 --> 00:20:58.640
+valero: Okay al wright, vamos al taller vale y tenemos
+
+218
+00:21:00.260 --> 00:21:04.329
+valero: en el taller. Voy hacia atrás y voy a abrir el Taller
+
+219
+00:21:09.110 --> 00:21:19.289
+valero: Mhm, 2 scripts kate en lectura, datos del taller son los datos que vais a utilizar vosotros para trabajar.
+
+220
+00:21:20.490 --> 00:21:21.830
+valero: Vamos a verlos.
+
+221
+00:21:23.670 --> 00:21:30.549
+valero: Veréis qué tipo de datos son y trabajareis con ellos.
+
+222
+00:21:30.810 --> 00:21:35.070
+valero: Y luego hay otro que es lectura, datos, ejemplo
+
+223
+00:21:35.260 --> 00:21:39.869
+valero: adul data, que estos son los que voy a trabajar. Yo voy a usar yo para trabajar hoy aquí?
+
+224
+00:21:40.250 --> 00:21:41.110
+valero: Okay.
+
+225
+00:21:42.370 --> 00:21:46.500
+valero: Sí, Vale.
+
+226
+00:21:47.430 --> 00:21:50.339
+valero: Los datos reales que vais a usar vosotros son estos.
+
+227
+00:21:51.220 --> 00:21:59.870
+valero: Tenéis unos datos que son bastante tochos a ver pone aquí ejemplos.
+
+228
+00:22:02.130 --> 00:22:12.290
+valero: Si buscáis la idea de estos de estos datos, pues básicamente son datos de si a una persona
+
+229
+00:22:12.610 --> 00:22:18.529
+valero: va a fallar devolviendo un crédito o no tienen un montón
+
+230
+00:22:18.650 --> 00:22:24.589
+valero: de de información y un montón de personas, Vale, Vamos a ver cuántas
+
+231
+00:22:25.320 --> 00:22:30.050
+valero: esto es cargando directamente los datos. Toda la base de datos ¿vale?
+
+232
+00:22:30.320 --> 00:22:33.940
+valero: Y aquí tenemos 300 000 personas
+
+233
+00:22:34.140 --> 00:22:38.320
+valero: y de cada persona. Tenemos 122 características
+
+234
+00:22:38.720 --> 00:22:44.820
+valero: Vale, estas características son 1 000 cosas. Ok, son
+
+235
+00:22:45.100 --> 00:22:51.410
+valero: cosas financieras claras, como, por ejemplo, ¿cuál es el ingreso total? Anual? Vale.
+
+236
+00:22:51.900 --> 00:23:09.140
+valero: o el crédito que que han pedido anualmente. Y hay cosas tipo si tiene su propio coche, si es hombre o mujer? Bueno, y aquí la función Target es si ha fallado devolviendo el crédito o no ha fallado.
+
+237
+00:23:10.070 --> 00:23:14.069
+valero: Ha tenido problemas en algún momento de de devolver el crédito.
+
+238
+00:23:14.760 --> 00:23:18.309
+valero: Pero hay 122 Vale, 122 características.
+
+239
+00:23:18.690 --> 00:23:29.230
+valero: No solo eso. No solo hay 122 características. Esta base de datos es para el que más quiera hacer más va a poder hacer okay. El taller es un rango de
+
+240
+00:23:29.750 --> 00:23:44.939
+valero: cosas muy simples que son cosas que vamos a hacer hoy, replicarlas o calentarme más la cabeza y calentarme más la vida. Podéis calentaros hasta donde queráis, porque la base de datos. Esta es brutal. Tiene 100, 22 dimensiones, la principal.
+
+241
+00:23:45.440 --> 00:23:50.300
+valero: Pero luego de cada una de las personas, hay varias. Bueno.
+
+242
+00:23:50.700 --> 00:23:57.770
+valero: hay varias bases de datos extra donde cada una de esas personas tienen más información.
+
+243
+00:23:57.980 --> 00:23:59.139
+valero: Por ejemplo.
+
+244
+00:23:59.250 --> 00:24:07.240
+valero: si ha pedido más créditos con esa entidad bancaria, salen los créditos que ha pedido y si los ha devuelto, no los ha devuelto.
+
+245
+00:24:08.170 --> 00:24:17.860
+valero: hay bases de datos que sale mensualmente esa persona, los créditos que ha pedido los los impagos que ha tenido los pagos que ha tenido.
+
+246
+00:24:18.830 --> 00:24:24.639
+valero: Hay un montón de cosas aquí que podéis utilizar para el taller
+
+247
+00:24:25.540 --> 00:24:27.929
+valero: es una locura meterse en esto.
+
+248
+00:24:28.140 --> 00:24:29.190
+valero: Pero ¿cómo
+
+249
+00:24:29.540 --> 00:24:34.739
+valero: os calentáis y queréis hacer más y más y más, pues que sepáis que aquí podéis tirar más
+
+250
+00:24:34.900 --> 00:24:38.710
+valero: a mí No, me no, me no me pide el cuerpo para que aprendáis
+
+251
+00:24:38.930 --> 00:24:43.479
+valero: de lo que yo os explico en el taller saliros de la base de datos principal.
+
+252
+00:24:43.700 --> 00:24:49.699
+valero: ¿qué? Pero aquí hay un montón de bases de datos que se pueden utilizar para complementar la principal.
+
+253
+00:24:51.160 --> 00:24:57.139
+valero: La idea principal de esto es hacer una predicción de si a la persona hay que darle un crédito o no
+
+254
+00:24:57.890 --> 00:25:07.560
+valero: vale sobre eso. Vais a tener que y esto tenía por aquí
+
+255
+00:25:08.970 --> 00:25:13.879
+valero: sobre eso vais a tener que poner una función de coste
+
+256
+00:25:14.370 --> 00:25:18.529
+valero: y just para aprendizaje justo que básicamente
+
+257
+00:25:19.070 --> 00:25:23.190
+valero: cambie las predicciones del modelo dependiendo
+
+258
+00:25:23.390 --> 00:25:31.929
+valero: de hacer que sus predicciones sean más independientes de una variable sensible que es el género, Vale, el género.
+
+259
+00:25:33.600 --> 00:25:36.220
+valero: Perdón está aquí.
+
+260
+00:25:39.160 --> 00:25:44.360
+valero: Es decir, vamos a hacer un modelo que no discrimine por género.
+
+261
+00:25:44.470 --> 00:25:47.769
+valero: que las predicciones que haga sean las mismas.
+
+262
+00:25:48.250 --> 00:25:50.730
+valero: Si son si entra un hombre o si entra una mujer.
+
+263
+00:25:50.920 --> 00:25:51.580
+valero: Mhm.
+
+264
+00:25:51.940 --> 00:26:02.099
+valero: Esto es un pelín triqui los detalles de estas cosas se las explicará. Ma Emanuel mañana o pasado. Ahora, luego haremos un ejemplo para que veáis cómo se puede hacer esto
+
+265
+00:26:02.310 --> 00:26:03.110
+valero: al Wright.
+
+266
+00:26:04.290 --> 00:26:09.240
+valero: Y además, pues buscaremos leches que está aquí
+
+267
+00:26:10.280 --> 00:26:13.519
+valero: distintas arquitecturas del modelo, pero de forma automática.
+
+268
+00:26:14.140 --> 00:26:17.439
+valero: probaremos distintas arquitecturas. Vale con el que quieras túnel
+
+269
+00:26:17.960 --> 00:26:21.439
+valero: y haréis lo de la incertidumbre a la salida. Vale
+
+270
+00:26:22.280 --> 00:26:25.320
+valero: todo eso? Bueno, y la y la capa customizada.
+
+271
+00:26:25.970 --> 00:26:27.230
+valero: ¿cómo lo veis
+
+272
+00:26:31.570 --> 00:26:32.710
+valero: estresante?
+
+273
+00:26:35.980 --> 00:26:37.870
+valero: ¿cómo va cristian? ¿cómo lo ves?
+
+274
+00:26:40.480 --> 00:26:41.180
+Cristian: Bien.
+
+275
+00:26:41.840 --> 00:26:42.640
+valero: Bien, pero.
+
+276
+00:26:42.640 --> 00:26:47.090
+Cristian: Próximo jueves. Ya lo veremos el próximo jueves.
+
+277
+00:26:47.090 --> 00:26:48.879
+valero: Ya lo veremos el próximo jueves. Vale.
+
+278
+00:26:49.410 --> 00:26:52.879
+valero: antes de entrar a esto, a a
+
+279
+00:26:54.230 --> 00:27:03.789
+valero: a jugar con los ejemplos. Los datos de ejemplo vale a hacer nosotros hoy este tallercito de una forma sencilla con otros datos de juguete.
+
+280
+00:27:04.280 --> 00:27:08.079
+valero: Solo os quiero decir una cosa que es
+
+281
+00:27:08.420 --> 00:27:11.659
+valero: en la información del taller. Aparte, tenéis
+
+282
+00:27:12.380 --> 00:27:18.669
+valero: l cada 1 a qué grupo pertenece. He hecho los grupos de forma aleatoria. Vale.
+
+283
+00:27:18.960 --> 00:27:28.299
+valero: de forma que trabajéis. O sea, si pues Albert está en el grupo, 1, pues va. Albert va a Josep y va rodolfo.
+
+284
+00:27:28.480 --> 00:27:33.430
+valero: vale puntos por lo del grupo, 2 grupos, 1 de 3 grupos, 3. Vale.
+
+285
+00:27:33.740 --> 00:27:34.510
+valero: ¿qué
+
+286
+00:27:35.370 --> 00:27:43.680
+valero: insisto si algún Grupo no puede, el añ la semana que viene. El jueves presentar, pues, hacéis un vídeo entre los 3 y entregáis 5 minutitos
+
+287
+00:27:43.940 --> 00:27:45.800
+valero: vale de vida.
+
+288
+00:27:46.370 --> 00:27:57.310
+valero: Vale alguna duda sobre lo que hay que hacer alguna duda sobre lo que hay que entregar sí,
+
+289
+00:27:58.200 --> 00:28:04.410
+valero: tenéis aquí que tenéis que entregar el co, un Github. Vale con el código Y
+
+290
+00:28:04.530 --> 00:28:07.619
+valero: pues la presentación. Si no venís a la presentación.
+
+291
+00:28:07.870 --> 00:28:15.160
+valero: pues entregáis el P D. F y un vídeo también vale alguna duda.
+
+292
+00:28:18.960 --> 00:28:23.179
+valero: no veo dudosos, podéis preguntar, ¿ Es decir.
+
+293
+00:28:23.710 --> 00:28:28.340
+valero: no lo hago en vídeo, ¿no? Porque me grabo un vídeo con el taller para que preguntéis, cosas de eso.
+
+294
+00:28:30.160 --> 00:28:31.899
+valero: De momento, lo tenéis, claro.
+
+295
+00:28:32.450 --> 00:28:38.569
+Diego Muñoz Alonso: U una una duda valero. Te Tenemos la descripción de los 122 campos del Dataset.
+
+296
+00:28:39.160 --> 00:28:41.500
+valero: Están aquí. Vale.
+
+297
+00:28:41.760 --> 00:28:43.100
+Diego Muñoz Alonso: Vale. Entonces.
+
+298
+00:28:43.100 --> 00:28:46.929
+valero: Sí en en el cadle, tenéis la descripción de los 122 campos.
+
+299
+00:28:47.500 --> 00:28:53.509
+valero: Y si no es un dataset, también muy, muy típico
+
+300
+00:28:53.990 --> 00:28:56.270
+valero: y estará en muchos sitios. Vale.
+
+301
+00:28:56.380 --> 00:28:58.170
+valero: De hecho, si le preguntáis a
+
+302
+00:28:58.300 --> 00:29:05.950
+valero: a la I a Os lo va a describir bastante bien, aunque las los campos y todo eso va.
+
+303
+00:29:05.950 --> 00:29:06.700
+Diego Muñoz Alonso: Entonces.
+
+304
+00:29:06.700 --> 00:29:08.630
+valero: Vale aquí abajo
+
+305
+00:29:08.810 --> 00:29:18.760
+valero: como ejemplo. O sea, yo he. Ca: Os he pasado todo el Dataset original, o sea, tenéis este C, S. V Tiene toda esa tabla original. ¿vale?
+
+306
+00:29:18.940 --> 00:29:22.309
+valero: Y esto carga El C. S. V No lo carga desde Cablem.
+
+307
+00:29:23.090 --> 00:29:35.439
+valero: Aquí tenéis toda la tabla aquí abajo, hecho un ejemplo, con las variables o las columnas más relevantes. La variable objetivo, obviamente, y luego la variable sensible.
+
+308
+00:29:35.550 --> 00:29:37.790
+valero: que es el género y luego
+
+309
+00:29:38.040 --> 00:29:41.579
+valero: por las variables financieras más importantes.
+
+310
+00:29:42.250 --> 00:29:53.680
+valero: la edad que es una variable descriptiva, bastante importante, y luego fuentes externas que esto son valoraciones que tienen de cada 1 de los clientes de fuentes externas.
+
+311
+00:29:53.800 --> 00:29:55.839
+valero: No dicen exactamente qué, pero es
+
+312
+00:29:56.400 --> 00:29:59.640
+valero: entidades externas han evaluado a cada 1 de sus clientes.
+
+313
+00:30:00.810 --> 00:30:09.090
+valero: Entonces esto de aquí, por ejemplo, una cosa que os recomiendo siempre es hacer algo así es
+
+314
+00:30:09.330 --> 00:30:15.029
+valero: hacer una visualización donde veamos cada una de las variables, su distribución marginal
+
+315
+00:30:15.210 --> 00:30:18.859
+valero: y luego combinadas las variables. ¿cómo están relacionadas?
+
+316
+00:30:18.970 --> 00:30:23.970
+valero: Pues el crédito y el anuiti. Este están muy relacionados. Vale.
+
+317
+00:30:24.520 --> 00:30:30.749
+valero: o también esto es el Lincoln total. Y los créditos que tienen también están muy relacionados
+
+318
+00:30:31.980 --> 00:30:40.970
+valero: aquí. Hay gente, pues que tiene mucho incom pero ha pedido pocos créditos, vale
+
+319
+00:30:41.590 --> 00:30:53.490
+valero: fecha de nacimiento y cuánto ganan o cuánto no hay mucha relación en en entre la edad a ver, no sí entre el los ingresos totales y la fecha de nacimiento.
+
+320
+00:30:53.860 --> 00:31:04.009
+valero: sí, y tenéis, pues eso más relaciones. Esto será seguramente un 0 que hay, no
+
+321
+00:31:04.450 --> 00:31:07.159
+valero: entre todas las varitas. Entonces vemos un poquito cómo se
+
+322
+00:31:07.520 --> 00:31:13.699
+valero: cuáles son las relaciones entre las variables. Insisto: la variable sensible.
+
+323
+00:31:14.520 --> 00:31:20.779
+valero: la variable sensible es el género y la variable a predecir
+
+324
+00:31:21.030 --> 00:31:25.229
+valero: que se está de ahí abajo, que es el Target.
+
+325
+00:31:29.050 --> 00:31:31.750
+valero: Vale más dudas.
+
+326
+00:31:33.350 --> 00:31:34.230
+valero: Nada.
+
+327
+00:31:34.810 --> 00:31:36.660
+Eduardo González: Sí una pregunta valero.
+
+328
+00:31:37.210 --> 00:31:53.669
+Eduardo González: No me queda del todo claro el número de modelos que hay que hacer, O sea, Entiendo que hay que hacer un modelo base y luego otros 4 modelos, cada 1 con con las tareas principales, o simplemente son 4 modelos y cada 1 con con una tarea incluida dentro del modelo.
+
+329
+00:31:54.610 --> 00:32:02.560
+valero: Tienes que hacer un modelo que incluya una capa customizada, la función de coste customizada. Y
+
+330
+00:32:03.150 --> 00:32:11.180
+valero: ya está en verdad, vale, bueno, sí, y y que devuelva la incertidumbre de salida.
+
+331
+00:32:11.630 --> 00:32:16.750
+valero: Y luego, sobre ese modelo, aplicar que eras túnel y
+
+332
+00:32:17.020 --> 00:32:36.590
+valero: el que las túner iterará con número de capas, tipo de funciones de activación. Y todo eso? Cuántos modelos tenéis que usar con el que creas túnel no me no hay un número, me da igual. O sea, no es es principalmente que que se vea, que sabéis, usar el crastunel para poder entrenar con distinta variabilidad en la arquitectura.
+
+333
+00:32:39.330 --> 00:32:40.779
+Eduardo González: Vale, Vale, okay, Sí.
+
+334
+00:32:41.450 --> 00:32:44.490
+valero: Bueno, alguna pregunta más.
+
+335
+00:32:47.070 --> 00:32:51.700
+valero: Nada va, pues vamos a jugar un poquito.
+
+336
+00:32:52.430 --> 00:32:58.379
+valero: Entonces he dicho que tenemos los datos para el ejemplo. Vamos a hacer una copia.
+
+337
+00:33:00.100 --> 00:33:02.569
+valero: Los datos para el ejemplo son muy parecidos.
+
+338
+00:33:03.100 --> 00:33:05.700
+valero: ¿qué a ver al final.
+
+339
+00:33:09.300 --> 00:33:15.040
+valero: en lugar de predecir, es también con muchas personas y en lugar de predecir
+
+340
+00:33:16.350 --> 00:33:20.170
+valero: si no va a devolver un crédito, sí lo va a devolver.
+
+341
+00:33:20.610 --> 00:33:27.370
+valero: Lo que se predice es cuánto dinero o si cobra más esa persona de 50 000 dólares o menos
+
+342
+00:33:27.580 --> 00:33:32.010
+valero: vale, entonces tenemos unas variables.
+
+343
+00:33:32.550 --> 00:33:35.700
+valero: De entrada, tenemos 14 variables. De entrada.
+
+344
+00:33:36.300 --> 00:33:40.220
+valero: tenemos 32 000 filas, es decir, 32 000 personas.
+
+345
+00:33:40.340 --> 00:33:48.060
+valero: y luego las variables de entrada de estas 14, pues tenemos demográfica, Es decir, ¿qué edad tiene la persona, qué sexo es, qué rauda.
+
+346
+00:33:48.440 --> 00:33:52.429
+valero: qué raza, si está casado, no vale
+
+347
+00:33:52.980 --> 00:33:58.410
+valero: luego educativas y o laborales en que trabaja, que que ha estudiado
+
+348
+00:33:58.810 --> 00:34:15.840
+valero: y financieras vale cuánto dinero tiene, cuánto dinero gana, cuánto dinero pierde y una variable que es el peso que le dan den a esa persona dentro de la población estadounidense, es decir, como el porcentaje de personas que son como parecida a esa persona.
+
+349
+00:34:15.989 --> 00:34:19.460
+valero: ¿ Es un poco rara, pero bueno, está ahí.
+
+350
+00:34:19.900 --> 00:34:22.310
+valero: Okay, ¿vale?
+
+351
+00:34:22.489 --> 00:34:24.699
+valero: Entonces vamos a cargar esos datos.
+
+352
+00:34:33.550 --> 00:34:38.570
+valero: estos datos se cargan directamente de del que Eras
+
+353
+00:34:38.739 --> 00:34:41.420
+valero: Okay, perdón, del que eras de del Caggle?
+
+354
+00:34:42.050 --> 00:34:46.079
+valero: Bueno, de Kagle o no se se descargan de una página web de Google que los tienen por ahí.
+
+355
+00:34:46.350 --> 00:34:51.169
+valero: Pero aquí tenéis el link a Kagler y el link a la U C, I,
+
+356
+00:34:51.429 --> 00:34:53.389
+valero: la u C. I. Esta base de datos
+
+357
+00:34:55.449 --> 00:35:03.829
+valero: tiene un montón de. Es parecido a Kag, El parecido a a los tenso Flow Datasets. Y todo esto tienen un montón de datasets vale
+
+358
+00:35:04.640 --> 00:35:14.599
+valero: donde creo que alguna vez os lo he comentado, pero tienen tienen un montón y podéis seleccionar. Bueno, pues quiero área, qué quiero? Pues business Vale.
+
+359
+00:35:14.800 --> 00:35:19.469
+valero: vale y dentro de business. ¿qué quiero? Pues quiero
+
+360
+00:35:20.080 --> 00:35:23.590
+valero: que que tenga por lo menos
+
+361
+00:35:24.040 --> 00:35:27.549
+valero: 10 000. Bueno, no, este es el tipo de de atributos.
+
+362
+00:35:29.580 --> 00:35:43.000
+valero: Quiero que sean pues, regulares. No. Entonces aquí podéis sacar datassets con las características que vosotros. Bueno, aquí
+
+363
+00:35:43.280 --> 00:35:49.930
+valero: también describe las características de está. Lo tenéis puesto en el el link, porque el describe las características, estas de la base de datos.
+
+364
+00:35:52.210 --> 00:35:54.870
+valero: Entonces, tenemos 32 000 personas
+
+365
+00:35:55.060 --> 00:36:02.809
+valero: y 14 variables de cada persona, y tenemos que predecir si esa persona cobra más de 50 000 dólares o menos de 50 000 dólares.
+
+366
+00:36:03.820 --> 00:36:05.750
+valero: Esta es toda la base de datos
+
+367
+00:36:06.250 --> 00:36:13.159
+valero: con las variables. Tenemos cada persona. Y tienen aquí, al final, si cobran menos de 50 000 o más de 50 000 Vale.
+
+368
+00:36:15.000 --> 00:36:19.560
+valero: Aquí vamos a procesar los datos para
+
+369
+00:36:19.840 --> 00:36:31.630
+valero: simplificar el tema, porque, claro, aquí tengo variables categóricas. Ok, y entonces vamos a reemplazar las categóricas por numéricas, por ejemplo.
+
+370
+00:36:31.830 --> 00:36:33.219
+valero: esta última.
+
+371
+00:36:33.950 --> 00:36:51.739
+valero: pues vamos a poner un 0 si cobra menos de 50 000, un 1 si cobra más de 50 000 Ok, o, por ejemplo, las de la raza, la vamos a sustituir, pues cada una de las variables que hay blanco, asiático. Indio otro negro, pues por número. Ok.
+
+372
+00:36:52.250 --> 00:36:57.120
+valero: y la de género, por si es hombre o un 0, si es Mujer: Uno vale.
+
+373
+00:36:58.920 --> 00:37:02.599
+valero: si hacemos eso, esa limpieza, pues tenemos aquí unos
+
+374
+00:37:03.050 --> 00:37:15.299
+valero: los ratitos más simplificado. Aparte, hemos tirado fuera alguna de las de las variables. Vale, las podríamos dejar que las he quitado, pero la podríamos dejar
+
+375
+00:37:15.720 --> 00:37:24.890
+valero: tendríamos que transformarlas de categóricas a numéricas. ¿vale? Pero para el ejemplo nos da un poco igual. Queremos hacerlo los ejemplos y ver que todo funcione.
+
+376
+00:37:25.440 --> 00:37:27.779
+valero: Nos quedamos con una base de datos que es así.
+
+377
+00:37:27.960 --> 00:37:33.260
+valero: Tengo un 2, 3, 4, 5, 6, 7, 8, Y
+
+378
+00:37:33.530 --> 00:37:46.330
+valero: la predicción vale 8 dimensiones de entrada, una de salida. Y tengo aquí 2 variables que podrían ser susceptibles de ser sensibles: la raza y el gen vale
+
+379
+00:37:46.920 --> 00:37:48.160
+valero: también la edad.
+
+380
+00:37:48.560 --> 00:37:56.489
+valero: La edad también es una cosa por la que se puede discriminar. Hay Hay veces que si es una persona muy mayor, pues no le voy a
+
+381
+00:37:56.630 --> 00:38:02.079
+valero: dar el crédito no le vale. Entonces también es una variable que se usa a veces para
+
+382
+00:38:02.510 --> 00:38:04.070
+valero: para discriminar. Vale.
+
+383
+00:38:06.140 --> 00:38:16.209
+valero: Veo os enseño alguna algún ejemplito, por ejemplo, si mostramos la edad frente al número de horas que se trabajan, Pues es curioso, ¿no?
+
+384
+00:38:16.940 --> 00:38:23.540
+valero: Cuando eres más pequeño, trabajas, menos horas, conforme pasas de esta edad, ya trabajas una
+
+385
+00:38:23.690 --> 00:38:33.360
+valero: un número de horas parecido hasta que tienes 60 años ahí. Esto se nota que es de Estados Unidos, porque hay gente que dice que trabaja 100 h a la semana. Serán Elon Musk.
+
+386
+00:38:33.520 --> 00:38:38.199
+valero: o no sé, vale todo el rato de los Musk durante toda su vida.
+
+387
+00:38:38.380 --> 00:38:42.709
+valero: Y luego, pues, hay gente de nue También se nota que es
+
+388
+00:38:42.880 --> 00:38:53.990
+valero: que es Estados Unidos, porque a partir de 60 y pico sigue habiendo gente que trabaja, pues sus 60, sus 40 h a la semana hasta los 90 años ¿vale? O sea.
+
+389
+00:38:54.150 --> 00:38:57.590
+valero: gente que no trabaja, pues no hay mucha vale.
+
+390
+00:38:59.260 --> 00:39:04.979
+valero: Podemos ver correlaciones que hay entre la predicción
+
+391
+00:39:05.520 --> 00:39:13.600
+valero: de si cobra mucho cobra poco y el género, por ejemplo, y vemos que hay predicción, es decir, que hay correlación.
+
+392
+00:39:13.970 --> 00:39:17.579
+valero: se ve claramente que dependiendo del género
+
+393
+00:39:17.930 --> 00:39:24.889
+valero: se cobra mucho. Se cobra poco, pues hay un una correlación del 0, 2, 1 diría: no es mucho, bueno.
+
+394
+00:39:25.030 --> 00:39:31.139
+valero: no mucho, pero ahora veremos en en las gráficas cómo es una cosa que se nota vale o con la raza también
+
+395
+00:39:31.630 --> 00:39:35.950
+valero: hay correlación. Esto está un poco. Esta correlación está un poco rara.
+
+396
+00:39:36.150 --> 00:39:41.630
+valero: porque claro, fijaros que la raza la hemos sustituido por unos números que no son.
+
+397
+00:39:42.810 --> 00:39:45.529
+valero: digamos, no están ordenados. ¿
+
+398
+00:39:45.710 --> 00:39:58.420
+valero: Cero, Corresponde a blanco el 1 a A. Creo que es asiático, el 2 a indio, el 3. A Entonces, Claro, ahí la correlación no se va a notar mucho. Pero ahora, cuando veamos los los datos
+
+399
+00:39:58.620 --> 00:40:08.829
+valero: graficado, pero es que se queda discriminación, por eso vale. Entonces cogemos los datos, normalizamos los datos que son susceptibles de ser normalizados Okay.
+
+400
+00:40:12.560 --> 00:40:25.140
+valero: Y ahora, pues, nos cogemos los datos de entrada todas las variables, menos la última y de salida, la última, que es si cobra más de 50 000 o menos de 50, o sea, haciendo eso, pues al final tenemos una
+
+401
+00:40:25.840 --> 00:40:32.129
+valero: tabla de datos donde tengo 32 000 datos, 8 dimensiones de entrada.
+
+402
+00:40:32.460 --> 00:40:35.810
+valero: 32 000 datos, una dimensión de salida,
+
+403
+00:40:37.020 --> 00:40:43.420
+valero: Nos cogemos los datos de entrada y de salida y nos cogemos como variable, sensible.
+
+404
+00:40:44.200 --> 00:40:47.000
+valero: la 4, que la 4 es
+
+405
+00:40:48.180 --> 00:40:51.619
+valero: 0, un 2, 3, 4, el género. Vale.
+
+406
+00:40:52.960 --> 00:40:55.370
+valero: esto todo es para ver los datos.
+
+407
+00:40:55.520 --> 00:40:58.539
+valero: para aprenderlos. Ahora jugaremos con ellos.
+
+408
+00:40:58.980 --> 00:41:07.430
+valero: ¿vale? Y entonces, si cogemos los datos, hacemos una grafitita donde vemos
+
+409
+00:41:07.950 --> 00:41:16.659
+valero: abajo, la gente que cobra poco o cobra mucho. Y cada una de estas columnas es si son hombres o si son mujeres, es decir.
+
+410
+00:41:16.800 --> 00:41:18.869
+valero: la gente que cobra poco.
+
+411
+00:41:19.010 --> 00:41:21.830
+valero: En general, hay más mujeres que hombres.
+
+412
+00:41:22.120 --> 00:41:27.870
+valero: Eso está normalizado por cada una de las variables, vale, O sea, está está bien hecho y
+
+413
+00:41:28.090 --> 00:41:32.259
+valero: y en general, gente que cobra mucho, pues hay más hombres que mujeres.
+
+414
+00:41:32.490 --> 00:41:33.210
+valero: ¿
+
+415
+00:41:33.330 --> 00:41:36.370
+valero: Y estos son datos directamente sacados de la base
+
+416
+00:41:36.770 --> 00:41:43.790
+valero: y si hacemos lo mismo por raza, pues vemos una cosa así: básicamente
+
+417
+00:41:44.440 --> 00:42:00.010
+valero: dentro de la gente que cobra poco. Son muchos los que cobran poco. Es decir. En general, hay mucha gente que cobra menos de 50 000 e dólares, Ok, vale, pero de esa dentro de esa gente cobra menos de 50 000 dólares, normalmente se nota más que los que
+
+418
+00:42:00.590 --> 00:42:05.839
+valero: más están en este grupo, pues son los
+
+419
+00:42:06.130 --> 00:42:12.649
+valero: indios o esquimales otros que no sabemos exactamente lo que son o los negros.
+
+420
+00:42:13.380 --> 00:42:23.830
+valero: y al revés, que tengan mucho ingreso, normalmente, pues son los blancos o los asiáticos, Esto es en Estados Unidos. Entonces hay un desbalanCEO porrazo. Sí,
+
+421
+00:42:24.210 --> 00:42:24.970
+valero: ¿vale?
+
+422
+00:42:25.090 --> 00:42:26.130
+valero: Entonces.
+
+423
+00:42:26.500 --> 00:42:34.129
+valero: ¿qué vamos a hacer ahora? Punto Uno: Vamos a hacer un modelo que a partir de las 8 variables de entrada prediga
+
+424
+00:42:34.470 --> 00:42:40.970
+valero: la la cantidad de si cobran más de 50 000 o menos de 50. 1 000. Ok.
+
+425
+00:42:41.140 --> 00:42:41.860
+valero: Vale.
+
+426
+00:42:46.570 --> 00:42:51.100
+valero: modelo modelo simple, predictivo?
+
+427
+00:42:52.060 --> 00:42:52.830
+valero: ¿no?
+
+428
+00:42:53.230 --> 00:43:00.069
+valero: Y entonces aquí podemos hacer nosotros el Código, ¿Vamos a pedir, o vamos a pedirle a la I A.
+
+429
+00:43:00.940 --> 00:43:11.780
+valero: Quiero un modelo simple usando quedas para predecir la variable Mhm
+
+430
+00:43:17.380 --> 00:43:29.460
+valero: a partir de las Baleares y de la variable es un modelo de clasificación vinagre.
+
+431
+00:43:36.040 --> 00:43:39.170
+valero: ¿qué modelo hacemos para que sea simple?
+
+432
+00:43:39.290 --> 00:43:44.460
+valero: Podríamos hacer 1 únicamente con una capa, y ya está, no. Por ejemplo.
+
+433
+00:43:47.480 --> 00:43:55.129
+valero: únicamente una capa densa usando quebras para predecir la variable I.
+
+434
+00:43:55.870 --> 00:44:01.100
+valero: Vamos a ver ahora va a hacer un modelo
+
+435
+00:44:01.320 --> 00:44:07.400
+valero: secuencial. Podrían no hacerlo secuencial. Pero bueno, donde hay eso, hay solo una capa: vale.
+
+436
+00:44:07.720 --> 00:44:12.499
+valero: Hacemos un modelo secuencial donde sólo tenemos una capa densa con una Ba, una
+
+437
+00:44:12.920 --> 00:44:16.409
+valero: salida solo porque solo vamos a predecir si cobra más o cobra menos
+
+438
+00:44:16.590 --> 00:44:21.469
+valero: y una función de activación sin móviles. Por qué le pone una función de activación simoide?
+
+439
+00:44:24.370 --> 00:44:26.869
+valero: Pregunta para vosotros no es retórica.
+
+440
+00:44:30.610 --> 00:44:33.979
+Higinio Paterna Ortiz: Para que sea entre 0 y 1 no las obreras.
+
+441
+00:44:34.440 --> 00:44:40.690
+valero: Porque las salidas las I S. Van entre 0 y 1. Y quiero obligar al modelo a que la salida vayan entre 0 y 1. Entonces le pongo una simple
+
+442
+00:44:40.800 --> 00:44:48.900
+valero: ¿vale, compilamos con el optimizador Adam Binary Chrocentro Pide Lost, Vale.
+
+443
+00:44:49.360 --> 00:44:55.019
+valero: y luego quiero ir midiendo, Obviamente, la Me, la el Lakura. Así vale.
+
+444
+00:44:55.560 --> 00:45:02.110
+valero: y quiero ver cómo va evolucionando. Y como quiero ver cómo va evolucionando. Voy a ponerlo aquí para sacarme el histórico.
+
+445
+00:45:02.450 --> 00:45:08.999
+valero: Y en lugar de ponerle 10 épocas, vamos a ponerle 100 épocas porque tiene pinta de que hombre, por lo menos 100 épocas tendría que ser
+
+446
+00:45:10.520 --> 00:45:12.760
+valero: igual, ¿no? igual con menos se puede.
+
+447
+00:45:15.120 --> 00:45:18.310
+valero: Procedemos el lost como va bajando.
+
+448
+00:45:18.660 --> 00:45:22.189
+valero: Vemos el Akurasy, cómo va subiendo o K.
+
+449
+00:45:22.520 --> 00:45:39.110
+valero: Y aquí lo que vamos a hacer es, pues, plotear, no por fin myplor aspere.
+
+450
+00:45:40.250 --> 00:45:42.660
+valero: Y entonces P. L, T. Cloud.
+
+451
+00:45:42.900 --> 00:45:51.850
+valero: Bueno, a ver qué me qué me sugieres Quiero el est los de de entrenamiento? Bueno, Y no le hemos puesto validación. Bueno.
+
+452
+00:45:52.650 --> 00:46:03.580
+valero: ahora luego le añadimos un valiviation split Vale, y aquí no tenemos en absoluto.
+
+453
+00:46:03.920 --> 00:46:07.540
+valero: Tenemos varias resolvemos.
+
+454
+00:46:10.990 --> 00:46:14.060
+valero: vale, y en.
+
+455
+00:46:14.060 --> 00:46:21.869
+Rodolfo Villena: Una una pregunta aquí. Creo que que has normalizado todos los datos de de entrada. No.
+
+456
+00:46:22.580 --> 00:46:22.900
+valero: Tú.
+
+457
+00:46:22.900 --> 00:46:23.960
+Rodolfo Villena: Y.
+
+458
+00:46:23.960 --> 00:46:24.640
+valero: Podían? Sí.
+
+459
+00:46:25.950 --> 00:46:28.040
+Rodolfo Villena: Vale eso.
+
+460
+00:46:28.420 --> 00:46:43.520
+Rodolfo Villena: O sea, Ant, antes de incluso hacer la partición de validación y de y de test. Eso no podría ser como una. O sea, no podría haber alguna pega en cuanto a que estamos normalizando todo el Dataset en lugar de solo los datos de entrenamiento.
+
+461
+00:46:43.970 --> 00:46:46.549
+valero: Correcto. Vamos a Vamos a ello. Vamos a hacerlo bien.
+
+462
+00:46:47.820 --> 00:46:54.730
+valero: Es decir, primero me particiono, entrenamiento y y test y validación ¿vale?
+
+463
+00:46:55.260 --> 00:47:03.050
+valero: Y entonces aquí digo en entrenamiento.
+
+464
+00:47:03.560 --> 00:47:08.040
+valero: Mhm: entrenamiento. Un 80 por 100,
+
+465
+00:47:11.620 --> 00:47:16.579
+valero: validación 10 por 100 y 3, 10 por 100.
+
+466
+00:47:19.000 --> 00:47:22.190
+valero: Madre, mía. Los tengo bien enseñados. No me pasáis ni una
+
+467
+00:47:24.910 --> 00:47:32.589
+valero: vale. Y aquí lo que vamos a hacer es normalizar. Todos vamos a tener que sacar las medias de cada 1
+
+468
+00:47:35.370 --> 00:47:36.270
+valero: zar.
+
+469
+00:47:37.320 --> 00:47:42.660
+valero: Y aquí le vamos a decir: normaliza
+
+470
+00:47:46.570 --> 00:47:57.130
+valero: todas las variables o estandariza todas las variables y
+
+471
+00:47:58.590 --> 00:48:01.160
+valero: que no vayan a entre estrell 1, es decir.
+
+472
+00:48:03.460 --> 00:48:08.460
+valero: todas menos la salida en realidad 0, 1.
+
+473
+00:48:08.610 --> 00:48:09.940
+valero: Claro, es un momento.
+
+474
+00:48:11.900 --> 00:48:16.230
+valero: Bueno, claro, porque aquí esto es esto es un número, Pero bueno.
+
+475
+00:48:16.810 --> 00:48:25.170
+valero: se analiza todas las variables usando la media y la desviación de los datos de entrenamiento
+
+476
+00:48:30.910 --> 00:48:31.640
+valero: ¿vale?
+
+477
+00:48:34.480 --> 00:48:37.049
+valero: Ay, le he puesto aquí. Bueno, pues ahora
+
+478
+00:48:38.750 --> 00:48:40.450
+valero: igual lo hace. Bien, no sé,
+
+479
+00:48:42.080 --> 00:48:43.979
+valero: vale, no está ahí muy bien.
+
+480
+00:48:44.460 --> 00:48:49.110
+valero: Esta no la he hecho, No la he corrido. Y esta de aquí la vamos a aceptar y ejecutar.
+
+481
+00:48:50.370 --> 00:48:51.910
+valero: porque lo que hace es
+
+482
+00:48:53.150 --> 00:49:02.289
+valero: usa el Scanner de de Syclear. Por si no os acordáis lo que el S el Scanner es como una transformación, entonces lo que hace es: Vale. Voy a aplicarle el Scanner
+
+483
+00:49:02.450 --> 00:49:10.929
+valero: a los datos de entrenamiento y además de entrenar el Scanner, Los voy a transformar entonces cojo los datos de entrenamiento y los transformó a escalados.
+
+484
+00:49:11.070 --> 00:49:20.220
+valero: Y ahora que ya tengo la transformación entrenada, solo la tengo que aplicar a validación ya test. Vale, vale
+
+485
+00:49:22.220 --> 00:49:26.760
+valero: esta de aquí abajo. Nos lo quitamos a a.
+
+486
+00:49:29.310 --> 00:49:32.270
+Rodolfo Villena: Y a ahora la pregunta sería
+
+487
+00:49:32.730 --> 00:49:42.109
+Rodolfo Villena: como mantenerse con variables, o sea, las variables tipo género que no tienen medio de piense. En teoría, el C D va a
+
+488
+00:49:42.590 --> 00:49:45.289
+Rodolfo Villena: el 0 a 4, pero no tenían.
+
+489
+00:49:45.840 --> 00:49:50.469
+Rodolfo Villena: o sea, en teoría, no no tenía atención ni tenía
+
+490
+00:49:50.870 --> 00:49:55.309
+Rodolfo Villena: p medias. O sea, quiere decir que son números números sin orden.
+
+491
+00:49:56.140 --> 00:49:59.430
+valero: Justo. La del género da un poco igual porque va entre 0 y 1.
+
+492
+00:49:59.910 --> 00:50:04.999
+Rodolfo Villena: Bueno, eso sí, pero el el la de la raza, Cinco.
+
+493
+00:50:05.950 --> 00:50:08.259
+valero: Correcto, la de raza y la educación
+
+494
+00:50:08.940 --> 00:50:16.289
+valero: que hay un un montón de números. Esto debería decirle hacerlo bien bien puede convertirlas a One Hot.
+
+495
+00:50:18.070 --> 00:50:23.600
+valero: Entonces, estas cuales son 0, Uno, la 2, la 3
+
+496
+00:50:26.810 --> 00:50:33.879
+valero: son las únicas que necesito convertir con una foto en Coding Vale.
+
+497
+00:50:34.520 --> 00:50:37.010
+valero: Entonces, aquí le puedo decir antes de eso.
+
+498
+00:50:40.600 --> 00:50:47.899
+valero: convierte las dimensiones dimensiones, 2 y 3.
+
+499
+00:50:49.870 --> 00:50:53.460
+valero: Mhm, numeración Python
+
+500
+00:50:56.690 --> 00:51:07.370
+valero: a One hot, son ateo, folcas, pero en numeración.
+
+501
+00:51:09.630 --> 00:51:13.020
+valero: A ver si me entiendes, Manuel está lo.
+
+502
+00:51:13.020 --> 00:51:14.619
+Javier Fernández Guerra: Tenía otra pregunta. Se me oye.
+
+503
+00:51:14.780 --> 00:51:15.980
+valero: Sí, Sí, Dime.
+
+504
+00:51:15.980 --> 00:51:28.659
+Javier Fernández Guerra: Por fin vale es que no me funciona el micro perdón, que, o sea, cuando codificamos la la variable de raza por 1, 2, 3, 4, 5, 6. No le estamos diciendo al modelo que una importa más que la otra. Digamos
+
+505
+00:51:29.480 --> 00:51:30.180
+Javier Fernández Guerra: pregunto.
+
+506
+00:51:30.440 --> 00:51:36.370
+valero: Es Sí, Sí, sí es es eso eso mismo. Exactamente lo que estamos haciendo ahora es coger y
+
+507
+00:51:36.540 --> 00:51:38.750
+valero: transformar esta variable.
+
+508
+00:51:39.130 --> 00:51:46.109
+valero: Cero, 1, 2, 3, 4 en One Hot, básicamente lo que vamos a hacer es decirle: mira.
+
+509
+00:51:46.610 --> 00:51:50.650
+valero: voy a crearme de esta única dimensión.
+
+510
+00:51:52.540 --> 00:51:58.459
+valero: Tengo una dimensión que tiene un 4, un 3, un 0.
+
+511
+00:51:58.840 --> 00:52:09.760
+valero: Lo voy a partir en varias dimensiones: la 0, un 2, 3 y 4.
+
+512
+00:52:10.180 --> 00:52:10.990
+valero: ¿vale?
+
+513
+00:52:11.230 --> 00:52:17.230
+valero: Y aquí lo que voy a hacer es tener un vector donde.
+
+514
+00:52:18.190 --> 00:52:31.050
+valero: si tengo un 0, le pongo un 1, y si tengo un si no tengo un 0, le pongo 0 como el 4, no es un 0, le pongo un 0 como el 3, no es un 0. Le pongo un 0 como este. Es un 0, le pongo 1
+
+515
+00:52:31.210 --> 00:52:36.509
+valero: esta segunda dimensión igual, pero con el 1, entonces es 0, 0, 0,
+
+516
+00:52:36.740 --> 00:52:40.120
+valero: lo mismo con el 2 0 0 0, No hay ningún 2,
+
+517
+00:52:40.440 --> 00:52:44.929
+valero: lo mismo con el 3, 0, 1 0 y lo mismo con el 4,
+
+518
+00:52:45.540 --> 00:52:52.260
+valero: 1 0 0. Y estas van a ser las dimensiones de entrada. Ahora, sí, el modelo sabe
+
+519
+00:52:52.610 --> 00:53:00.240
+valero: que cuando le entra un 1 aquí y un 0 en las otras, eso quiere decir que es esa raza, pero lo puede tratar de una forma separada.
+
+520
+00:53:02.200 --> 00:53:04.500
+Javier Fernández Guerra: Ay, perdón. Me estaba pegando con el micro y no me he enterado.
+
+521
+00:53:04.840 --> 00:53:11.260
+valero: No, no, no te, no te preocupes que es. Es. Está guay porque es. Es Es importante. Es importante que que esas cosas os jodan.
+
+522
+00:53:11.700 --> 00:53:20.640
+valero: Lo importante es que os chirríe el cerebro con eso. ¿vale? Porque yo lo hago para para pasarlo por encima para para ir al al Me voy a la cuestión, pero Mola, que
+
+523
+00:53:20.900 --> 00:53:24.600
+valero: ir al de Like. Voy a decirle a aceptar. Vamos a ver
+
+524
+00:53:28.100 --> 00:53:32.789
+valero: la que queremos son las 2 columnas, las 2 y la 3. La de educación y raza
+
+525
+00:53:33.460 --> 00:53:38.189
+valero: tiene las otras ya tienen características numéricas.
+
+526
+00:53:38.770 --> 00:53:44.090
+valero: Vamos a transformar estas numeración y raza.
+
+527
+00:53:45.510 --> 00:53:49.019
+valero: las numéricas de hace un escalado est estándar.
+
+528
+00:53:49.680 --> 00:53:55.149
+valero: y las otras les hace. Juanjo Es decir, aquí ya está haciendo todo
+
+529
+00:53:55.760 --> 00:53:58.440
+valero: todo lo de abajo de golpe, Okay
+
+530
+00:54:01.910 --> 00:54:07.160
+valero: ha hecho la separación, ha hecho la estandarización y ha hecho, la partición de los datos.
+
+531
+00:54:07.810 --> 00:54:09.770
+valero: Por lo tanto, esto de aquí
+
+532
+00:54:10.690 --> 00:54:14.050
+valero: ya no tiene sentido, y esto de aquí, y ya no pienso, va
+
+533
+00:54:15.160 --> 00:54:21.700
+valero: ahora, sí, datos de entrenamiento estos con 27 dimensiones, porque ahora ten se me han partido
+
+534
+00:54:21.980 --> 00:54:30.850
+valero: esas 2 dimensiones en en 3 o en 5 y en no sé cuántos vale, y
+
+535
+00:54:31.500 --> 00:54:34.990
+valero: esto de aquí me da igual. Ya no lo quiero muy bien.
+
+536
+00:54:35.870 --> 00:54:38.599
+valero: el X ya no lo quiero para nada.
+
+537
+00:54:39.940 --> 00:54:41.780
+valero: Y esto de aquí ya no lo quiero para nada.
+
+538
+00:54:42.200 --> 00:54:47.509
+valero: Y aquí sí que voy a coger, y voy a decirle que X de 30 es este X de Train.
+
+539
+00:54:48.080 --> 00:54:49.749
+valero: Y este vídeo de rain, insisto.
+
+540
+00:54:49.980 --> 00:54:54.149
+valero: para que queden luego las figuritas y no se me jodan todas las figuras.
+
+541
+00:54:54.670 --> 00:55:00.340
+valero: Mhm: ¿Por qué?
+
+542
+00:55:02.490 --> 00:55:07.230
+valero: Porque X. D. 30. Pa.
+
+543
+00:55:11.710 --> 00:55:14.880
+valero: El I, El Li, el mhm.
+
+544
+00:55:15.630 --> 00:55:19.799
+valero: I Y S Porque la variable S. Ya no es la 4.
+
+545
+00:55:20.540 --> 00:55:25.770
+valero: Ahora, el género no va a ser la 4.
+
+546
+00:55:27.030 --> 00:55:28.510
+valero: Si no va a ser ¿Cuál?
+
+547
+00:55:29.810 --> 00:55:35.350
+valero: Cero, un 2, 3, 4. Claro hostias. Cuántas se han metido por el medio, si antes había
+
+548
+00:55:36.100 --> 00:55:40.770
+valero: un, 2, 3, 4, 5, 6, 7 y 8. Antes había 8.
+
+549
+00:55:41.010 --> 00:55:47.390
+valero: Y ahora hay cuántas hemos dicho. 27, Ha metido 19
+
+550
+00:55:48.200 --> 00:55:53.560
+valero: si antes era la 4, es 4 Plus, 19.
+
+551
+00:55:54.190 --> 00:55:56.040
+valero: El Zip ahora es la 23,
+
+552
+00:55:56.780 --> 00:55:58.769
+valero: si no me equivocaba con mis números.
+
+553
+00:56:01.960 --> 00:56:03.359
+valero: pues me da igual.
+
+554
+00:56:06.240 --> 00:56:12.200
+Cristian: Pero una pregunta a ver si entiendo juanjo de Encodin, la que ha hecho es crear otras columnas
+
+555
+00:56:12.500 --> 00:56:18.629
+Cristian: con hombre o mujer y ponerle un ser en 1. Entonces, como no vas a coger género, qué columna coges? Porque ya ahora tienes 2.
+
+556
+00:56:18.630 --> 00:56:26.070
+valero: No en género. No, no, no la he hecho. La La perdición solo ha hecho en en y.
+
+557
+00:56:26.070 --> 00:56:26.960
+Cristian: La raza.
+
+558
+00:56:27.450 --> 00:56:35.610
+valero: En raza y en educación vale en la 2 y en la 3 0, un 2 y 3.
+
+559
+00:56:36.060 --> 00:56:36.770
+Cristian: Vale.
+
+560
+00:56:37.020 --> 00:56:39.749
+valero: Vale en género, la 0 y 1.
+
+561
+00:56:40.950 --> 00:56:44.329
+valero: Ahora, el problema que tengo es que no sé cuál es, pero es eso es.
+
+562
+00:56:45.540 --> 00:56:50.640
+valero: Tenía aquí, puesto que era la 4,
+
+563
+00:56:52.090 --> 00:56:55.439
+valero: debería ser a ver. Vamos a ver cuál es que es.
+
+564
+00:57:07.810 --> 00:57:09.669
+valero: Ese es más jodido esto, la verdad
+
+565
+00:57:21.040 --> 00:57:23.850
+valero: Hombre al S. E. I, P, Por lo menos ya está.
+
+566
+00:57:25.820 --> 00:57:28.079
+valero: Esto es así 26. ¡1 000!
+
+567
+00:57:29.230 --> 00:57:42.569
+valero: Y esto qué vale Uy. Y esto, ¿por qué no? ¿por qué no le quita la dimensión?
+
+568
+00:57:43.330 --> 00:57:49.469
+valero: Porque si esto es, ¿por qué no le quitaste adiós a nadie
+
+569
+00:57:50.410 --> 00:57:59.850
+valero: hostia. Estoy flipando. Se supone que cuando tú coges una R A y le pones aquí un numerito elimina esa dimensión igual que ha hecho aquí el xtran al cogerla 0,
+
+570
+00:58:00.010 --> 00:58:01.630
+valero: le ha quita, le ha quitado. Esto.
+
+571
+00:58:03.220 --> 00:58:07.410
+valero: Es una cosa que es una guarrada, pero pero pero va a funcionar.
+
+572
+00:58:08.940 --> 00:58:09.630
+valero: Uy.
+
+573
+00:58:14.660 --> 00:58:16.680
+valero: No sé si alguien sabe qué está pasando aquí.
+
+574
+00:58:16.680 --> 00:58:17.790
+Cristian: Es ejecutado.
+
+575
+00:58:18.480 --> 00:58:21.570
+valero: Sí, Sí, veo ahí ahí brutal. Y ahí
+
+576
+00:58:25.000 --> 00:58:26.820
+valero: hayzam. ¿ Entonces a ver el paisaje.
+
+577
+00:58:27.120 --> 00:58:32.110
+valero: Tiene pinta de que sea porque es
+
+578
+00:58:33.010 --> 00:58:35.500
+valero: una matriz esparce que se le llama.
+
+579
+00:58:38.880 --> 00:58:41.850
+valero: Es decir, lo ha guardado los datos.
+
+580
+00:58:42.120 --> 00:58:46.540
+valero: El mamón los ha guardado en una matriz que
+
+581
+00:58:47.150 --> 00:58:50.359
+valero: es, sabe que casi todos van a ser ceros
+
+582
+00:58:50.850 --> 00:58:53.330
+valero: y, como sabe que casi todos van a ser ceros.
+
+583
+00:58:53.600 --> 00:58:58.210
+valero: Lo guarda en un sitio que dice todo esto son ceros menos en los sitios que yo te diga.
+
+584
+00:58:59.170 --> 00:59:06.270
+valero: No sé si esto alguna vez lo habéis trabajado, pero es una cosa interesante de saber si tenemos unos datos que son casi todo ceros.
+
+585
+00:59:06.480 --> 00:59:09.569
+valero: Hay un tipo de datos particular que es esparce
+
+586
+00:59:10.070 --> 00:59:17.049
+valero: que dice: vale si el 90 por 100 son ceros, pues digo que todos son ceros menos en el 10 por 100. Este me dices qué dato es y dónde va.
+
+587
+00:59:17.750 --> 00:59:19.790
+valero: y que ocupa mucho menos los datos. Así,
+
+588
+00:59:20.340 --> 00:59:21.910
+valero: lo que pasa que yo no quiero eso
+
+589
+00:59:26.090 --> 00:59:31.459
+valero: no sé por qué mierdas, el teórica. No sé qué.
+
+590
+00:59:32.880 --> 00:59:35.350
+valero: Cómo convierto esto a a A.
+
+591
+00:59:38.480 --> 00:59:42.980
+valero: Voy a decirle cómo vierto.
+
+592
+00:59:43.110 --> 00:59:47.969
+valero: Mhm: Sí, a una variable.
+
+593
+00:59:54.900 --> 00:59:56.670
+valero: Así que no tengas algo ahí,
+
+594
+01:00:04.630 --> 01:00:12.940
+valero: pues sí le gusta, pero tendría que hacerlo así de otra forma. Así convierto eso a raíz uy.
+
+595
+01:00:18.500 --> 01:00:22.530
+valero: con pa haciéndolo así. Y ya está según tu padre.
+
+596
+01:00:31.200 --> 01:00:38.529
+valero: Bueno, estoy a puntito de saltarme esto y dejarlo porque es solo para la
+
+597
+01:00:52.460 --> 01:01:00.899
+valero: es solo para celebrar. Vale, lo lo reviso a ver ese esa gilipollez y saco el gráfico más adelante, pero todo lo demás ya está.
+
+598
+01:01:01.050 --> 01:01:05.260
+valero: Y el de raza ahora va a cambiar también el tipo, el el gráfico de raza, pero, bueno.
+
+599
+01:01:06.320 --> 01:01:09.970
+valero: como lo tenéis en la original, habitamos. Vale.
+
+600
+01:01:11.200 --> 01:01:14.499
+valero: vamos a ver si a esto aún así le gusta.
+
+601
+01:01:16.560 --> 01:01:19.459
+valero: Y ahora tenemos el Xtrain.
+
+602
+01:01:24.120 --> 01:01:28.720
+valero: Ya no es escalado si no es X indirectamente y ya está para entrenar.
+
+603
+01:01:30.240 --> 01:01:34.610
+valero: Y y Ueval. Y bueno.
+
+604
+01:01:38.370 --> 01:01:39.170
+valero: no le gusta.
+
+605
+01:01:54.280 --> 01:01:55.200
+valero: es la
+
+606
+01:02:00.030 --> 01:02:00.980
+valero: ¿vale?
+
+607
+01:02:03.170 --> 01:02:12.870
+valero: El año de entrada año de entrada, entrenamiento, validación.
+
+608
+01:02:13.380 --> 01:02:15.089
+valero: No sé qué mierdas te pasa.
+
+609
+01:02:25.460 --> 01:02:28.770
+valero: esperaba 8 dimensiones. ¿por qué esperaba 8 dimensiones?
+
+610
+01:02:29.750 --> 01:02:33.239
+valero: porque aquí le he puesto el X, Este joder. Menos mal vale
+
+611
+01:02:33.520 --> 01:02:39.950
+valero: es que como antes se usaba la variable X en general, pues vamos a coger, había entrenado un modelo.
+
+612
+01:02:40.100 --> 01:02:46.180
+valero: había generado un modelo que tenía 8 dimensiones de entrada cuando ahora el modelo ya tiene 20, y no sé cuántas.
+
+613
+01:02:46.520 --> 01:02:47.200
+valero: Mhm
+
+614
+01:02:50.520 --> 01:02:53.690
+valero: Vale, el modelo va a entrenar.
+
+615
+01:02:55.670 --> 01:03:01.649
+valero: Vamos a sacar en los normal. Y en los de validación
+
+616
+01:03:02.920 --> 01:03:06.249
+valero: era cura así normal y de la cura así de validación.
+
+617
+01:03:08.450 --> 01:03:17.160
+valero: Mhm, Vamos a ver cómo funciona el modelo. Vamos a ver aquí en Akula: Sí,
+
+618
+01:03:17.960 --> 01:03:23.790
+valero: tar va a tardar un montón, pero bueno y
+
+619
+01:03:24.160 --> 01:03:30.819
+valero: y no va subiendo mucho más 0. 28 28 28
+
+620
+01:03:32.160 --> 01:03:33.740
+valero: vamos a decirle que haga solo
+
+621
+01:03:34.360 --> 01:03:40.710
+valero: 20 y ya está. O sea, tiene que hacer 100. Cada vez vamos a ver va.
+
+622
+01:03:42.480 --> 01:03:48.289
+valero: si tenemos el modelo normal. Y ahora lo que queremos es, por ejemplo, hacer.
+
+623
+01:03:48.680 --> 01:03:56.680
+valero: Tenemos una cosa de ítems ¿Qué ítems tenemos que hacer? Tenemos que hacer una función de coste modificada, vale
+
+624
+01:03:57.700 --> 01:04:02.169
+valero: o una capa mo modificada, vamos a hacer una una capa modificada
+
+625
+01:04:08.840 --> 01:04:11.880
+valero: claro en el taller.
+
+626
+01:04:12.430 --> 01:04:15.830
+valero: Se os sugiere un tipo de capa. Vamos a ver.
+
+627
+01:04:16.270 --> 01:04:23.830
+valero: Voy a hacer otra, por ejemplo, una capa customizada que calcule el ratio de endeudamiento.
+
+628
+01:04:24.050 --> 01:04:25.919
+valero: que haga cosas de división
+
+629
+01:04:26.170 --> 01:04:35.890
+valero: entre las variables financieras de entrada, para sacar cuánto. ¿cuál es el porcentaje de endeudamiento de esa persona, es decir, depende de lo que
+
+630
+01:04:36.000 --> 01:04:38.859
+valero: cobre no y lo que deba.
+
+631
+01:04:40.490 --> 01:04:44.369
+valero: vamos a hacer. Otra cosa que es, por ejemplo, en estas variables.
+
+632
+01:04:47.680 --> 01:04:50.249
+valero: cambiar los datos.
+
+633
+01:04:55.200 --> 01:04:59.200
+valero: porque le he dado para el modelo y no le daba a rehacer su modelo.
+
+634
+01:04:59.910 --> 01:05:01.690
+valero: Ya había entrenado el modelo un poco
+
+635
+01:05:06.320 --> 01:05:07.170
+valero: okay.
+
+636
+01:05:07.350 --> 01:05:10.049
+valero: Ahora sí tiene. Senti vas a tener sentido que sacas
+
+637
+01:05:10.720 --> 01:05:15.039
+valero: va a salir la curvita es que ya había entrenado. Ya estaba convergido. Por eso salía plano, okay
+
+638
+01:05:15.420 --> 01:05:17.260
+valero: descojones de mí. Cristian.
+
+639
+01:05:17.750 --> 01:05:24.079
+valero: me ves en tu misma situación, ¿verdad? Me ves que te va a pasar esto aquí en.
+
+640
+01:05:24.080 --> 01:05:29.619
+Cristian: Te lo pillas rápido. Ya he tirado 2 h y esto digo, coño. Era porque ya lo habían ejecutado antes. Sabes.
+
+641
+01:05:29.620 --> 01:05:31.100
+valero: Bueno.
+
+642
+01:05:31.100 --> 01:05:31.800
+Cristian: Es el.
+
+643
+01:05:32.160 --> 01:05:36.240
+valero: Por eso juego a esto, o sea, a juego a cagarla yo en clase.
+
+644
+01:05:36.550 --> 01:05:47.869
+valero: porque luego dices, vale estas cosas. Si la si si le pasan a él, me pueden pasar a mí. Y además, cuando le pasan a él, ellos pasan a vosotros y dice. Esto es lo que le pasó a valero. ¿qué tal es un poco más cansino? Porque se hace
+
+645
+01:05:48.030 --> 01:05:50.709
+valero: cuando entro en un bucle se hace más cansino. Pero bueno.
+
+646
+01:05:51.970 --> 01:06:02.300
+valero: vale. De hecho, no se va a ver mucho la curva porque fijaros en la curva si las 2 primeras suben o al principio sube. Y luego ya aquí se se satura. Vamos a ver las curvas.
+
+647
+01:06:02.780 --> 01:06:05.180
+valero: Bueno, este es el los entonces los bajan.
+
+648
+01:06:05.370 --> 01:06:07.329
+valero: Sí, tiene sentido
+
+649
+01:06:07.900 --> 01:06:14.339
+valero: y de la curas y sube, y tiene sentido. Vale, se queda planito hecho, pues unas curvas bastante majas.
+
+650
+01:06:16.000 --> 01:06:23.380
+valero: ¿vamos a crear una capa modificada, por ejemplo, algo que
+
+651
+01:06:23.840 --> 01:06:32.260
+valero: me sirva sobre las variables de entrada que yo pueda decir, por ejemplo, que
+
+652
+01:06:36.820 --> 01:06:41.029
+valero: multiplique las variables de entrada a ver multiplique
+
+653
+01:06:43.990 --> 01:06:49.770
+valero: o las dividas. ¿a qué ratios en general, de todas con todas, vale quiero una capa
+
+654
+01:06:50.190 --> 01:06:54.930
+valero: que cuando yo lo aplique, vaya a coger vamos. Aquí.
+
+655
+01:06:56.100 --> 01:07:02.529
+valero: Si alguien tiene alguna alguna idea mejor la podemos decir y hacerla en directo. Vale lo que
+
+656
+01:07:03.720 --> 01:07:13.969
+valero: a mí se me ocurre así por pensando en lo de los ratios, porque eso había puesto el la parte del taller. Así es. Yo tengo unos datos que tienen unas dimensiones de entrada, por ejemplo.
+
+657
+01:07:14.270 --> 01:07:20.230
+valero: En este caso tienen 27. Hemos dicho, pues, de 27 van a ser un montón.
+
+658
+01:07:21.200 --> 01:07:32.180
+valero: N Datos. Y 27 N por n por venir, vale una opción.
+
+659
+01:07:32.290 --> 01:07:38.980
+valero: Voy a darle la opción 1, porque no estoy ahora del todo contento con esto, es decirle: vale
+
+660
+01:07:39.100 --> 01:07:44.820
+valero: de estas dimensiones. De entrada, lo que vas a hacer es generarme
+
+661
+01:07:45.140 --> 01:07:48.140
+valero: unas dimensiones. Me cojo estas 27
+
+662
+01:07:48.630 --> 01:07:54.339
+valero: y aparte, me generas unas dimensiones que sean los ratios de todas esas 27 entre ellas.
+
+663
+01:07:54.470 --> 01:07:57.040
+valero: Es decir, me cojo la dimensión 1
+
+664
+01:07:57.870 --> 01:07:59.850
+valero: y la divido por la dimensión, 2
+
+665
+01:08:00.900 --> 01:08:02.759
+valero: por la 1 y la vida por la 3.
+
+666
+01:08:03.210 --> 01:08:11.350
+valero: Sí, Me generó un montón de dimensiones extra que sean los ratios.
+
+667
+01:08:11.580 --> 01:08:14.229
+valero: ¿por qué estoy pensando que no es una buena idea ahora mismo.
+
+668
+01:08:14.520 --> 01:08:18.629
+valero: porque cuántas me saldrían? Me va a salir factorial de 27?
+
+669
+01:08:19.170 --> 01:08:28.070
+valero: Dimensiones extra? Bueno, y eso es un mon es un montoncito de de dimensiones. Mhm.
+
+670
+01:08:30.439 --> 01:08:33.480
+valero: S ¿Se está entendiendo mi propuesta de ratios o no?
+
+671
+01:08:33.899 --> 01:08:39.720
+valero: ¿sí? Sí, yo tengo aquí 27 dimensiones, la 1, la 2. Así. Así,
+
+672
+01:08:40.450 --> 01:08:48.790
+valero: yo podría decir, bueno, me interesa que, además, la red pueda tener en cuenta los ratios entre algunas de estas dimensiones.
+
+673
+01:08:49.290 --> 01:08:54.140
+valero: las redes. Ahora mismo, todo lo que hab hemos aprendido, no hay divisiones.
+
+674
+01:08:54.340 --> 01:08:59.619
+valero: ¿vale? Entonces, si no hay divisiones, yo la puedo poner directamente y decirle: Vale, haz una capa
+
+675
+01:09:00.069 --> 01:09:05.589
+valero: que me devuelva las dimensiones de entrada normales. Y, aparte, me devuelves los ratios entre todas las dimensiones. De entrada.
+
+676
+01:09:05.760 --> 01:09:06.479
+valero: Mhm.
+
+677
+01:09:06.770 --> 01:09:16.450
+valero: El único problema que tengo es que, como hay 27 dimensiones de entrada, pues factoría el de 27 que serían todas estas. Es un montón. Es un número muy grande.
+
+678
+01:09:16.560 --> 01:09:20.270
+valero: ajá en bicicleta. Estuvieron.
+
+679
+01:09:21.319 --> 01:09:21.959
+Cristian: Sí.
+
+680
+01:09:23.310 --> 01:09:29.589
+valero: Uno por 10 a la 28 dimensiones no queremos 10 a la 28 dimensiones, eso es un montón ¿
+
+681
+01:09:30.220 --> 01:09:31.569
+valero: Y
+
+682
+01:09:32.100 --> 01:09:42.779
+valero: voy a pensar, por ejemplo, hacer exponentes. Bueno, es una cosa también interesante. Es un poco asqueroso de de optimizar, pero una capa
+
+683
+01:09:43.000 --> 01:09:47.240
+valero: en que yo le meta los datos y me devuelva
+
+684
+01:09:47.550 --> 01:09:57.360
+valero: cada imaginaros que, por ejemplo, que tuviese 2 dimensiones y me devuelva esas dimensiones elevadas a un exponente
+
+685
+01:09:58.020 --> 01:09:59.130
+valero: de 1.
+
+686
+01:09:59.610 --> 01:10:00.740
+valero: Dispone de 2
+
+687
+01:10:03.400 --> 01:10:09.479
+valero: esos exponentes. Si son, si la red piensa que lo mejor es no hacer nada, los va a poner a 1,
+
+688
+01:10:12.720 --> 01:10:20.749
+valero: pero muchas veces poner exponentes y con cosas numéricas y con cosas de de finanzas es interesante porque los exponentes
+
+689
+01:10:20.900 --> 01:10:30.130
+valero: generan operaciones, tipo saturaciones o tipo, pues los que los grandes se hacen muy grandes o los Pe o los grandes se hacen muy pequeños.
+
+690
+01:10:30.970 --> 01:10:39.090
+valero: Si tengo saturaciones, tengo un exponente menor que 1 aplica esta operación. ¿esto qué hace hace que
+
+691
+01:10:39.300 --> 01:10:46.830
+valero: si alguien tiene unos valores muy grandes, por ejemplo, en sus ingresos anuales.
+
+692
+01:10:47.100 --> 01:10:50.000
+valero: En realidad, estas personas las trato.
+
+693
+01:10:50.300 --> 01:10:54.979
+valero: aunque tengan valores muy grandes. Las tato iguales, es decir, estas de aquí
+
+694
+01:10:55.730 --> 01:10:59.739
+valero: se convierten en este rango de aquí en un rango pequeño
+
+695
+01:11:00.300 --> 01:11:03.970
+valero: y las personas que están aquí, que va a haber muchas más personas
+
+696
+01:11:04.390 --> 01:11:06.430
+valero: les dejo un rango más amplio.
+
+697
+01:11:06.950 --> 01:11:09.669
+valero: Se Se entiende esta operación y por qué tiene sentido o no?
+
+698
+01:11:12.340 --> 01:11:15.600
+valero: Eso es un no, totalmente, o sea, hay 0. Seis.
+
+699
+01:11:17.550 --> 01:11:18.170
+Cristian: Sí, Sí.
+
+700
+01:11:18.730 --> 01:11:21.009
+valero: Sí se entiende o lo re o lo repito.
+
+701
+01:11:24.550 --> 01:11:33.940
+valero: no he visto que nadie ha dicho que sí lo vea. Le pregunto, básicamente, una operación de este estilo
+
+702
+01:11:34.420 --> 01:11:41.379
+valero: comprime los valores altos y deja iguales los pequeños. Y eso es muy útil para datos tipo.
+
+703
+01:11:41.600 --> 01:11:49.349
+valero: A ver aquí. Hemos sacado aquí. No hemos sacado los datos en esta, pero en el ejemplo de lectura
+
+704
+01:11:49.790 --> 01:11:55.590
+valero: de los datos del taller tenéis estas aquí en
+
+705
+01:11:56.180 --> 01:12:01.420
+valero: fijaros, por ejemplo, en estas distribuciones. Lo que ocurre es que hay hay mucha gente
+
+706
+01:12:01.750 --> 01:12:09.939
+valero: que tiene, o mira estas aún más radical. Hay mucha gente que su su ganancia anual es poca
+
+707
+01:12:10.300 --> 01:12:14.569
+valero: y hay mu poca gente que su ganancia anual es mucha.
+
+708
+01:12:15.410 --> 01:12:25.070
+valero: entonces no tiene sentido que yo utilice los mismos recursos para codificar esta parte, para fijarme que la red se fije en esta parte
+
+709
+01:12:26.180 --> 01:12:27.669
+valero: con los mismos recursos
+
+710
+01:12:28.560 --> 01:12:34.090
+valero: que aquí lo quiero es en esta zona menos recursos que aquí aquí. Tengo mucha gente. Quiero fijarme mucho
+
+711
+01:12:34.390 --> 01:12:38.269
+valero: para eso le aplico una operación de este estilo
+
+712
+01:12:39.480 --> 01:12:47.720
+valero: que lo que hace es para convertir esa distribución así en una distribución uniforme.
+
+713
+01:12:48.820 --> 01:12:49.520
+valero: Vale.
+
+714
+01:12:52.910 --> 01:12:55.210
+valero: sí vamos a intentar hacerlo.
+
+715
+01:12:56.840 --> 01:12:57.790
+valero: No sé si.
+
+716
+01:12:57.790 --> 01:12:59.330
+Higinio Paterna Ortiz: Y una pregunta.
+
+717
+01:12:59.330 --> 01:12:59.910
+valero: Mhm.
+
+718
+01:13:00.120 --> 01:13:18.389
+Higinio Paterna Ortiz: En el caso bueno de la esto de los exponentes, lo entiendo un poco más el sentido de hacerlo customizado, Pero para los ratios, ¡qué diferencia, por lo menos diferencia aparente verso a lo mejor directamente que era una variable que sea dividir las 2 entradas, por ejemplo, o sea, qué diferencia.
+
+719
+01:13:18.750 --> 01:13:23.380
+valero: No, Claro, si la pones como primera capa en lo de ratio, no tienes ninguna diferencia.
+
+720
+01:13:24.090 --> 01:13:24.690
+Higinio Paterna Ortiz: Vale.
+
+721
+01:13:24.690 --> 01:13:29.979
+valero: Si eso es como una capa interna que ya la la la red ya hubiese hecho operaciones, entonces sí.
+
+722
+01:13:30.340 --> 01:13:34.009
+valero: Pero tienes razón. Tío si no tengo parámetros
+
+723
+01:13:34.340 --> 01:13:41.590
+valero: como primera capa no tiene sentido el exponencial. Sí, vale, Pues vamos a hacer.
+
+724
+01:13:42.340 --> 01:13:47.980
+valero: Vamos a pedirle a nuestra amiga a ver si es capaz de hacernos algo que tenga sentido. Vale.
+
+725
+01:13:50.890 --> 01:14:02.550
+valero: Quiero que hagas una capa customizada con heras usa solo queras punto Orgs
+
+726
+01:14:02.730 --> 01:14:10.930
+valero: te acordáis qué qué era que uses solo que quieras punto ops para que luego, por dentro poder usar tensor Flow o Pire Torch o Jacks. Vale.
+
+727
+01:14:11.780 --> 01:14:13.829
+valero: usa solo quedas punto ox.
+
+728
+01:14:14.540 --> 01:14:29.660
+valero: Lo que quiero que hagan la capa es que para cada dimensión de entrada le aplique un exponente
+
+729
+01:14:33.540 --> 01:14:37.750
+valero: que serán parámetros entrenables.
+
+730
+01:14:40.660 --> 01:14:49.920
+valero: Vamos a asegurarnos de que esto no se va a ir a la mierda ponle un mínimo al exponente
+
+731
+01:14:50.450 --> 01:14:58.660
+valero: de 0, coma 1 y un máximo de mhm.
+
+732
+01:14:59.840 --> 01:15:02.520
+valero: Pues, por ejemplo, mhm.
+
+733
+01:15:02.700 --> 01:15:06.350
+valero: porque si no, si le ponemos valores muy pequeñitos o muy grandes, se va a ir. Todo
+
+734
+01:15:06.490 --> 01:15:16.080
+valero: va va a des descuadrar los datos. Vale, quiero que inicialices los exponentes
+
+735
+01:15:18.600 --> 01:15:26.910
+valero: a 1. Vale, porque quiero que al principio la capa no haga nada y que, conforme vaya entrenando, vaya ajustando el exponente para modificar los datos.
+
+736
+01:15:27.050 --> 01:15:32.290
+valero: Mhm y algo más.
+
+737
+01:15:34.450 --> 01:15:38.779
+valero: Quiero restringirlos. Quiero inicializarlos a 1.
+
+738
+01:15:40.130 --> 01:15:43.030
+valero: Tengo algo más en la cabeza, pero
+
+739
+01:15:46.780 --> 01:15:48.230
+valero: bueno, nada más
+
+740
+01:15:57.130 --> 01:16:04.580
+valero: vale ahora a esa capa y nosotros haremos un modelito, pues ponemos nuestro propio modelo, también.
+
+741
+01:16:10.570 --> 01:16:18.910
+valero: Aceptar pásamelo. Bien, vamos a verlo. ¿qué ha hecho en esta capa os acordáis que habían 3
+
+742
+01:16:19.070 --> 01:16:27.600
+valero: 3 imprescindible que eran estos 3. Vale el Init, el Bill y el Call y 1 que es interesante
+
+743
+01:16:27.840 --> 01:16:34.349
+valero: para configurar. Había también 1 para sacar el el tamaño de salida.
+
+744
+01:16:34.530 --> 01:16:40.790
+valero: Pero en este caso, el tamaño de salida va a ser igual que el de entrada vale
+
+745
+01:16:41.920 --> 01:16:43.449
+valero: capa creada con éxito.
+
+746
+01:16:43.920 --> 01:16:47.439
+valero: Leemos, Ponen Layer que me parece muy bien
+
+747
+01:16:47.550 --> 01:16:53.390
+valero: y en principio no tengo ningún argumento que pasarle, porque va a coger cada una de las dimensiones de entrada
+
+748
+01:16:53.860 --> 01:16:58.360
+valero: y le va a dar una dimensión de salida con un parámetro Vale. Aquí no hay
+
+749
+01:16:58.720 --> 01:17:06.200
+valero: parámetros que yo le tenga que decir. Usa 2 exponentes, 3 exponentes, 5, no hay hiper parámetros Vale, Okay.
+
+750
+01:17:06.760 --> 01:17:09.460
+valero: Sí que hay. Los parámetros que son los exponentes
+
+751
+01:17:10.050 --> 01:17:18.840
+valero: y los exponentes van a tener un tamaño de la longitud de las dimensiones de entrada, los vamos a inicializar a unos
+
+752
+01:17:19.040 --> 01:17:21.760
+valero: y le vamos a decir que nunca
+
+753
+01:17:22.020 --> 01:17:31.199
+valero: se pasen por debajo de 0 coma 1 ni sean, se vayan por encima de 3. Vale, Le decimos que sean entrenables. Y bueno, les llame exponentes porque quede todo
+
+754
+01:17:31.520 --> 01:17:39.150
+valero: y la operación que aplica es cojo, las entradas, las X, Y les aplico los exponentes
+
+755
+01:17:39.570 --> 01:17:42.720
+valero: en en el Power, en el en el elevado.
+
+756
+01:17:43.210 --> 01:17:44.790
+valero: Se ha hecho lo que yo quiero.
+
+757
+01:17:45.960 --> 01:17:48.190
+valero: Así en principio debería funcionar.
+
+758
+01:17:49.410 --> 01:17:51.029
+valero: Voy a coger el modelo.
+
+759
+01:17:52.370 --> 01:17:54.650
+valero: Voy a copiarme todo en realidad.
+
+760
+01:17:56.650 --> 01:17:59.409
+valero: y vamos a hacer un modelo; 2.
+
+761
+01:18:03.500 --> 01:18:05.229
+valero: Vamos a hacer un modelo, 2
+
+762
+01:18:06.290 --> 01:18:09.510
+valero: que coja y tenga la capa densa, esta
+
+763
+01:18:09.890 --> 01:18:15.220
+valero: y meta. Esta capa expone en Lider que la tendré que poner.
+
+764
+01:18:16.010 --> 01:18:17.859
+valero: La pongo al principio y ya está
+
+765
+01:18:19.490 --> 01:18:27.869
+valero: sobre los datos de entrada y punto. No, Sí, No podéis elegir ¿
+
+766
+01:18:31.750 --> 01:18:32.670
+valero: Esto.
+
+767
+01:18:32.810 --> 01:18:34.519
+valero: Aquí falta una comida.
+
+768
+01:18:34.850 --> 01:18:37.270
+Marco Corpa Criado: Puedes probar los 2, no a ver qué diferencias hay
+
+769
+01:18:37.440 --> 01:18:39.149
+Marco Corpa Criado: si lo ponen antes o después.
+
+770
+01:18:40.550 --> 01:18:51.669
+valero: Después? Bueno, sí lo podría probar probar después lo que pasa después va a ser más sencillo porque solo va a coger la salida y le va a la le va a aplicar la la espo, la exponencial.
+
+771
+01:18:51.780 --> 01:18:55.339
+valero: Y como va entre 0. Y 1. Lo que quiero es que vaya siga yendo un tercero. Y 1,
+
+772
+01:18:55.940 --> 01:19:02.469
+valero: lo que sí que podría hacer es poner una capa densa y ponerla después. Es decir, voy a hacer 1 simple en el que le pongo. Solo
+
+773
+01:19:02.930 --> 01:19:07.399
+valero: el tamaño de entrada ya está. Esto sería el modelo simple
+
+774
+01:19:11.740 --> 01:19:16.139
+valero: simple y un poco más complejo
+
+775
+01:19:19.140 --> 01:19:21.799
+valero: por el mismo modelo. Aquí está dando un error.
+
+776
+01:19:24.050 --> 01:19:25.239
+valero: No sé por qué.
+
+777
+01:19:25.670 --> 01:19:31.560
+valero: Mhm, Yo compila o no compleja, mola mucho la cámara.
+
+778
+01:19:34.410 --> 01:19:35.860
+valero: Y esto de aquí
+
+779
+01:19:39.530 --> 01:19:40.330
+valero: mucho.
+
+780
+01:19:41.930 --> 01:19:47.200
+valero: No es que las vayas Mamón Ves se exponen, Vale, tanto.
+
+781
+01:19:55.440 --> 01:19:57.979
+valero: Dice que no existe esto.
+
+782
+01:20:00.030 --> 01:20:06.760
+valero: Este tipo de problemas. Vamos a decirle que nos lo explique, pero os os digo yo ¿de dónde viene
+
+783
+01:20:07.150 --> 01:20:18.800
+valero: tienen un un problema bastante gordo, porque antes usaban el tensor flow punto que eras. Y entonces, en la I A se ha leído un montón de código con Tensor Flow Queras, que tenía
+
+784
+01:20:19.440 --> 01:20:28.340
+valero: funcioncitas con otro nombre. Entonces lo único que va a pasar es que aquí me va a sugerir usar otro nombre en en lugar de clickbaloe, pero va a hacer exactamente lo mismo.
+
+785
+01:20:30.870 --> 01:20:36.889
+valero: fijaros que ha cambiado esta parte de aquí y de hecho, se ha definido en una una función propia para hacer el clip
+
+786
+01:20:37.140 --> 01:20:37.890
+valero: un ¿Qué
+
+787
+01:20:41.600 --> 01:20:50.179
+valero: acepto? No quiero que pongas este de aquí abajo. Mira que te que que estás Y ahora Okay.
+
+788
+01:20:50.730 --> 01:20:54.910
+valero: ahora se lo ha lo ha aceptado. Este es el modelo simple.
+
+789
+01:20:55.240 --> 01:21:02.660
+valero: Hace pongo aquí un modelo complejo que sería algo así. Como le pongo aquí: una capa denso.
+
+790
+01:21:04.430 --> 01:21:08.040
+valero: por ejemplo, con 10 dimensiones.
+
+791
+01:21:08.250 --> 01:21:13.320
+valero: Mhm: Vamos a ver el el Tú, Marín.
+
+792
+01:21:16.140 --> 01:21:20.059
+Rodolfo Villena: Pero ahí te va a pisar un modelo con el otro. No le has puesto los 2. Model: Dos.
+
+793
+01:21:20.460 --> 01:21:22.739
+valero: Sí. Así solo voy a ver el 2.
+
+794
+01:21:23.660 --> 01:21:28.150
+valero: Debería ver el 2, y debería tener 2 capas.
+
+795
+01:21:28.150 --> 01:21:30.530
+Rodolfo Villena: Al ejecutarlo, te va a pisar 1 con el otro. No.
+
+796
+01:21:31.030 --> 01:21:35.630
+valero: Ya, pero me pisa el 2. ¿me debería de pisar el 1. Bueno, porque aquí te he puesto un módem.
+
+797
+01:21:35.920 --> 01:21:39.240
+Rodolfo Villena: que, pues ha puesto simple model, 2 y complejo. Model, 2.
+
+798
+01:21:40.260 --> 01:21:47.640
+valero: Sí sí sí, o sea, es que los he puesto a posta con el mismo nombre, porque así ahora cogen, Y digo, quiero usar el simple, pues hago así
+
+799
+01:21:49.310 --> 01:21:50.680
+valero: y pruebo en el simple.
+
+800
+01:21:51.200 --> 01:21:51.680
+Rodolfo Villena: A la.
+
+801
+01:21:51.680 --> 01:21:54.400
+valero: Que rehacer todo el código de abajo.
+
+802
+01:21:54.500 --> 01:21:57.169
+valero: Eso hubo barro. Pero Pero
+
+803
+01:21:58.270 --> 01:22:05.849
+valero: y aquí el model 2 me está diciendo que no tiene muy claro las dimensiones de entrada, porque se las he pasado en la capa de en medio. No quiero eso, quiero ser eso.
+
+804
+01:22:07.250 --> 01:22:09.349
+valero: Quiero coger pifas atrás.
+
+805
+01:22:12.670 --> 01:22:13.490
+valero: Okay.
+
+806
+01:22:13.730 --> 01:22:16.280
+valero: Ahora sí tiene claras las dimensiones de entrada.
+
+807
+01:22:16.570 --> 01:22:23.760
+valero: Y me dice: efectivamente, es esta: capa. Tengo 10 parámetros, porque tengo 10 dimensiones centrada y ya está.
+
+808
+01:22:24.790 --> 01:22:31.819
+valero: Vale, lo demás, es todo igual compilo. El modelo.
+
+809
+01:22:31.980 --> 01:22:36.890
+valero: Esto de aquí no me hacía a mí Falta y entreno al modelo
+
+810
+01:22:38.680 --> 01:22:41.699
+valero: con los mismos datos. Aquí para plotear.
+
+811
+01:22:42.230 --> 01:22:44.020
+valero: Voy a remolotear estos 2
+
+812
+01:22:47.990 --> 01:22:52.800
+valero: y vamos a ver cómo se le da el entrenamiento porque
+
+813
+01:22:53.020 --> 01:22:57.690
+valero: entrenar exponentes no es una cosa del todo sencilla. ¿vale?
+
+814
+01:22:58.060 --> 01:23:02.279
+valero: Por lo que decía de este comportamiento que puede ser así,
+
+815
+01:23:02.790 --> 01:23:04.560
+valero: la función, o puede ser así,
+
+816
+01:23:07.130 --> 01:23:10.260
+valero: si el exponente es menor que 1
+
+817
+01:23:10.710 --> 01:23:20.740
+valero: es una función satura saturante. Si el exponente es mayor que 1 es una función exponencial. Vale o parabólica.
+
+818
+01:23:21.910 --> 01:23:25.020
+valero: entonces lo hace el efecto contrario.
+
+819
+01:23:25.720 --> 01:23:30.140
+valero: Entonces, ese con el 1 para arriba y 1 para abajo cambia bastante.
+
+820
+01:23:31.190 --> 01:23:32.360
+valero: Vamos a ver.
+
+821
+01:23:40.630 --> 01:23:45.610
+valero: claro que se está entrenando o sobre entrenando más que antes.
+
+822
+01:23:45.860 --> 01:23:48.960
+valero: Cero. 82 0 83 en en
+
+823
+01:23:49.160 --> 01:23:54.439
+valero: validación, en acuras y de validación. Es más que lo que tenía aquí.
+
+824
+01:23:55.200 --> 01:23:57.690
+valero: Si el modelo está haciendo algo y algo bueno.
+
+825
+01:23:58.300 --> 01:24:06.600
+valero: Okay saca un poco más ya cura, sin validación que los de arriba vamos a ver las curvas.
+
+826
+01:24:07.380 --> 01:24:10.850
+valero: De hecho, no he acabado de entrenar, aunque
+
+827
+01:24:12.030 --> 01:24:14.790
+valero: en a en Akurasias sí que ha sobreentrenado.
+
+828
+01:24:15.270 --> 01:24:21.079
+valero: ¿ Ha tenido una, una, unos tiempos buenos aquí y luego ha tirado para abajo.
+
+829
+01:24:21.240 --> 01:24:21.910
+valero: ¿
+
+830
+01:24:22.230 --> 01:24:24.899
+valero: Entonces 1 aquí tendría la duda
+
+831
+01:24:25.350 --> 01:24:28.209
+valero: de lo clásico que nos dice esto es para
+
+832
+01:24:28.520 --> 01:24:31.959
+valero: no hace falta Te Paras aquí por esta zona de aquí.
+
+833
+01:24:32.200 --> 01:24:34.140
+valero: Y ya está Okay.
+
+834
+01:24:35.150 --> 01:24:36.250
+valero: Bueno.
+
+835
+01:24:36.440 --> 01:24:44.930
+valero: ¿qué ocurre que, como esto sigue bajando? A mí me chirría un poco. Y hay veces que cuando el lo sigue bajando, te vale la pena alargarlo más, porque esto igual luego vuelve a subir
+
+836
+01:24:45.550 --> 01:24:50.290
+valero: Otra cosa que pasa aquí es que los saltos son muy grandes.
+
+837
+01:24:50.710 --> 01:24:58.110
+valero: Yo le bajaría un poco el learning red para ver si estos movimientos de aquí realmente al principio sube de forma suave.
+
+838
+01:24:58.370 --> 01:24:59.120
+valero: Okay.
+
+839
+01:24:59.290 --> 01:25:02.439
+valero: Entonces iría más despacito. Entrenaría más despacito.
+
+840
+01:25:02.570 --> 01:25:07.370
+valero: Y aquí subiría de forma más suave, y vería a ver si aquí de verdad hay un máximo o no hay un máximo
+
+841
+01:25:07.600 --> 01:25:08.300
+valero: Okay.
+
+842
+01:25:09.220 --> 01:25:14.799
+valero: Eso lo dejamos para el taller anterior en el que os pelearéis con
+
+843
+01:25:15.030 --> 01:25:18.490
+valero: las curvas suaves. Y todo eso sí vale.
+
+844
+01:25:18.790 --> 01:25:22.830
+valero: Ya tenemos una capa, Ok, vamos a ver.
+
+845
+01:25:22.970 --> 01:25:26.030
+valero: Y el efecto.
+
+846
+01:25:26.750 --> 01:25:32.140
+valero: Una verdad, a ver customización, función de coste.
+
+847
+01:25:32.530 --> 01:25:35.170
+valero: error a la salida, o el quedas tú en él.
+
+848
+01:25:35.790 --> 01:25:36.830
+valero: ¿qué hacemos?
+
+849
+01:25:37.120 --> 01:25:42.740
+valero: Vamos a hacer? Elige tu propia aventura. ¿qué hacemos? Primero hacemos
+
+850
+01:25:42.850 --> 01:25:49.800
+valero: una función de coste optimizada para intentar que optimice el el aprendizaje, justo.
+
+851
+01:25:50.380 --> 01:25:54.230
+valero: Queréis que hagamos primero una prueba con que eras túnel.
+
+852
+01:25:54.620 --> 01:25:58.849
+valero: o intentamos predecir el error a la salida del modelo.
+
+853
+01:26:02.680 --> 01:26:03.969
+valero: ¿Qué os pide el cuerpo.
+
+854
+01:26:11.480 --> 01:26:14.030
+Marco Corpa Criado: Yo tengo una duda valero
+
+855
+01:26:14.480 --> 01:26:32.529
+Marco Corpa Criado: y es básicamente no sé cómo se metería si en una de las capas de la red o si se podría meter, por ejemplo, la correlación de Spirman en vez de la de Pierson que has calculado antes, que tiene una relación lineal. La de Spirman tiene una de bueno, tiene sentido de la ordenación. No, entonces a lo mejor tiene sentido meterla, por
+
+856
+01:26:33.370 --> 01:26:41.799
+Marco Corpa Criado: Porque si tiene unos datos que van entre un rango y a ver si sacan más de 50 000 o menos de 50 000 dólares, pues puede estar altamente correlacionado.
+
+857
+01:26:42.130 --> 01:26:45.509
+valero: Vale. Entonces. P: Y eso para optimizar.
+
+858
+01:26:45.880 --> 01:26:47.160
+Marco Corpa Criado: Claro. No sé dónde iría.
+
+859
+01:26:47.160 --> 01:26:48.949
+valero: Lo meteríamos en la función de coste?
+
+860
+01:26:49.480 --> 01:26:52.630
+valero: Sí, lo me porque.
+
+861
+01:26:53.070 --> 01:26:58.420
+valero: o sea lo que vamos a hacer ahora y vamos a meterlo ahí ya. Y vemos el ejemplo es
+
+862
+01:27:01.930 --> 01:27:06.519
+valero: esto: los de las ediciones anteriores Sí, lo han visto.
+
+863
+01:27:06.710 --> 01:27:15.489
+valero: Lo que queremos ver es si tu modelo, la predicción de tu modelo está relacionada, por ejemplo, con correlación.
+
+864
+01:27:15.880 --> 01:27:18.950
+valero: con la variable sensible, es decir.
+
+865
+01:27:19.770 --> 01:27:22.300
+valero: esa predicción que hace. Mi modelo
+
+866
+01:27:22.720 --> 01:27:27.780
+valero: se relaciona con que la persona sea un hombre o una mujer.
+
+867
+01:27:28.710 --> 01:27:35.299
+valero: No, Eso suena un poco raro, ¿no? El modelo. Sus predicciones dependen de si la persona es un hombre o una mujer.
+
+868
+01:27:35.630 --> 01:27:44.650
+valero: y esto podemos calcularlo, y ahora podemos coger y entrenar con esa forzando a que eso
+
+869
+01:27:45.200 --> 01:27:48.380
+valero: sea pequeño, Es decir, lo que podemos hacer
+
+870
+01:27:48.630 --> 01:27:54.980
+valero: es crearnos una función de coste donde yo voy a minimizar el Ms. Este
+
+871
+01:27:55.670 --> 01:27:58.049
+valero: se pone así en matemáticas.
+
+872
+01:27:59.610 --> 01:28:13.070
+valero: Más voy a penalizar que haya correlación entre la I y la S, pero.
+
+873
+01:28:13.070 --> 01:28:17.859
+Marco Corpa Criado: Si quieres minimizar eso, deberías ponerlo un menos delante, no para que sea máxima. La correlación.
+
+874
+01:28:18.270 --> 01:28:22.599
+valero: O sea, yo lo que quiero es que la correlación sea pequeña.
+
+875
+01:28:22.600 --> 01:28:24.990
+Marco Corpa Criado: porque es tu variable como sensible. No.
+
+876
+01:28:24.990 --> 01:28:25.690
+valero: Exacto. Yo creo.
+
+877
+01:28:25.690 --> 01:28:26.330
+Marco Corpa Criado: Vale.
+
+878
+01:28:26.330 --> 01:28:29.879
+valero: De mi modelo no estén relacionadas con esa variable posible.
+
+879
+01:28:30.210 --> 01:28:30.860
+Marco Corpa Criado: Vale, Vale.
+
+880
+01:28:31.160 --> 01:28:34.329
+valero: Entonces sí que sumaría esas 2 cosas.
+
+881
+01:28:34.740 --> 01:28:39.590
+valero: Tienes razón que a veces puedo querer lo opuesto. Puedo querer, por ejemplo.
+
+882
+01:28:40.110 --> 01:28:49.280
+valero: financieramente. Vale esto. Yo no lo he probado ni visto nadie que lo pruebe así. Pero tiene todo el sentido de que si yo, Por ejemplo, tengo una variable que sea
+
+883
+01:28:49.700 --> 01:28:55.920
+valero: las predicciones de un broker o las las
+
+884
+01:28:56.180 --> 01:28:58.760
+valero: las estimaciones de un broker del que me fío
+
+885
+01:28:58.930 --> 01:29:04.839
+valero: lo que le digo a mi modelo es: mira, predice, intenta predecir el mercado
+
+886
+01:29:05.160 --> 01:29:12.040
+valero: y que tus predicciones estén correlacionadas. Y ahora, si le pondría un menos aquí con las predicciones del broker
+
+887
+01:29:13.030 --> 01:29:16.140
+valero: o las predicciones de un modelo y del que yo me fío.
+
+888
+01:29:16.450 --> 01:29:24.170
+valero: Entonces esto forzaría aquí. Mi modelo intenta predecir el mercado, pero además intenta predecir cómo funciona ese otro modelo.
+
+889
+01:29:24.540 --> 01:29:26.370
+valero: Vale ahí, le meteríamos, al menos.
+
+890
+01:29:27.910 --> 01:29:32.789
+valero: Pero si queremos que no esté relacionada las predicciones, pues tenemos que ponerla que más
+
+891
+01:29:33.970 --> 01:29:35.240
+valero: vale. Vamos a hacer eso?
+
+892
+01:29:36.950 --> 01:29:40.159
+valero: Función de coste customizando. Primero, vamos a ver.
+
+893
+01:29:40.460 --> 01:29:51.100
+valero: sí hay una relación, una correlación entre las predicciones y la variable sensible, entonces le digo, calcula las correlaciones
+
+894
+01:29:51.900 --> 01:29:58.199
+valero: entre la variable predicha las correlaciones de Pearson.
+
+895
+01:29:58.820 --> 01:30:00.160
+valero: Esa es la normal.
+
+896
+01:30:00.440 --> 01:30:03.919
+valero: Y de Spirman, que tiene relaciones
+
+897
+01:30:04.120 --> 01:30:11.989
+valero: no lineales o se tiene en cuenta relaciones no lineales entre la variable predicha y la variable sensible
+
+898
+01:30:15.490 --> 01:30:18.880
+valero: vale mientras se lo piensa. Voy a.
+
+899
+01:30:18.880 --> 01:30:20.750
+Higinio Paterna Ortiz: Una pregunta
+
+900
+01:30:21.050 --> 01:30:31.210
+Higinio Paterna Ortiz: en este caso. Al ser la variable sensible discreta, no habría problema en estar la correlación o tendría sentido, me refiero al darse la tos continua.
+
+901
+01:30:31.790 --> 01:30:34.560
+valero: Se puede se puede utilizar la correlación también.
+
+902
+01:30:35.470 --> 01:30:36.220
+Higinio Paterna Ortiz: Vale, Vale.
+
+903
+01:30:36.220 --> 01:30:42.430
+valero: Tú aplicas, pienso entre corra entre variables discretas y funciona mientras
+
+904
+01:30:43.050 --> 01:30:48.460
+valero: el 0 mientras sea solo dicotómicas, digamos, vale.
+
+905
+01:30:48.600 --> 01:30:52.040
+valero: porque el 0 s solo tenga 0 el 1. No
+
+906
+01:30:53.500 --> 01:30:59.469
+valero: pueden haber variable correlaciones ahí que tengan más sentido de hacer. Pero bueno, esto va a funcionar.
+
+907
+01:31:01.040 --> 01:31:05.500
+valero: Vale, Aceptamos y ejecutamos.
+
+908
+01:31:06.710 --> 01:31:09.280
+valero: Y ahora no le gusta porque
+
+909
+01:31:10.300 --> 01:31:17.140
+valero: esta es la variable sensible que es el género. Dice que la columna, 23 que yo había acertado la columna. No, yo había dicho la 23.
+
+910
+01:31:17.530 --> 01:31:25.760
+valero: Hoy he dicho, la voy a ver si he fallado antes, yo había dicho la 23.
+
+911
+01:31:25.760 --> 01:31:26.230
+Rodolfo Villena: El se.
+
+912
+01:31:26.920 --> 01:31:31.609
+valero: Haber acertado la columna, pero aquí hay algo más que no le acaba de gustar.
+
+913
+01:31:32.110 --> 01:31:34.919
+valero: Entonces esta es la variable sensible
+
+914
+01:31:36.380 --> 01:31:38.360
+valero: y le decimos que calcule. Esto
+
+915
+01:31:41.810 --> 01:31:47.040
+valero: tiene pinta de qué ha tenido. Tiene el mismo problema que yo
+
+916
+01:31:47.320 --> 01:31:53.880
+valero: tiene pinta de que esta variable es sensible exacto, ves.
+
+917
+01:31:54.000 --> 01:31:56.790
+valero: puede ser un arrae, 2 D o una matriz dispersa
+
+918
+01:31:57.300 --> 01:32:03.579
+valero: Okay. Y entonces queremos sacarla. Y como mierdas solo como mierda lo hacen.
+
+919
+01:32:05.200 --> 01:32:09.309
+valero: Sí, es de una forma, hace de una forma así de otra.
+
+920
+01:32:11.800 --> 01:32:15.830
+valero: Vale, Ahora, sí que correcto.
+
+921
+01:32:18.430 --> 01:32:19.250
+valero: Okay.
+
+922
+01:32:22.600 --> 01:32:23.960
+valero: Esto que hace aquí.
+
+923
+01:32:25.990 --> 01:32:33.920
+valero: La operación que hace es esta tú a R A y Y Flaten Okay.
+
+924
+01:32:34.600 --> 01:32:41.909
+valero: Si yo ahí arriba pusiese tu Array igual, funcionaba. Bueno, luego ya lo hago yo por mi lado, que es el que me me enzarzo en
+
+925
+01:32:43.120 --> 01:32:58.430
+valero: lo único que hace es convertirla de de de esparce a variable. ¿no? Y vemos que hay correlación alta entre las variables. Yo no quiero. Yo creo que esto sea cercano a 0. Okay. Y entonces digo, vale.
+
+926
+01:32:58.590 --> 01:33:06.069
+valero: primero, vamos a hacer una función de coste customizar.
+
+927
+01:33:08.360 --> 01:33:09.110
+valero: ¿espera?
+
+928
+01:33:13.050 --> 01:33:30.869
+valero: ¿tienen alguna función de coste destomizada enteras chándom era punto 2 que penalicen, ten penalicen o penalicen
+
+929
+01:33:31.020 --> 01:33:50.410
+valero: el M C y además penalice la correlación entre la predicción y la variable, sensible, el pan.
+
+930
+01:33:52.000 --> 01:33:54.719
+valero: Entonces lo que va a hacer ahora es un M. S E
+
+931
+01:33:55.350 --> 01:34:01.529
+valero: donde va a hacer esto, básicamente va a hacer un M. S donde le sume como penalización. Esto
+
+932
+01:34:03.610 --> 01:34:07.579
+valero: vamos a ver hasta qué punto lo hace exactamente igual que yo quiero. Pero
+
+933
+01:34:07.960 --> 01:34:12.189
+valero: Y luego lo que vamos a hacer es cogernos el mismo modelo que tenemos aquí arriba
+
+934
+01:34:13.950 --> 01:34:17.610
+valero: y hacer lo mismo. Pero Ent, voy a copiarlas todas.
+
+935
+01:34:22.870 --> 01:34:24.670
+valero: y vamos a hacer lo mismo.
+
+936
+01:34:28.280 --> 01:34:35.540
+valero: Pero cuando vayamos a entrenar, en lugar de aquí, decirles celos, le vamos a decir en los customis
+
+937
+01:34:39.520 --> 01:34:44.430
+valero: y les vamos a llamar modelos 3, porque así lo guardamos.
+
+938
+01:34:46.440 --> 01:34:49.030
+valero: Sí, pa mierda
+
+939
+01:34:52.320 --> 01:34:56.929
+valero: el libro, aceptaría lo miramos. Voy a cambiar todo lo de modelo. Tres que luego la liaré. Parda.
+
+940
+01:34:58.600 --> 01:35:05.439
+valero: Mhm: Tres historicos. Bueno, mientras entrene, lo puedo hacer
+
+941
+01:35:06.530 --> 01:35:16.849
+valero: a ver qué ha hecho aquí vale Custom Fauners Lux ha hecho toda una función de coste.
+
+942
+01:35:17.240 --> 01:35:22.600
+valero: Yo lo que quiero, bueno luego para los señores, los es igual a este de aquí,
+
+943
+01:35:27.650 --> 01:35:37.040
+valero: enseñaré una, están instancia de esta clase. Vale y tiene una
+
+944
+01:35:37.890 --> 01:35:41.620
+valero: un peso que le vamos a dar a la parte del.
+
+945
+01:35:42.280 --> 01:35:46.660
+valero: o sea, esto de aquí. De hecho lo ha llamado Holanda, también. Okay.
+
+946
+01:35:47.440 --> 01:35:58.540
+valero: Y eso podemos decidir cuánto penalizo la parte fermos. Bueno, vale, Y ahora lo que hacemos es.
+
+947
+01:36:00.330 --> 01:36:02.949
+valero: cogemos el valor real.
+
+948
+01:36:05.890 --> 01:36:13.219
+valero: Lo que ha mirado, lo que ha hecho es meter como valor real. Esto, es decir, last is
+
+949
+01:36:14.910 --> 01:36:18.259
+valero: ha convertido en y extendido
+
+950
+01:36:19.640 --> 01:36:27.379
+valero: donde tengo 2 dimensiones. Una son las is normales y otra la variable, sensible. Entonces nos vamos a tener que hacer estos datos.
+
+951
+01:36:29.250 --> 01:36:35.460
+valero: ¿por qué? Porque ahora, como necesito las 2, necesito la S para aquí
+
+952
+01:36:38.710 --> 01:36:42.620
+valero: y necesito La: Y para aquí la S se la tengo que pasar de alguna forma
+
+953
+01:36:43.080 --> 01:36:47.900
+valero: cómo se la está pasando dentro de el i irreal.
+
+954
+01:36:52.710 --> 01:36:59.090
+valero: Tienen que ser sensores de una sola columna. Bueno, esto es para para que los datos tengan sentido vale
+
+955
+01:36:59.970 --> 01:37:01.290
+valero: calcular
+
+956
+01:37:01.750 --> 01:37:06.800
+valero: la entropía cruzada. Yo le he dicho que haga el M. S Y ya pasa de mi puta cara. Yo lo he dicho. M: S: es verdad
+
+957
+01:37:07.640 --> 01:37:13.699
+valero: que penalice el M. S. E: Bueno, en lugar de penalizar el M. S. E, aquí lo que ha decidido
+
+958
+01:37:14.980 --> 01:37:23.480
+valero: es que va a penalizar la entropía cruzada. Vale, va en Arecol Centerping entre el y predicho
+
+959
+01:37:23.660 --> 01:37:27.219
+valero: y el irreal Okay. Muy bien.
+
+960
+01:37:27.420 --> 01:37:34.110
+valero: lo está haciendo porque yo lo he usado antes en la parte de arriba. Yo he usado el b Binary Cronentroppi, y él ha dicho, bueno, pues lo que quieres en realidad es esto.
+
+961
+01:37:34.510 --> 01:37:37.020
+valero: Tú has dicho esto, Vale, no, Pero tú no te enteras
+
+962
+01:37:37.570 --> 01:37:43.240
+valero: Tú lo que realmente quieres es lo que yo diga, Bueno, tienes razón.
+
+963
+01:37:43.440 --> 01:37:47.169
+valero: Entonces, por un lado, calcula esto. Eso es esta parte de aquí
+
+964
+01:37:48.300 --> 01:37:58.530
+valero: y ahora. Por otro lado, va a calcular la correlación. Todo esto es la correlación calculada
+
+965
+01:37:59.380 --> 01:38:07.780
+valero: con todas las operaciones de la de la correlación, en lugar de usar la función correlación de del cyclear como no puede y tiene que hacer la diferenciable.
+
+966
+01:38:08.160 --> 01:38:12.389
+valero: Se ha creado aquí una funcioncita que calcula la correlación.
+
+967
+01:38:13.560 --> 01:38:21.529
+valero: Y entonces ahora tenemos el total, el total. ¿qué es el Binard Croscentropy? Es decir, esto de aquí
+
+968
+01:38:21.730 --> 01:38:28.600
+valero: más el landa que yo le ponga de entrada multiplicado por la penalización de la correlación. ¿vale?
+
+969
+01:38:29.260 --> 01:38:30.960
+valero: Y ya está.
+
+970
+01:38:32.330 --> 01:38:36.269
+valero: Si yo aquí me hago una instancia de esta función de coste.
+
+971
+01:38:36.580 --> 01:38:41.269
+valero: Uf! Com Aquí le podría decir el valor del Landa.
+
+972
+01:38:42.260 --> 01:38:43.699
+valero: Puedo dejarlo.
+
+973
+01:38:43.880 --> 01:38:46.949
+valero: Vamos a ponerle un valor, el que nos den a nosotros para ganar
+
+974
+01:38:49.020 --> 01:38:51.140
+valero: 0 2, solo porque sea distinto.
+
+975
+01:38:52.200 --> 01:38:57.539
+valero: Y ahora lo único que tengo que hacer es aquí, en lugar de cuando entrena
+
+976
+01:38:58.040 --> 01:39:06.320
+valero: decirle que entrene con binary crucentropy. Yo quiero que haga test algún modelo.
+
+977
+01:39:07.870 --> 01:39:10.680
+valero: pues hombre el modelo en realidad es el mismo que antes.
+
+978
+01:39:10.890 --> 01:39:15.049
+valero: La arquitectura es exactamente la misma. ¿vale? Lo único que he cambiado es
+
+979
+01:39:15.320 --> 01:39:19.280
+valero: en función de de coste de entrenar, y
+
+980
+01:39:19.870 --> 01:39:24.579
+valero: le damos a entrenar. Y obviamente, no funciona, porque en algún momento se ha rallado haciendo la función de corte
+
+981
+01:39:25.730 --> 01:39:30.059
+valero: coño. Claro, porque no he hecho, el extendido no no se ha rallado. Es mi culpa.
+
+982
+01:39:32.460 --> 01:39:41.000
+valero: Necesito ir Eatraint ext a ver si lo entiende. Él solo es capaz de hacerlo.
+
+983
+01:39:47.770 --> 01:39:48.939
+valero: Voy a hacerlo?
+
+984
+01:39:51.820 --> 01:39:58.920
+valero: Pues sí, sí lo haces. Sí, vale, Es decir, me hago una variable I extendida
+
+985
+01:39:59.500 --> 01:40:08.130
+valero: con la longitud de los datos de entrenamiento y 2 dimensiones. Ahora, en la primera dimensión, le pongo Letrain. Y en la segunda le pongo la variable, sensible
+
+986
+01:40:09.110 --> 01:40:11.720
+valero: Y entonces, aquí le voy a poner esto
+
+987
+01:40:12.100 --> 01:40:17.240
+valero: y tengo que hacer lo mismo para validación y debería hacer lo mismo para test, pero
+
+988
+01:40:18.060 --> 01:40:24.670
+valero: me vais a permitir que sea un poco perruno como ahora. No lo voy a evaluar en test.
+
+989
+01:40:25.580 --> 01:40:30.920
+valero: Es se llamaba Ana.
+
+990
+01:40:31.170 --> 01:40:32.070
+valero: Sin duda
+
+991
+01:40:39.360 --> 01:40:44.870
+valero: es y vale.
+
+992
+01:40:52.270 --> 01:40:53.709
+valero: si no lo he hecho mal.
+
+993
+01:40:53.890 --> 01:40:56.219
+valero: Y ahora puede ser que yo sí que lo haya hecho mal.
+
+994
+01:40:59.040 --> 01:41:04.110
+valero: Ay, otra vez la puta mierda esta de del de la spartsing.
+
+995
+01:41:06.900 --> 01:41:12.290
+valero: ¿cómo le había puesto este aquí arriba, tú a Ray.
+
+996
+01:41:16.860 --> 01:41:22.679
+valero: si no ¿dónde lo ha hecho aquí tu barra y todo junto.
+
+997
+01:41:25.350 --> 01:41:26.700
+valero: Guay!
+
+998
+01:41:29.960 --> 01:41:31.739
+valero: Platten! No quiero flat.
+
+999
+01:41:35.730 --> 01:41:37.050
+valero: Sí, quiero flaquema
+
+1000
+01:41:42.210 --> 01:41:43.669
+valero: y tengo que hacer lo mismo que antes.
+
+1001
+01:41:45.370 --> 01:41:49.290
+valero: No aquí No, Aquí ¿vale?
+
+1002
+01:41:51.000 --> 01:41:51.960
+valero: Y
+
+1003
+01:41:55.370 --> 01:41:56.650
+valero: el épsilon
+
+1004
+01:41:57.040 --> 01:42:02.220
+valero: lo ha metido en el denominador ha metido una función. Eso no esto creo que lo que pasó el otro día en clase.
+
+1005
+01:42:02.650 --> 01:42:11.020
+valero: ha metido una función épsilo en el denominador numerito para que cuando divida divida por algo que no sea 0, exactamente, ¿no?
+
+1006
+01:42:11.480 --> 01:42:16.170
+valero: Y esa función en Filon, pues no se llama así, sino que se llama backen.
+
+1007
+01:42:19.120 --> 01:42:29.750
+valero: Es decir, ha metido como el para hacer la correlación. Hay que dividir. Se asegura de que esa división nunca puede ser dividir por 0, entonces le suma un numerito muy pequeñito. Es al denominado.
+
+1008
+01:42:30.530 --> 01:42:31.430
+valero: Muy bien.
+
+1009
+01:42:32.310 --> 01:42:37.760
+valero: Ahora sí tiene pinta de que va a entrar Okay.
+
+1010
+01:42:41.640 --> 01:42:49.660
+valero: y ahora vamos a ver esto? Y podríamos haber puesto como métrica. La correlación Bueno, es igual.
+
+1011
+01:42:49.990 --> 01:42:55.609
+valero: porque lo que vamos a ver es un auditorio X 3 mientras entrena
+
+1012
+01:42:56.350 --> 01:43:05.370
+valero: si si meto como métrica, la correlación podría ir viendo cómo evoluciona el esa correlación. Pero bueno.
+
+1013
+01:43:07.370 --> 01:43:11.910
+valero: da igual con que al final acabe saliendo Lo que yo quiero que salga.
+
+1014
+01:43:13.090 --> 01:43:19.350
+valero: que es que básicamente haya menos correlación, espérate.
+
+1015
+01:43:23.360 --> 01:43:30.169
+valero: ¿no? Pero aquí hay un problema ah, no, que que listo es que hija de puta la guía ¿ Es que macho tío.
+
+1016
+01:43:30.580 --> 01:43:32.950
+valero: Le he dicho que me minimice la correlación
+
+1017
+01:43:33.550 --> 01:43:37.890
+valero: y no me ha hecho tampoco caso. ¿por qué la he elevado al cuadrado?
+
+1018
+01:43:39.130 --> 01:43:42.489
+valero: ¿por qué? Porque si yo le digo que minimice la correlación
+
+1019
+01:43:42.820 --> 01:43:44.639
+valero: la va a hacer muy negativa.
+
+1020
+01:43:45.290 --> 01:43:49.999
+valero: Va a llevar a menos 1. Y yo no quiero que sea menos 1. Yo quiero que sea 0.
+
+1021
+01:43:50.420 --> 01:43:54.130
+valero: Entonces lo que ha hecho es elevo al cuadrado y te lo pone aquí y dice
+
+1022
+01:43:55.440 --> 01:44:02.239
+valero: el ébano al cuadrado, porque sea positivo o negativo. Tiene un número positivo y ahora lo minimizas todo.
+
+1023
+01:44:03.410 --> 01:44:05.700
+valero: Entonces el mamona que le ha puesto un cuadrado.
+
+1024
+01:44:09.000 --> 01:44:10.979
+valero: y tienes razón, que había que poner un
+
+1025
+01:44:16.220 --> 01:44:26.970
+valero: ya me decía el del banco Sabadell esta tarde decía, claro, y lo nos dicen que les demos los datos para que entrenen los modelos para hacer la predicción de créditos, para echarnos.
+
+1026
+01:44:27.180 --> 01:44:33.780
+valero: para entrenar a la I A, Y yo perder mi trabajo. Dice que lo hará mejor si es que al final lo va a hacer mejor que yo, pero claro.
+
+1027
+01:44:34.700 --> 01:44:36.250
+valero: me hubiera quedado sin trabajo.
+
+1028
+01:44:36.570 --> 01:44:39.080
+valero: Mhm: Vamos a ver.
+
+1029
+01:44:45.170 --> 01:44:48.740
+valero: Vale, bueno, no ha acabado del todo, pero casi.
+
+1030
+01:44:49.050 --> 01:44:50.440
+Higinio Paterna Ortiz: Y una pregunta.
+
+1031
+01:44:50.750 --> 01:44:51.410
+valero: Mhm.
+
+1032
+01:44:51.410 --> 01:45:06.340
+Higinio Paterna Ortiz: O sea, si realmente hacemos esto, porque, o sea, hay ciertas variables que vale, son sensibles y no queremos que se discrimine por ellas porque no directamente las las excluimos. Me refiero, si al final queremos que la correlación sea baja. No me refiero.
+
+1033
+01:45:07.000 --> 01:45:23.259
+valero: Buena buena pregunta. Mañana o pasado, Emanuel, te te supongo que ahondará en esto, pero la respuesta corta es que tú no metas esa variable específicamente en el modelo, no quiere decir que esa información que hay en esa variable no esté en los datos.
+
+1034
+01:45:23.630 --> 01:45:24.620
+valero: es decir.
+
+1035
+01:45:24.860 --> 01:45:30.580
+valero: información de raza. Yo la puedo quitar la columna de raza, ya, pero hay ciertos números códigos postales
+
+1036
+01:45:31.170 --> 01:45:33.830
+valero: que claramente tienen la información de raza.
+
+1037
+01:45:34.270 --> 01:45:39.799
+valero: Entonces el modelo, si va a ser, si tiene que ser racista para
+
+1038
+01:45:40.180 --> 01:45:42.610
+valero: ajustar los datos buenos que tiene el banco
+
+1039
+01:45:42.710 --> 01:45:47.190
+valero: y no le dices nada, va a ser racista y la va a buscar la información donde sea.
+
+1040
+01:45:47.510 --> 01:45:53.300
+valero: Es mejor darle la información y decirle, y esto de aquí quiero que seas contrario.
+
+1041
+01:45:53.450 --> 01:46:02.939
+valero: Entonces el modelo dice: Vale, tú quieres que yo no use esto o qué o que las predicciones sean independientes De esto vale, pues damelo como entrada, y yo juego con eso para para que tú,
+
+1042
+01:46:03.070 --> 01:46:11.080
+valero: pero Sí, Ese es buen punto. Es pregunta clásica: ¿vale redoble de tambor.
+
+1043
+01:46:11.330 --> 01:46:14.320
+valero: Las correlaciones tienen que ser más cercanas a hacer?
+
+1044
+01:46:15.320 --> 01:46:19.389
+valero: Espero que sí, porque la clasificación se ha ido a la
+
+1045
+01:46:22.430 --> 01:46:29.529
+valero: son más cercanos a 0. No son mucho más cercanas a 0, ¿ Menos 0, 23, que es la de Birdson, que estamos utilizando. Y antes era.
+
+1046
+01:46:35.450 --> 01:46:37.929
+Rodolfo Villena: Once y algo. Y se lo cuarteaba.
+
+1047
+01:46:38.230 --> 01:46:43.690
+valero: No no 0. 36. Hemos pasado de menos 0, 36 y 0, 4
+
+1048
+01:46:44.000 --> 01:46:47.079
+valero: a menos 0 23 y 0? 22
+
+1049
+01:46:47.450 --> 01:46:51.650
+valero: Bueno, lo hemos mejorado, vale, pero no hemos mejorado muchísimo.
+
+1050
+01:46:52.590 --> 01:46:56.669
+valero: O sea, esto se puede llegar a hacer si le Si le cambiamos el Landa.
+
+1051
+01:46:56.990 --> 01:46:59.700
+valero: podemos penalizar mucho más eso.
+
+1052
+01:47:00.610 --> 01:47:07.829
+valero: Cuanto más alto le ponga el valor de landa aquí más voy a penalizar eso.
+
+1053
+01:47:08.580 --> 01:47:10.310
+valero: Voy a hacer un ejemplo rápido.
+
+1054
+01:47:10.460 --> 01:47:22.280
+valero: Y mientras entrena y vamos a seleccionar algo así, más radical mientras es entrena, vemos
+
+1055
+01:47:23.580 --> 01:47:30.119
+valero: estas curvas fijaros que ahora en Akura así tiene muchísimo menos
+
+1056
+01:47:30.510 --> 01:47:33.020
+valero: un Ahora acierta el 40 por 100.
+
+1057
+01:47:33.780 --> 01:47:38.680
+valero: Cuando antes acertaba el 83 Okay.
+
+1058
+01:47:39.390 --> 01:47:41.920
+valero: El modelo Anakurashi ha perdido precisión.
+
+1059
+01:47:42.970 --> 01:47:47.560
+valero: Entonces lo que veréis es que básicamente
+
+1060
+01:47:48.250 --> 01:48:02.790
+valero: una forma de trabajar con esto es ajustar una curva entre Akura Shin y digamos,
+
+1061
+01:48:02.960 --> 01:48:10.799
+valero: Ferners, Si el modelo es más justo, tiene menos alturas.
+
+1062
+01:48:13.340 --> 01:48:16.459
+valero: Y si el modelo tiene Masakurasy va a ser menor.
+
+1063
+01:48:17.130 --> 01:48:22.529
+valero: Y entonces yo puedo ir cambiando el landa y sacando modelos que tengan estos valores.
+
+1064
+01:48:23.900 --> 01:48:28.740
+valero: y yo puedo quedarme donde a mí me dé la gana. Aquí
+
+1065
+01:48:30.990 --> 01:48:36.330
+valero: donde a mí me dé la gana o donde el regulador me obliga a estar Okay.
+
+1066
+01:48:36.760 --> 01:48:44.729
+valero: No existe numeri numeritos. Ya lo comentamos el otro día en clase. Ahora mismo hay una regla por ahí
+
+1067
+01:48:45.080 --> 01:48:54.499
+valero: macarrónicas de hace 40 o 50 años. Sobre esto se dice que un 20 por 100 es aceptable
+
+1068
+01:48:55.090 --> 01:49:00.859
+valero: ese Co: 2 que nos ha salido por chamba. No nos lo he ajustado yo en ningún momento sería aceptable.
+
+1069
+01:49:01.170 --> 01:49:05.940
+valero: Esto depende de la realidad. Depende del número de datos, depende de muchas cosas, pero
+
+1070
+01:49:06.810 --> 01:49:10.280
+valero: hace 50 años eso era lo que se aceptaba.
+
+1071
+01:49:11.340 --> 01:49:18.629
+valero: Y ahora los que han hecho la ley nueva de la I, A, pues que vengan y nos digan, os comentará Emanuel de esto y os comentará también un poco marina
+
+1072
+01:49:18.830 --> 01:49:21.239
+valero: que vendrá de aquí a 2 semanas.
+
+1073
+01:49:21.610 --> 01:49:26.580
+valero: cuando se hablen de explicabilidad, o se hablará también un poco de Ferness y de la ley del Iais?
+
+1074
+01:49:27.700 --> 01:49:28.390
+valero: ¿vale?
+
+1075
+01:49:30.240 --> 01:49:35.150
+valero: Vamos a ver que ha entrenado 100. Diecisiete.
+
+1076
+01:49:38.500 --> 01:49:45.290
+valero: estamos casi en el mismo Cura. Así pues, entonces va a estar. No, pues fijaros que estamos casi en el mismo cura. Así que antes.
+
+1077
+01:49:46.670 --> 01:49:50.480
+valero: Sin embargo, la correlación ahora sí que ha bajado, casi
+
+1078
+01:49:50.810 --> 01:49:53.289
+valero: cercano. Va cada vez más cercana.
+
+1079
+01:49:53.550 --> 01:49:57.749
+valero: Entonces, con ese numerito, con ese landa, podemos elegir
+
+1080
+01:49:58.010 --> 01:50:01.600
+valero: cuánto de justo queremos que sea nuestro okay.
+
+1081
+01:50:02.300 --> 01:50:10.810
+valero: Vale, Ya tenemos 2 de las 4 cosas que queríamos hacer.
+
+1082
+01:50:11.040 --> 01:50:15.970
+valero: Vamos a jugar a hacer algo con ahora.
+
+1083
+01:50:16.090 --> 01:50:21.910
+valero: Yo creo que el que lo del que eras túnel será más sencillo que lo hagáis vosotros por vuestra cuenta. No puede ser
+
+1084
+01:50:23.200 --> 01:50:26.440
+valero: o qué quedas túnel o o
+
+1085
+01:50:27.080 --> 01:50:32.939
+valero: o variación a la salida? Emmanuel Os va a contar algo de la incertidumbre y haréis algo de código. Pero
+
+1086
+01:50:34.960 --> 01:50:39.560
+valero: algún bo alguna votación con 0 votos hago lo que me dé la gana.
+
+1087
+01:50:43.380 --> 01:50:44.150
+valero: ¿vale?
+
+1088
+01:50:44.580 --> 01:50:49.529
+valero: Pues nada. Voy a hacer lo de la el error a la salida.
+
+1089
+01:50:49.710 --> 01:50:54.589
+valero: que yo creo que es es un poco más bueno, de hecho de que eras tú no, ya tocamos algo en clase.
+
+1090
+01:50:56.370 --> 01:51:00.969
+valero: Vale, Europe. Te Os voy a enseñar donde mierda se dejó aquí.
+
+1091
+01:51:01.080 --> 01:51:03.790
+valero: Aquí está mi mano que se me había perdido la mano.
+
+1092
+01:51:04.880 --> 01:51:12.520
+valero: Voy a aplicar esto una nueva okay.
+
+1093
+01:51:15.320 --> 01:51:19.230
+valero: El rollo va a ser este. Vamos a hacer la forma más tonta
+
+1094
+01:51:20.170 --> 01:51:22.270
+valero: que a mí se me ha ocurrido para hacer
+
+1095
+01:51:23.210 --> 01:51:33.539
+valero: saber la la incertidumbre de un modelo a la salida. Hay varias opciones. ¿vale? Y Emanuel Os contará algunas opciones. La más simple para mí es esta: Nosotros ahora tenemos un modelo
+
+1096
+01:51:36.410 --> 01:51:41.400
+valero: que le paso los datos de entrada y hace unas predicciones.
+
+1097
+01:51:44.040 --> 01:51:49.349
+valero: Yo quiero saber cuál es la incertidumbre sobre esa predicción.
+
+1098
+01:51:49.860 --> 01:51:53.289
+valero: ¿qué es la incertidumbre sobre esa predicción, básicamente, es
+
+1099
+01:51:53.700 --> 01:51:58.910
+valero: ¿qué distancia hay entre esa predicción? Y la realidad vale.
+
+1100
+01:51:59.790 --> 01:52:05.019
+valero: Y entonces, ahora lo que voy a hacer es, me voy a generar una variable extra
+
+1101
+01:52:05.390 --> 01:52:09.859
+valero: que sea ésta. Le voy a aplicar mi modelo a los de la entrada. Voy a sacar las
+
+1102
+01:52:10.030 --> 01:52:14.060
+valero: las predicciones. Voy a generarme una variable.
+
+1103
+01:52:14.520 --> 01:52:19.100
+valero: Le voy a llamar error y ahora voy a entrenar en otro modelo.
+
+1104
+01:52:22.330 --> 01:52:24.839
+valero: ¿dónde le voy a meter esto.
+
+1105
+01:52:25.420 --> 01:52:27.689
+valero: Le puedo meter también como entrada
+
+1106
+01:52:29.270 --> 01:52:34.249
+valero: las predicciones, porque las voy a tener, Vale, Puedo hacerlo o no
+
+1107
+01:52:34.740 --> 01:52:37.980
+valero: voy a hacerlo primero sin meter eso. Solo con los datos de entrada.
+
+1108
+01:52:38.100 --> 01:52:40.049
+valero: Y ahora, para ese dato, de entrada
+
+1109
+01:52:40.830 --> 01:52:44.380
+valero: quiero sacar una estimación del error.
+
+1110
+01:52:44.770 --> 01:52:48.160
+valero: Es una estimación de cómo esta predicción.
+
+1111
+01:52:48.310 --> 01:52:51.149
+valero: ¿Cómo, de lejos estaré en la torre real.
+
+1112
+01:52:51.280 --> 01:52:51.950
+valero: Mhm.
+
+1113
+01:52:52.980 --> 01:52:58.600
+valero: entonces, ahora mismo, es que, de hecho, ya tengo el primer modelo entrenado. Solo quiero hacer un segundo modelo
+
+1114
+01:52:58.760 --> 01:53:03.790
+valero: que lo que prediga, en lugar de ser la valor de salida, prediga el error.
+
+1115
+01:53:05.200 --> 01:53:06.810
+valero: Entonces vamos a hacer aquí un
+
+1116
+01:53:10.220 --> 01:53:10.960
+valero: Mhm
+
+1117
+01:53:14.680 --> 01:53:22.440
+valero: del error, un cierto sentido común de champ
+
+1118
+01:53:24.310 --> 01:53:29.860
+valero: predicción, de la incertidumbre, de prensa del modelo anterior.
+
+1119
+01:53:33.110 --> 01:53:33.820
+valero: vale.
+
+1120
+01:53:34.720 --> 01:53:39.050
+valero: Y ahora nos hacemos directamente las variables.
+
+1121
+01:53:39.190 --> 01:53:42.720
+valero: Bueno, vamos a coger el predict. Este
+
+1122
+01:53:47.720 --> 01:53:48.580
+valero: vale.
+
+1123
+01:53:51.630 --> 01:53:53.640
+valero: esto es el Predik de Train.
+
+1124
+01:53:56.140 --> 01:53:59.079
+valero: Quiero el predi de validación.
+
+1125
+01:53:59.500 --> 01:54:07.750
+valero: Y de momento estoy ignorando el test. Pero bueno, sabéis verdad que tenéis que usar el test al final de todo y todo eso eso lo tenéis claro.
+
+1126
+01:54:10.080 --> 01:54:14.710
+valero: validación. Y ahora digo, vale, pues quiero el error de Train.
+
+1127
+01:54:15.770 --> 01:54:18.299
+valero: que va a ser la predicción de train
+
+1128
+01:54:22.070 --> 01:54:32.190
+valero: absoluto de la predicción de training, el y de 30 y el error de variación.
+
+1129
+01:54:49.670 --> 01:54:54.180
+valero: Si no me he equivocado con los nombres de las variables que vamos a verlo en breve.
+
+1130
+01:54:55.780 --> 01:54:57.679
+valero: pues ya prácticamente lo tengo hecho.
+
+1131
+01:54:59.970 --> 01:55:03.400
+valero: Mierda no existe. Ibal.
+
+1132
+01:55:04.790 --> 01:55:10.149
+valero: ¿cómo es sí, tremenda, Ah, que es mayúscula
+
+1133
+01:55:19.010 --> 01:55:21.350
+valero: y 30 años eran mayúsculas. En realidad.
+
+1134
+01:55:22.390 --> 01:55:30.130
+valero: Mhm: Es decir, aquí cuando entreno, está aquí.
+
+1135
+01:55:31.640 --> 01:55:33.719
+valero: Y Trainch, sí, ¿qué hace más.
+
+1136
+01:55:38.580 --> 01:55:39.749
+valero: pero es Life
+
+1137
+01:55:44.620 --> 01:55:50.510
+valero: Vale Okay, pues ya tengo las E. S. Esto da un poco de rabia, pero
+
+1138
+01:55:51.380 --> 01:55:53.050
+valero: para que no, ex no exista.
+
+1139
+01:55:53.600 --> 01:55:57.659
+valero: Y ahora nos vamos a hacer un modelito. ¿qué modelito me puedo hacer?
+
+1140
+01:55:58.100 --> 01:56:03.190
+valero: Me voy a coger un modelo muy parecido a los que he hecho antes. Y ya está el cofó
+
+1141
+01:56:03.330 --> 01:56:12.890
+valero: este modelo alguna, un entrenamiento? Vamos a ver las curvas y adelante
+
+1142
+01:56:16.940 --> 01:56:21.250
+valero: claro ahora este modelo? Tres.
+
+1143
+01:56:21.710 --> 01:56:29.030
+valero: Mhm: Vamos a llamarle S, que sería la variable de salida. Vale.
+
+1144
+01:56:31.840 --> 01:56:38.040
+valero: ¿Puedo usar la capa exponencial o no? En realidad, aquí. Da igual que sea el mismo tipo de modelo. Podría voy a quitar la capa exponencial.
+
+1145
+01:56:38.220 --> 01:56:38.910
+valero: ¿vale?
+
+1146
+01:56:40.650 --> 01:56:42.760
+valero: Y voy a dejar un modelo solo aquí,
+
+1147
+01:56:48.020 --> 01:56:50.670
+valero: y ya está.
+
+1148
+01:56:50.910 --> 01:56:54.289
+valero: Y ahora lo que queremos como entrada son
+
+1149
+01:56:54.780 --> 01:56:57.989
+valero: igualmente las X de entrenamiento Vale.
+
+1150
+01:56:58.170 --> 01:57:00.309
+valero: Ahora, si solo hacemos esta versión
+
+1151
+01:57:00.510 --> 01:57:05.120
+valero: normalmente no mejora mucho. Yo cuando he hecho pruebas con esto, cuando he juego con esto.
+
+1152
+01:57:05.410 --> 01:57:13.210
+valero: no mejora mucho por merecer las predicciones. Aquí Es curioso, porque para estimar el error no.
+
+1153
+01:57:13.460 --> 01:57:28.380
+valero: no le hace falta la esti, la la predicción. Pero, bueno, vale, y el modelo es un modelo sencillito.
+
+1154
+01:57:30.500 --> 01:57:34.960
+valero: Y aquí no vamos a hacer esto, sino que vamos a primero menos mal.
+
+1155
+01:57:35.560 --> 01:57:43.510
+valero: Así que no los m seria ¿no?
+
+1156
+01:57:46.490 --> 01:57:51.230
+valero: Y de hecho, bueno, sí, ese valor es positivo.
+
+1157
+01:57:54.350 --> 01:57:56.900
+valero: Puede ser mayor de 1.
+
+1158
+01:57:57.830 --> 01:58:01.020
+valero: Aquí he puesto una función de activación simueble, pero fijaros
+
+1159
+01:58:01.280 --> 01:58:03.850
+valero: que corro corro. Y pongo esto aquí
+
+1160
+01:58:04.160 --> 01:58:11.510
+valero: y cojo el mismo modelo, Pero la salida, esta, el E puede ser hasta puede valer hasta 2.
+
+1161
+01:58:12.910 --> 01:58:15.510
+valero: Si la y predicha es menos 1.
+
+1162
+01:58:15.690 --> 01:58:20.970
+valero: Y la I real era 1 menos 1, menos 1 es 2.
+
+1163
+01:58:21.310 --> 01:58:22.000
+valero: Mhm.
+
+1164
+01:58:22.730 --> 01:58:28.159
+valero: Entonces aquí, pues puedo poner relv, porque lo que sí que no puede ser
+
+1165
+01:58:28.400 --> 01:58:30.219
+valero: el error es menor que 0.
+
+1166
+01:58:30.820 --> 01:58:41.060
+valero: Mhm Vale, Matrix era cura si está, no tiene sentido.
+
+1167
+01:58:43.830 --> 01:58:50.389
+valero: Tiene sentido, pues vamos a poner el mar. No ves
+
+1168
+01:58:51.420 --> 01:58:59.429
+valero: esto de aquí. No nos hace falta los datos extendidos. Y ahora lo que vamos a hacer es intentar predecir el error de
+
+1169
+01:59:00.980 --> 01:59:02.040
+valero: de tren.
+
+1170
+01:59:04.740 --> 01:59:05.870
+valero: Y aquí.
+
+1171
+01:59:06.430 --> 01:59:09.940
+valero: Bueno, bueno, 2 veces la misma.
+
+1172
+01:59:12.740 --> 01:59:15.470
+valero: Mhm: ¿Tienes variación.
+
+1173
+01:59:15.670 --> 01:59:16.550
+valero: ¿qué?
+
+1174
+01:59:17.060 --> 01:59:21.949
+valero: Y aquí le ponemos una s para no liarlo todo.
+
+1175
+01:59:25.130 --> 01:59:26.440
+valero: Vamos a ver.
+
+1176
+01:59:27.260 --> 01:59:31.140
+valero: Sí, he sido capaz de hacerlo todo bien
+
+1177
+01:59:33.350 --> 01:59:36.239
+valero: que nos va a dar tiempo y todo a hacer
+
+1178
+01:59:37.500 --> 01:59:41.059
+valero: el obtuno, el optuno o el el que eras tú. No
+
+1179
+01:59:43.320 --> 01:59:53.339
+valero: puedo hacerlo con Neptuna, porque como vosotros lo tenéis que hacer con querastunel, sí, y son parecidos. Bueno, son para no darlo todo hecho o ese olodo y hecho, y ya está,
+
+1180
+01:59:53.490 --> 01:59:56.670
+valero: es sencillo. Ahora vemos con túnel para que las tunas y ya está
+
+1181
+01:59:57.490 --> 02:00:02.120
+valero: cómo lo veis. Hasta ahora se ha entendido todos los pasos que he seguido. Se ha entendido
+
+1182
+02:00:02.220 --> 02:00:07.900
+valero: lo que se pide en el taller alguna duda.
+
+1183
+02:00:10.770 --> 02:00:24.300
+Rodolfo Villena: Yo esto último del error. Tengo que repasarlo. El El error no es ya lo que hacemos cuando entrenamos el o sea, intentar minimizar la función de de pérdida, no es ya trabajar con el error.
+
+1184
+02:00:24.560 --> 02:00:29.760
+valero: Sí, Tú estás mini minimizar que este sea lo más pequeño posible
+
+1185
+02:00:30.520 --> 02:00:32.169
+valero: cuando entrenas este de aquí arriba.
+
+1186
+02:00:32.280 --> 02:00:39.149
+valero: Mhm: Eso es así. Yo, cuando entreno a este modelo. Quiero que este error sea lo más pequeño posible.
+
+1187
+02:00:39.250 --> 02:00:40.529
+valero: pero no es 0
+
+1188
+02:00:41.000 --> 02:00:45.250
+valero: si fuese 0. La segunda parte no tendría sentido. Tendría un modelo perfecto. Esto es 0, y ya está.
+
+1189
+02:00:45.760 --> 02:00:51.339
+valero: Mhm, Pero no es 0, Y lo que va a ocurrir es que para algunas muestras de entrada.
+
+1190
+02:00:51.700 --> 02:00:58.170
+valero: esta predicción va a ser mucho más distinta de la original y para otras no.
+
+1191
+02:00:58.980 --> 02:01:11.079
+valero: entonces habrá muestras que sean sencillas de predecir la salida. Por ejemplo, en créditos, habrán personas que claramente vayan a devolver el crédito y personas que no.
+
+1192
+02:01:11.710 --> 02:01:13.579
+valero: o personas que tengo dudas
+
+1193
+02:01:14.160 --> 02:01:22.660
+valero: y el modelo aquí, aunque él tenga dudas por dentro. Aunque yo aquí le pase unas variables que el modelo no tiene muy claro. Él le estoy obligando, porque le pongo una asimoide
+
+1194
+02:01:22.830 --> 02:01:27.040
+valero: y le digo, tú me dices que a esta persona sí o a esta persona no.
+
+1195
+02:01:27.810 --> 02:01:33.899
+valero: Y entonces, como yo lo obligo, el modelo dice, bueno, pues si me dices que si o si no, Pues yo te digo que sí o si no.
+
+1196
+02:01:34.140 --> 02:01:39.719
+valero: Pero luego voy a hacer las predicciones y lo mismo las lío. Tengo un error alto.
+
+1197
+02:01:40.310 --> 02:01:48.900
+valero: Este segundo modelo que va a hacer es: ah, vale, pues yo sé que cuando metes este tipo de persona. El otro modelo suele equivocarse.
+
+1198
+02:01:49.320 --> 02:01:50.580
+valero: No lo tiene claro.
+
+1199
+02:01:51.220 --> 02:01:59.390
+valero: Y entonces este segundo modelo, lo que te dice es este de aquí arriba para este tipo de personas se va a equivocar. Y para este otro tipo de personas no se va a equivocar.
+
+1200
+02:02:00.400 --> 02:02:05.650
+valero: Lo único que estoy haciendo es predecir cuándo se va a equivocar el de arriba y cuándo No.
+
+1201
+02:02:06.100 --> 02:02:06.789
+valero: sí. No sé.
+
+1202
+02:02:06.790 --> 02:02:09.209
+Rodolfo Villena: Que son como una especie de modelos complementarios.
+
+1203
+02:02:09.880 --> 02:02:12.520
+valero: Sí es. Son, de hecho, son.
+
+1204
+02:02:12.520 --> 02:02:17.450
+Rodolfo Villena: Uno me va a decir si le doy o no se le doy y el otro me va a decir, te has equivocado o no te has equivocado. Vale.
+
+1205
+02:02:17.880 --> 02:02:24.339
+valero: Sí o te sueles equivocar, porque si este pudiese calcular el error exactamente perfectamente.
+
+1206
+02:02:24.460 --> 02:02:29.049
+valero: pues lo único que teníamos que hacer es utilizarlo para para corregir esto de aquí arriba.
+
+1207
+02:02:29.910 --> 02:02:35.989
+valero: pero no lo va a hacer perfecto. Lo que va a hacer en general, aquí tienes una variación grande.
+
+1208
+02:02:36.110 --> 02:02:44.160
+valero: Aquí tienes un error alto. No te sé decir, si es positivo, si es negativo, no te sé decir ¿Cómo tienes que usar ese error para mo para modificar esto?
+
+1209
+02:02:45.180 --> 02:02:48.190
+valero: Y Am: Y este modelo solo sirve
+
+1210
+02:02:48.390 --> 02:02:51.319
+valero: para predecir el error de este modelo de aquí arriba.
+
+1211
+02:02:51.990 --> 02:02:54.380
+valero: Otro modelo tendrá otro tipo de errores.
+
+1212
+02:02:54.690 --> 02:02:58.629
+valero: Por eso son varios unidaddos. Estos modelos.
+
+1213
+02:02:59.650 --> 02:03:01.159
+Rodolfo Villena: Vale, Okay. Gracias.
+
+1214
+02:03:01.160 --> 02:03:11.399
+Higinio Paterna Ortiz: Claro, pero sí te puede salir. Por ejemplo, el caso este del escoria crediticio para esos casos de mucha incertidumbre, a lo mejor que lo revisara un humano. No, No sé o
+
+1215
+02:03:11.700 --> 02:03:14.160
+Higinio Paterna Ortiz: con que saltara una alarma, digamos, no, por ejemplo.
+
+1216
+02:03:14.160 --> 02:03:21.080
+valero: Perfecto. Eso Eso sería una aplicación directa, es decir, para los casos que tienen totalmente seguro el modelo
+
+1217
+02:03:21.370 --> 02:03:35.200
+valero: Paso, pero Ahora veremos y vamos a poner. Vamos a plantear casos particulares y veamos hostia. Hay casos en los que este de arriba la caga y este de abajo efectivamente te está avisando hostia, este seguramente la vaya a cagar.
+
+1218
+02:03:37.300 --> 02:03:44.610
+valero: Vamos a ver si esto si si entrenan el segundo modelo. Eso quiere decir en que ha funcionado.
+
+1219
+02:03:45.850 --> 02:03:57.720
+Cristian: Vale, Raúl. Yo tengo una pregunta. Es decir, aunque te dé que aunque el modelo, el primer modelo te diga si si o si no no te da o no es una probabilidad, es un
+
+1220
+02:03:58.690 --> 02:04:00.210
+Cristian: si no te dice.
+
+1221
+02:04:00.690 --> 02:04:07.480
+valero: Sí por E es es cercana, una probabilidad porque te da un valor entre 0 y 1.
+
+1222
+02:04:08.890 --> 02:04:11.760
+valero: Es decir, no te da 0, o 1 es verdad.
+
+1223
+02:04:11.980 --> 02:04:15.640
+valero: Y entonces, si dices no lo que me está dando es 0, coma 6,
+
+1224
+02:04:15.890 --> 02:04:17.720
+valero: pues entonces ya es un indicio
+
+1225
+02:04:17.970 --> 02:04:19.599
+valero: de que no lo tiene muy claro.
+
+1226
+02:04:19.750 --> 02:04:22.890
+valero: pero yo no le estoy pidiendo que me
+
+1227
+02:04:23.600 --> 02:04:26.610
+valero: que me dé el el su error, su varianza.
+
+1228
+02:04:26.810 --> 02:04:33.130
+valero: Él le estoy pidiendo solo un valor entre 0 y 1. Entonces este se está centrando en intentar decir 0. Uno
+
+1229
+02:04:33.470 --> 02:04:39.940
+valero: podríamos ir, y ahora podemos hacerlo. También. Vamos a ver cómo se relacionan, que esto valga
+
+1230
+02:04:40.520 --> 02:04:43.770
+valero: un valor intermedio con que este tenga un te digo un error alto.
+
+1231
+02:04:45.660 --> 02:04:47.209
+valero: Van a estar relacionados.
+
+1232
+02:04:47.310 --> 02:04:54.979
+valero: pero no tiene por qué ser exacta. No es exactamente lo mismo. Este está entrenado específicamente para la rodilla.
+
+1233
+02:04:56.940 --> 02:04:57.710
+valero: ¿vale?
+
+1234
+02:04:58.100 --> 02:05:02.790
+valero: Y esto más o menos entrena aquí. No había curascy, ¿no?
+
+1235
+02:05:03.120 --> 02:05:07.250
+valero: Pero hay más en hemos dicho, vale, vale.
+
+1236
+02:05:12.710 --> 02:05:18.159
+valero: a mí me gusta el Ma, ¿ Porque esto nos dice que va a predecir
+
+1237
+02:05:18.560 --> 02:05:22.050
+valero: el error con un error de 0 1 en general.
+
+1238
+02:05:23.090 --> 02:05:26.639
+valero: Entonces, bueno, vamos a ver cómo qué significa eso.
+
+1239
+02:05:28.100 --> 02:05:31.839
+valero: Vamos a aplicarlo el modelo o del 3
+
+1240
+02:05:37.660 --> 02:05:39.599
+valero: junto a play.
+
+1241
+02:05:39.910 --> 02:05:48.450
+valero: De hecho, creo que no hace falta ni a la playa, error de training exacto
+
+1242
+02:05:51.000 --> 02:05:55.790
+valero: y aplicamos sobre los datos de entrenamiento.
+
+1243
+02:06:01.480 --> 02:06:15.260
+valero: Error de validación sobre los datos de validación vale en la playa, Sí, indirectamente hostias.
+
+1244
+02:06:17.090 --> 02:06:23.900
+valero: No le ha gustado mierda como está haciendo esto. Yo no me acuerdo ni ni de aplicar el modelo.
+
+1245
+02:06:24.710 --> 02:06:26.070
+valero: ¿puede ser eso, ¿verdad?
+
+1246
+02:06:30.190 --> 02:06:31.150
+valero: Predik.
+
+1247
+02:06:38.460 --> 02:06:47.170
+valero: Las 2 han funcionado las 2 opciones que había usado? ¿han funcionado alguna vez en la vida Okay.
+
+1248
+02:06:48.270 --> 02:06:56.890
+valero: Y ahora podemos ver, Vale, vamos a ver. Vamos a flotear el error este
+
+1249
+02:06:57.420 --> 02:07:02.230
+valero: respecto al error real, el error real. Lo tenemos.
+
+1250
+02:07:02.510 --> 02:07:04.320
+valero: Tenemos esto?
+
+1251
+02:07:04.650 --> 02:07:15.220
+valero: Mhm, es decir, es capaz de predecir más o menos el error hostias curioso. Esto. ¿
+
+1252
+02:07:21.250 --> 02:07:22.540
+valero: El error.
+
+1253
+02:07:28.930 --> 02:07:35.620
+valero: o sea, aquí lo hace bastante mal a ver el el vamos a ponernos al revés, porque si no
+
+1254
+02:07:36.640 --> 02:07:37.929
+valero: no se entiende muy bien
+
+1255
+02:07:43.080 --> 02:07:48.120
+valero: si el error real va entre 0 y 0 5.
+
+1256
+02:07:48.600 --> 02:07:52.570
+valero: Lo hace bastante bien, porque te dice que
+
+1257
+02:07:53.220 --> 02:08:00.230
+valero: hace esta parte de aquí si el error real es más alto de 0. Cinco, no lo hace bien del todo lo que pasa, que por aquí hay menos numeritos.
+
+1258
+02:08:01.220 --> 02:08:07.020
+valero: Y Aquí hay una cosa tipo exponencial, bastante clara, no
+
+1259
+02:08:07.170 --> 02:08:09.329
+valero: decir aquí hay una relación exponencial.
+
+1260
+02:08:12.200 --> 02:08:19.179
+valero: Me están entrando ganas de usar la la capa, la nueva capa que hemos hecho de exponencial y entrenarlo. No sé. Bueno, vamos a ver si
+
+1261
+02:08:19.300 --> 02:08:24.179
+valero: de momento vamos a a ver las cosas que hemos dicho, porque ya ha funcionado más o menos. ¿
+
+1262
+02:08:24.550 --> 02:08:31.090
+valero: Entonces, si yo, por ejemplo, quiero ver
+
+1263
+02:08:31.710 --> 02:08:41.349
+valero: lo que ha propuesto higinio. Es decir, quiero ver para qué datos voy a cogernos unos datos.
+
+1264
+02:08:41.570 --> 02:08:48.680
+valero: Y voy a ver, bueno, claro, es eso es más o menos esto es más o menos lo que ha propuesto higinio, porque es esto directamente. Me va a decir
+
+1265
+02:08:49.710 --> 02:08:53.850
+valero: qué valores son susceptibles de estar por aquí arriba.
+
+1266
+02:08:55.030 --> 02:08:55.770
+valero: ¿no?
+
+1267
+02:08:56.170 --> 02:09:02.519
+valero: Es decir, si yo cojo un valor de error alto.
+
+1268
+02:09:03.070 --> 02:09:06.540
+valero: De hecho, acierta bastante
+
+1269
+02:09:08.060 --> 02:09:16.979
+valero: cuando yo le vaya a decir, cógeme 1 que hayas estimado con un error alto, es decir, por ejemplo, los de a partir de 0 3 a 0 6.
+
+1270
+02:09:17.380 --> 02:09:20.409
+valero: Voy a considerarlos errores altos, todos esos
+
+1271
+02:09:20.850 --> 02:09:25.710
+valero: luego tienen errores altos o por lo menos casi todos.
+
+1272
+02:09:27.630 --> 02:09:30.670
+valero: Entonces, si yo le digo, vale, cógeme los de los de 0 5,
+
+1273
+02:09:31.770 --> 02:09:33.340
+valero: los que tengo más de 0 a 0.
+
+1274
+02:09:48.620 --> 02:09:53.529
+valero: Estaría guay, también ver los ordenadores para para ver exactamente, Pero, bueno.
+
+1275
+02:09:55.360 --> 02:10:07.360
+valero: sí, no sé, no sé, o sea, se entiende más o menos lo que hace. Me quedo con la rabia de que eso tiene una forma parabólica y le y me entrenaría al modelo para que para intentar evitarla. Pero
+
+1276
+02:10:08.980 --> 02:10:15.670
+valero: y no, no recuerdo lo que lo que habías propuesto. Cristian: Ah, sí, lo que queríamos ver es si las I S. Predichas
+
+1277
+02:10:16.790 --> 02:10:22.850
+valero: tenían un valor y más o menos cerca de 0 5,
+
+1278
+02:10:23.160 --> 02:10:27.980
+valero: Cuando el modelo se X se equivocaba.
+
+1279
+02:10:28.610 --> 02:10:32.440
+valero: Podemos hacer eso con el modelo cuando se equivoca el modelo.
+
+1280
+02:10:32.610 --> 02:10:51.410
+valero: Y cuando tenemos la predicción, es decir, las eas predichas de entrenamiento contra los errores de entrenamiento.
+
+1281
+02:10:58.650 --> 02:10:59.410
+valero: Vale.
+
+1282
+02:11:02.990 --> 02:11:07.259
+valero: le he de entrenamiento. Lo he puesto para el absoluto, No, porque ahora me está. Me estoy rayando con eso.
+
+1283
+02:11:08.820 --> 02:11:10.300
+valero: Sí, tiene barras.
+
+1284
+02:11:16.380 --> 02:11:23.470
+valero: Aquí hay menos. Me Se ve peor la relación, porque el
+
+1285
+02:11:27.220 --> 02:11:28.000
+valero: a ver
+
+1286
+02:11:34.160 --> 02:11:39.839
+valero: porque caen solo en la cruz, no deberían poder caer solo en la cruz, o sea, los valores de de
+
+1287
+02:11:40.040 --> 02:11:41.270
+valero: predicción.
+
+1288
+02:11:46.300 --> 02:11:54.509
+valero: Bueno, claro, ya sé por qué sale en la cruz porque las Is reales
+
+1289
+02:11:55.230 --> 02:11:57.129
+valero: sí que suelo valen 0, 1
+
+1290
+02:11:57.690 --> 02:12:00.089
+valero: Entonces, como solo valen 0 1.
+
+1291
+02:12:00.570 --> 02:12:09.469
+valero: El error es o el valor de i Gorrito, 1 o el valor de igorrito, menos 0.
+
+1292
+02:12:13.050 --> 02:12:23.260
+valero: Pua Ahora sí que estáis mirándome como como la vaca. Cuando ve el tren, pasar sí,
+
+1293
+02:12:23.370 --> 02:12:29.120
+valero: sabes, o sea aquí solo puede caber caer en la cruz porque o es
+
+1294
+02:12:29.440 --> 02:12:34.420
+valero: el valor menos 1, o es el valor menos 0, y entonces tiene caras.
+
+1295
+02:12:34.800 --> 02:12:37.300
+valero: Se ven bastante peor. La relación que aquí
+
+1296
+02:12:41.380 --> 02:12:43.810
+valero: molaría ver en estos en los que se equivocan.
+
+1297
+02:12:44.850 --> 02:12:47.389
+valero: Y si lo hago con esto
+
+1298
+02:12:48.440 --> 02:12:49.879
+valero: aquí, sí que va a salir
+
+1299
+02:12:50.600 --> 02:12:53.029
+valero: algo muy parecido a lo anterior.
+
+1300
+02:12:57.120 --> 02:13:04.189
+valero: el impredicho menos no son iguales, pero son muy parecidos.
+
+1301
+02:13:12.400 --> 02:13:14.010
+valero: Si lo pongo al revés.
+
+1302
+02:13:17.920 --> 02:13:23.400
+valero: Bueno, Aq pasa, claro, aquí, pasa eso justo lo que decía. Cristian
+
+1303
+02:13:25.340 --> 02:13:27.589
+valero: los valores que están por en medio
+
+1304
+02:13:29.330 --> 02:13:35.269
+valero: están muy relacionados con los errores que predice el modelo como error alto
+
+1305
+02:13:35.860 --> 02:13:44.179
+valero: los valores que sí que tiene claro que son 1 que predice muy cerca del 1 o que predice muy cerca del 0 les da un valor bajo
+
+1306
+02:13:44.930 --> 02:13:46.130
+valero: un valor de reloj.
+
+1307
+02:13:46.670 --> 02:13:51.259
+valero: Entonces ahora me da la la la
+
+1308
+02:13:51.500 --> 02:13:56.410
+valero: me pide el cuerpo, hacer la segunda opción, es decir, meter esta de aquí
+
+1309
+02:13:57.980 --> 02:14:06.899
+valero: si la I cuando tiene un valor cerca de 0, 5. Ya sé que va a tener un error alto, pues eso es una cosa informativa y se la puedo meter al modelo como ha entrado.
+
+1310
+02:14:07.300 --> 02:14:08.000
+valero: ¿vale?
+
+1311
+02:14:08.360 --> 02:14:10.000
+valero: Y no tengo que hacer nada.
+
+1312
+02:14:10.150 --> 02:14:14.040
+valero: Solo voy a coger el mismo modelo, y me voy a hacer unas X extendidas
+
+1313
+02:14:19.830 --> 02:14:26.210
+valero: donde ponga las X y las Eputs, No hacer eso.
+
+1314
+02:14:35.610 --> 02:14:44.460
+valero: Segunda opción de incertidumbre, metiendo trans y pre dichas. Vale
+
+1315
+02:14:44.780 --> 02:14:48.129
+valero: a ver si lo hago, prometo que lo intento hacer rápido.
+
+1316
+02:14:50.810 --> 02:14:56.049
+valero: Quiero primero hacerme algo extendido, y aquí tenía cosas extendidas. Vale.
+
+1317
+02:14:59.640 --> 02:15:02.320
+valero: Hago las X extendidas.
+
+1318
+02:15:03.900 --> 02:15:08.019
+valero: Es un el 15 30.
+
+1319
+02:15:08.180 --> 02:15:11.080
+valero: Le voy a meter el x Detrind.
+
+1320
+02:15:14.290 --> 02:15:19.810
+valero: Y le voy a meter aquí el link, pero he dicho: Berlín.
+
+1321
+02:15:20.540 --> 02:15:21.599
+valero: te lo he dicho. Esto no
+
+1322
+02:15:24.330 --> 02:15:27.089
+valero: vale y hago lo mismo para variación.
+
+1323
+02:15:32.070 --> 02:15:35.170
+valero: Okay. Estoy haciendo estos datos de aquí.
+
+1324
+02:15:44.730 --> 02:15:51.310
+valero: Mhm, No, variación. Y esto es variacional.
+
+1325
+02:15:52.910 --> 02:15:53.650
+valero: Y s.
+
+1326
+02:15:53.960 --> 02:15:57.309
+valero: Y si lo llego a hacer bien. ¿qué X Training
+
+1327
+02:16:10.350 --> 02:16:19.100
+valero: Hostia: Claro, si es que no son, no tienen un montón de de estos. Tiene que ser todos
+
+1328
+02:16:21.290 --> 02:16:29.950
+valero: entonces del 0 hasta el menos 1. Y aquí meto en el menos 1, al menos si no.
+
+1329
+02:16:30.470 --> 02:16:32.549
+valero: Y aquí en el en el menú Sí, no está.
+
+1330
+02:16:33.750 --> 02:16:37.680
+valero: Y lo que quiero no es meter 2.
+
+1331
+02:16:37.830 --> 02:16:43.079
+valero: Esto. Si no esto 1 más?
+
+1332
+02:16:43.620 --> 02:16:44.309
+valero: Mhm.
+
+1333
+02:16:46.920 --> 02:16:51.349
+valero: Sí, el número de dimensiones tendrá que ser el mismo número de dimensiones que tiene la X. Más 1
+
+1334
+02:16:55.290 --> 02:16:55.950
+valero: vale
+
+1335
+02:17:01.250 --> 02:17:02.790
+valero: muy bien para hacer esto.
+
+1336
+02:17:14.260 --> 02:17:27.530
+Rodolfo Villena: La forma. Esa de arco podría tener que ver con la forma en que hemos diseñado el modelo. Le hemos dicho que le íbamos a penalizar el que se equivocara el que se equivocara mucho. Le hemos puesto en landa al final alto.
+
+1337
+02:17:27.650 --> 02:17:47.239
+Rodolfo Villena: y Entonces, lo que está diciendo el arco es que a medida que va creciendo el error real y el predicho hasta 0, 5 más o menos de los 2 evolucionan igual. Pero a medida que el error real aumenta el error del modelo, cada vez va a predecir menos, o sea, le habíamos penalizado que subiera. Entonces, por eso vuelve a bajar. Puede ser eso.
+
+1338
+02:17:48.639 --> 02:17:54.969
+valero: Puede ser que tenga que ver con la función de costes. Sí, con la función del coste customizada. Sí, sí, Sí, Sí,
+
+1339
+02:17:55.259 --> 02:18:02.279
+valero: No sé exactamente porque fíjate que la función de coste customizada afecta a, o sea, no tienen.
+
+1340
+02:18:02.609 --> 02:18:05.479
+valero: no le importa mucho cuál sea el valor de la I predicha
+
+1341
+02:18:05.889 --> 02:18:08.649
+valero: en principio, aunque está dentro de la correlación.
+
+1342
+02:18:09.349 --> 02:18:18.389
+valero: va a tener que ver de la relación entre esto de aquí entre estas 2.
+
+1343
+02:18:19.199 --> 02:18:29.569
+valero: Eso es lo que va a penalizar. Y puede ser que esa relación sea tenga que ver con eso? Bueno, de hecho, Ten tiene bastante pinta que esté jodiéndonos, porque está haciendo una predicción un poco rara. En algunos sitios
+
+1344
+02:18:29.879 --> 02:18:31.529
+valero: la hemos forzado muchísimo.
+
+1345
+02:18:36.449 --> 02:18:40.779
+valero: Vamos a cruzar los dedos y pensar que lo ha hecho bien ¿vale? No lo voy a revisar
+
+1346
+02:18:41.009 --> 02:18:44.779
+valero: porque no me va a dar tiempo, Voy a coger el modelo
+
+1347
+02:18:45.799 --> 02:18:50.949
+valero: y voy a hacer lo mismo todo igual de aquí hasta
+
+1348
+02:18:55.039 --> 02:18:55.699
+valero: sí.
+
+1349
+02:18:58.259 --> 02:19:06.139
+valero: De hecho, no le voy ni a cambiar el nombre. Vale. Es una guarrada porque vamos a machacar el modelo anterior.
+
+1350
+02:19:06.499 --> 02:19:09.699
+valero: pero si no, no me va a dar tiempo.
+
+1351
+02:19:13.809 --> 02:19:17.299
+valero: X, train perfecto también.
+
+1352
+02:19:19.919 --> 02:19:25.519
+valero: Y lo que sí tengo que hacer es ponerme aquí. El Xtrel extendido.
+
+1353
+02:19:26.189 --> 02:19:28.099
+valero: Y aquí X, vale este.
+
+1354
+02:19:30.249 --> 02:19:30.939
+valero: Vale.
+
+1355
+02:19:33.099 --> 02:19:36.269
+valero: Y esto va a salir. Esto va a salir.
+
+1356
+02:19:39.339 --> 02:19:46.029
+valero: Y esto por ahí en esta unidad está muy bueno.
+
+1357
+02:19:47.289 --> 02:19:55.439
+valero: Mhm Ya está a ver, modificar todo lo que tocaba
+
+1358
+02:20:06.219 --> 02:20:10.389
+valero: aparte, lo que indica esa esas curvas en los aquí
+
+1359
+02:20:12.509 --> 02:20:24.649
+valero: indica que el modelo tiene, si le pongo más capas va a funcionar mejor porque va a ser capaz de pre de pillar estos comportamientos no lineales solo con 2 capas, le cuesta más
+
+1360
+02:20:26.869 --> 02:20:27.579
+valero: claro.
+
+1361
+02:20:37.069 --> 02:20:40.859
+valero: Estamos prácticamente igual en el mismo sitio que antes.
+
+1362
+02:20:41.909 --> 02:20:46.679
+valero: Ya os he dicho que que algo que me que me jode un poco, pero
+
+1363
+02:20:47.049 --> 02:20:50.269
+valero: pero que cuando he probado a meter aquí la impredicha.
+
+1364
+02:20:50.639 --> 02:20:54.289
+valero: no es capaz. El modelo de sacarle mucho jugo.
+
+1365
+02:20:56.019 --> 02:20:58.659
+valero: Tiene sentido porque la impredicha viene de
+
+1366
+02:20:59.469 --> 02:21:07.159
+valero: un modelo sobre las los datos de entrada. Y si ya este ya le pasó los datos de entrada, pues podría por dentro sacarse esa predicho.
+
+1367
+02:21:07.599 --> 02:21:14.529
+valero: Mhm. Pero bueno, es un poco el final. ¿vale?
+
+1368
+02:21:16.279 --> 02:21:17.449
+valero: ¿qué hemos hecho
+
+1369
+02:21:20.309 --> 02:21:35.549
+valero: ver los datos del problema original, no me hagáis, No me cojáis los datos de ejemplo. Cogerme los datos del taller Vale, lo ponen en P, D, F, Y lo pone aquí con el nombre que toca.
+
+1370
+02:21:35.739 --> 02:21:39.189
+valero: Por favor, no cojáis los datos. De ejemplo, Vale, cogemos los 2 del taller.
+
+1371
+02:21:39.849 --> 02:21:45.109
+valero: Vamos a aplicar función, capa customizada, función de coste customizada.
+
+1372
+02:21:45.429 --> 02:21:51.229
+valero: el que eras túner y medir la incertidumbre vale
+
+1373
+02:21:51.429 --> 02:21:56.489
+valero: hemos jugado a hacer capa customizada función de coste customizada y hacer
+
+1374
+02:21:56.649 --> 02:22:01.319
+valero: una incertidumbre. Las 3 cosas. He hecho la cosa más simple: Okay.
+
+1375
+02:22:01.639 --> 02:22:02.509
+valero: Yo
+
+1376
+02:22:02.889 --> 02:22:12.729
+valero: os voy a pedir eso. Obviamente. Después, aquí, cada 1 tirará lo máximo o o no. Y para mí, ese hacer
+
+1377
+02:22:13.869 --> 02:22:25.219
+valero: lo que tenéis que a controlar son los conceptos más que irse y se que se os vaya la cabeza cogiendo muchas dimensiones en los datos que hemos dicho que podéis si queréis, y hay muchas dimensiones que coger
+
+1378
+02:22:25.709 --> 02:22:29.939
+valero: o hacer 100 000 modelos con el que eras túnel
+
+1379
+02:22:30.209 --> 02:22:35.019
+valero: me da un poco igual. No hay una competición, en particular
+
+1380
+02:22:35.259 --> 02:22:43.499
+valero: con un valor de la de error, ni nada de eso vale y alguna duda
+
+1381
+02:22:46.999 --> 02:22:49.709
+valero: tenéis claro, los grupos tenéis claro lo que hay que hacer.
+
+1382
+02:22:50.559 --> 02:22:52.819
+valero: Mañana tenéis clase y pasado también
+
+1383
+02:22:53.149 --> 02:22:58.829
+valero: Okay. El jueves que viene, nos vemos en la en el mismo canal que habéis sintonizado?
+
+1384
+02:23:00.519 --> 02:23:02.589
+valero: Mhm: Todo bien.
+
+1385
+02:23:02.779 --> 02:23:03.649
+valero: Sí.
+
+1386
+02:23:05.889 --> 02:23:10.149
+valero: All Right: Bueno, su a ver, nos vemos el jueves.
+
+1387
+02:23:10.990 --> 02:23:11.790
+Cristian: Luego.
+
+1388
+02:23:12.400 --> 02:23:13.839
+Rodolfo Villena: Hasta luego. Gracias.
+

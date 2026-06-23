@@ -1,0 +1,411 @@
+PROMPT PARA CODEX EN VS CODE
+
+Contexto
+Estoy trabajando en la práctica del máster titulada:
+
+Taller B4-T1 — Diseño de Redes Confiables
+
+El notebook actual se llama:
+
+Taller_B4_T1_punto12_custom_layer.ipynb
+
+Quiero que modifiques este notebook, NO que crees uno desde cero. El objetivo es corregir, mejorar y documentar la versión actual, que ya contiene:
+
+1. Punto 1: arquitectura customizada con una capa `DebtBurdenLayer` para ratios de endeudamiento.
+2. Punto 2: aprendizaje justo mediante FAIR Loss, con penalización de dependencia estadística entre las predicciones del modelo y la variable sensible `CODE_GENDER`.
+
+El notebook debe quedar preparado como versión integrada de la práctica, no como notebook parcial de punto 1 o punto 2.
+
+IMPORTANTE
+- Mantén la arquitectura customizada existente del punto 1.
+- Mantén la lógica FAIR Loss existente del punto 2.
+- No elimines resultados útiles ya generados.
+- No simplifiques en exceso.
+- No cambies el enfoque general de la práctica.
+- Haz modificaciones limpias, trazables y ejecutables.
+- El notebook final debe poder ejecutarse de arriba abajo sin errores.
+- Usa nombres claros para variables, tablas, figuras y funciones.
+- Si hay alguna celda duplicada o desactualizada, actualízala o muévela, pero evita romper dependencias.
+
+Tareas que debes realizar
+
+============================================================
+1. RENOMBRAR EL NOTEBOOK FINAL
+============================================================
+
+El notebook final debe guardarse con el nombre:
+
+Taller_B4_T1.ipynb
+
+No borres necesariamente el archivo original, pero genera/guarda la versión final con ese nombre.
+
+============================================================
+2. ACTUALIZAR LA PRIMERA CELDA MARKDOWN
+============================================================
+
+Al principio del notebook debe aparecer una celda markdown con este contenido o equivalente:
+
+# Taller B4-T1 — Diseño de Redes Confiables
+
+**Componentes del equipo:**
+
+- Albert Martin
+- Josep Pérez Segura
+- Rodolfo Villena
+
+**Práctica:** Diseño de redes confiables para clasificación de riesgo de crédito.
+
+**Bloques implementados en esta versión:**
+
+1. Arquitectura customizada mediante una capa financiera `DebtBurdenLayer`.
+2. Aprendizaje justo mediante funciones de pérdida FAIR que penalizan la dependencia entre las predicciones y la variable sensible `CODE_GENDER`.
+
+El objetivo de este notebook es construir, entrenar y auditar un modelo de clasificación binaria para riesgo de crédito, incorporando restricciones financieras explícitas y una primera estrategia de reducción de dependencia estadística respecto al género.
+
+============================================================
+3. CORREGIR TEXTOS OBSOLETOS DEL NOTEBOOK
+============================================================
+
+Busca y corrige cualquier markdown que diga o sugiera que el notebook implementa “solo el punto 1”.
+
+Sustituye esas frases por una descripción integrada:
+
+- Punto 1: arquitectura customizada.
+- Punto 2: FAIR Loss / aprendizaje justo.
+
+Por ejemplo, si aparece algo como:
+
+"Este notebook implementa solo el primer punto de la práctica..."
+
+sustituir por algo equivalente a:
+
+"Este notebook integra los dos primeros bloques de la práctica: una arquitectura customizada basada en ratios financieros y una extensión de aprendizaje justo mediante funciones de pérdida customizadas."
+
+============================================================
+4. CORREGIR REFERENCIAS INCORRECTAS A DP GAP
+============================================================
+
+En el bloque del punto 2 se menciona “DP gap bajo”, pero el notebook actualmente no calcula explícitamente DP gap.
+
+Corrige esa redacción para que no prometa una métrica que no se calcula.
+
+Sustituye expresiones como:
+
+"justicia (DP gap bajo)"
+
+por:
+
+"justicia medida como menor dependencia estadística entre las predicciones del modelo y la variable sensible `CODE_GENDER`"
+
+Opcionalmente, puedes mencionar que DP gap podría añadirse como métrica complementaria, pero no lo presentes como métrica principal si no se calcula.
+
+============================================================
+5. CORREGIR PRINT DE CLASES DE PÉRDIDA DEFINIDAS
+============================================================
+
+Busca una línea similar a:
+
+print('Clases de pérdida definidas: FairLossDP, FairLossPearson, FairLossCKARBF, FairLossMI')
+
+Si en el código solo están definidas `FairLossPearson` y `FairLossCKARBF`, corrígela a:
+
+print("Clases de pérdida definidas: FairLossPearson, FairLossCKARBF")
+
+No menciones clases que no existen en el notebook.
+
+============================================================
+6. ALINEAR LA MÉTRICA CKA RBF DE ENTRENAMIENTO Y EVALUACIÓN
+============================================================
+
+Revisa la clase `FairLossCKARBF` y la función de evaluación `compute_cka_rbf_np`.
+
+Si la loss usa:
+
+gamma = 0.5
+
+pero la evaluación calcula gamma automáticamente, modifica la evaluación para que use también `gamma=0.5` cuando se esté comparando con esa loss.
+
+Por ejemplo, en la función de evaluación o en el diccionario de métricas, asegúrate de usar:
+
+"cka_rbf": round(compute_cka_rbf_np(y_proba, s_np, gamma=0.5), 6)
+
+El objetivo es que la dependencia penalizada durante entrenamiento y la dependencia reportada después sean coherentes.
+
+============================================================
+7. EVITAR SELECCIONAR EL MEJOR MODELO USANDO TEST
+============================================================
+
+Actualmente el notebook parece seleccionar el mejor modelo FAIR a partir de métricas de test. Esto no es lo más limpio metodológicamente.
+
+Modifica el flujo para que:
+
+1. Cada modelo se evalúe en validation y test.
+2. La selección del mejor modelo FAIR se haga usando validation.
+3. El test se use solo para reportar el rendimiento final del modelo seleccionado.
+
+Crea o adapta una función de evaluación genérica, por ejemplo:
+
+```python
+def evaluate_all(y_true_np, y_proba, s_np, threshold=0.5, cka_gamma=0.5):
+    y_true_np = np.asarray(y_true_np).reshape(-1)
+    y_proba = np.asarray(y_proba).reshape(-1)
+    s_np = np.asarray(s_np).reshape(-1)
+    y_pred = (y_proba >= threshold).astype(int)
+
+    return {
+        "auc": roc_auc_score(y_true_np, y_proba),
+        "accuracy": accuracy_score(y_true_np, y_pred),
+        "balanced_accuracy": balanced_accuracy_score(y_true_np, y_pred),
+        "recall_class_1": recall_score(y_true_np, y_pred, zero_division=0),
+        "precision_class_1": precision_score(y_true_np, y_pred, zero_division=0),
+        "f1_class_1": f1_score(y_true_np, y_pred, zero_division=0),
+        "pearson_sq": compute_pearson_sq(y_proba, s_np),
+        "cka_rbf": compute_cka_rbf_np(y_proba, s_np, gamma=cka_gamma),
+        "mean_pred_gender_0": float(np.mean(y_proba[s_np == 0])) if np.any(s_np == 0) else np.nan,
+        "mean_pred_gender_1": float(np.mean(y_proba[s_np == 1])) if np.any(s_np == 1) else np.nan,
+        "mean_pred_gap_abs": float(abs(np.mean(y_proba[s_np == 0]) - np.mean(y_proba[s_np == 1]))) if np.any(s_np == 0) and np.any(s_np == 1) else np.nan,
+    }
+```
+
+Asegúrate de importar las métricas necesarias:
+
+```python
+from sklearn.metrics import (
+    roc_auc_score,
+    accuracy_score,
+    balanced_accuracy_score,
+    recall_score,
+    precision_score,
+    f1_score,
+    confusion_matrix,
+    classification_report,
+)
+```
+
+Criterio recomendado para seleccionar el mejor FAIR:
+
+- Usar validation.
+- Priorizar reducción de dependencia con pérdida moderada de AUC.
+- Una regla sencilla y defendible puede ser:
+  - quedarse con modelos cuya caída de AUC de validación frente al base no supere 0.01 o 0.015;
+  - dentro de ellos elegir el modelo con menor `cka_rbf` o menor `pearson_sq` en validation.
+
+Implementa esta regla de forma clara y documentada.
+
+Si el notebook ya tiene una selección manual, sustitúyela o acompáñala de una selección basada en validation.
+
+============================================================
+8. AÑADIR AUDITORÍA POR GRUPO SENSIBLE
+============================================================
+
+Añade una función para auditar resultados por grupo sensible `CODE_GENDER`.
+
+Debe calcular, para cada grupo:
+
+- n
+- tasa real de TARGET=1
+- probabilidad media predicha
+- tasa de predicción positiva con umbral 0.5
+- AUC por grupo
+- recall clase 1 por grupo
+- precision clase 1 por grupo
+
+Añade también gaps absolutos entre grupos para:
+
+- probabilidad media predicha
+- tasa de predicción positiva
+- tasa real de TARGET=1
+
+Código sugerido:
+
+```python
+def fairness_group_report(y_true, y_proba, s, threshold=0.5):
+    y_true = np.asarray(y_true).reshape(-1)
+    y_proba = np.asarray(y_proba).reshape(-1)
+    s = np.asarray(s).reshape(-1)
+    y_pred = (y_proba >= threshold).astype(int)
+
+    rows = []
+    for group_value in sorted(np.unique(s)):
+        mask = s == group_value
+        group_y_true = y_true[mask]
+        group_y_proba = y_proba[mask]
+        group_y_pred = y_pred[mask]
+
+        # AUC puede fallar si en un grupo solo hay una clase. Proteger con try/except.
+        try:
+            group_auc = roc_auc_score(group_y_true, group_y_proba)
+        except ValueError:
+            group_auc = np.nan
+
+        rows.append({
+            "CODE_GENDER": int(group_value),
+            "n": int(mask.sum()),
+            "target_rate": float(np.mean(group_y_true)),
+            "mean_pred_proba": float(np.mean(group_y_proba)),
+            "predicted_positive_rate": float(np.mean(group_y_pred)),
+            "auc": group_auc,
+            "recall_class_1": recall_score(group_y_true, group_y_pred, zero_division=0),
+            "precision_class_1": precision_score(group_y_true, group_y_pred, zero_division=0),
+        })
+
+    report = pd.DataFrame(rows)
+
+    if len(report) == 2:
+        gaps = {
+            "mean_pred_gap_abs": float(abs(report.loc[0, "mean_pred_proba"] - report.loc[1, "mean_pred_proba"])),
+            "predicted_positive_rate_gap_abs": float(abs(report.loc[0, "predicted_positive_rate"] - report.loc[1, "predicted_positive_rate"])),
+            "target_rate_gap_abs": float(abs(report.loc[0, "target_rate"] - report.loc[1, "target_rate"])),
+        }
+    else:
+        gaps = {
+            "mean_pred_gap_abs": np.nan,
+            "predicted_positive_rate_gap_abs": np.nan,
+            "target_rate_gap_abs": np.nan,
+        }
+
+    return report, gaps
+```
+
+Después, genera y muestra:
+
+1. Auditoría por grupo del modelo base en test.
+2. Auditoría por grupo del mejor modelo FAIR seleccionado en validation, reportado en test.
+3. Una tabla resumen de gaps base vs FAIR.
+
+Nombres sugeridos:
+
+```python
+base_group_report_test, base_group_gaps_test = fairness_group_report(y_test_np, y_test_proba_base, s_test_np)
+best_fair_group_report_test, best_fair_group_gaps_test = fairness_group_report(y_test_np, y_test_proba_best_fair, s_test_np)
+```
+
+Ajusta los nombres reales de variables al notebook.
+
+============================================================
+9. CORREGIR INTERPRETACIÓN DE CKA VS PEARSON²
+============================================================
+
+Busca cualquier markdown que diga algo como:
+
+"CKA ≥ Pearson², lo que indica que hay dependencia no lineal..."
+
+Cámbialo por una frase más prudente:
+
+"En esta ejecución, CKA RBF toma valores superiores a Pearson². Esto sugiere que la medida basada en kernel puede estar capturando dependencia adicional respecto a la medida lineal, aunque ambas métricas no son directamente equivalentes en escala."
+
+Evita presentar CKA y Pearson² como métricas directamente comparables en magnitud.
+
+============================================================
+10. CAMBIAR TÍTULO DEL BLOQUE DE EXPORTACIÓN
+============================================================
+
+Si existe una sección llamada:
+
+"Exportación del mejor modelo FAIR"
+
+pero realmente no guarda el objeto modelo, sino probabilidades, configuración y tablas, cambia el título a:
+
+"Exportación de artefactos del mejor modelo FAIR"
+
+Opcionalmente, si quieres guardar el modelo realmente, modifica el sweep para conservar los modelos entrenados en un diccionario:
+
+```python
+trained_fair_models[(loss_name, lambda_fair)] = model_f
+```
+
+y después guarda el mejor:
+
+```python
+best_fair_model.save(OUTPUT_DIR / "best_fair_model.keras")
+```
+
+Si guardar el modelo complica mucho la notebook por las custom losses, basta con cambiar el título y guardar artefactos.
+
+============================================================
+11. AÑADIR TABLA BASE VS FAIR MÁS EXPLICABLE
+============================================================
+
+Asegúrate de que exista una tabla final que compare al menos:
+
+- modelo base del punto 1
+- mejor modelo FAIR seleccionado en validation
+
+Columnas mínimas:
+
+- model_name
+- selection_split
+- loss_type
+- lambda_fair
+- test_auc
+- test_accuracy
+- test_balanced_accuracy
+- test_recall_class_1
+- test_precision_class_1
+- test_f1_class_1
+- test_pearson_sq
+- test_cka_rbf
+- test_mean_pred_gap_abs
+- test_predicted_positive_rate_gap_abs
+
+La tabla debe ser legible y debe poder exportarse a CSV.
+
+============================================================
+12. ACTUALIZAR GRÁFICO PARETO
+============================================================
+
+Mantén o crea un gráfico de trade-off tipo Pareto.
+
+Debe mostrar:
+
+- Eje X: dependencia FAIR en validation, preferiblemente `cka_rbf` o `pearson_sq`.
+- Eje Y: rendimiento predictivo en validation, preferiblemente `auc` o `balanced_accuracy`.
+- Cada punto debe corresponder a un valor de `lambda_fair` y tipo de loss.
+- Destaca o etiqueta el mejor modelo FAIR seleccionado.
+
+Opcionalmente, genera otro gráfico equivalente en test solo con fines descriptivos, pero aclara que la selección se hace en validation.
+
+============================================================
+13. AÑADIR CELDA FINAL MARKDOWN DE CONCLUSIONES
+============================================================
+
+Añade al final del notebook una celda markdown con el siguiente texto, adaptando los valores numéricos si el notebook vuelve a ejecutarse y cambian ligeramente:
+
+## Comentarios y conclusiones provisionales de la práctica
+
+En esta versión del notebook se han desarrollado los dos primeros bloques de la práctica `B4-T1: Diseño de Redes Confiables`.
+
+En primer lugar, se ha construido una arquitectura customizada para clasificación binaria de riesgo de crédito sobre el dataset `Home Credit Default Risk`. La red utiliza dos entradas: una rama principal con variables numéricas imputadas y escaladas, y una rama financiera en bruto que conserva los importes originales de ingresos, crédito y anualidad. Sobre esta segunda rama se ha implementado la capa customizada `DebtBurdenLayer`, que calcula internamente ratios de endeudamiento y aplica una saturación suave mediante `tanh`. Esta capa introduce conocimiento financiero explícito dentro de la arquitectura y evita que ratios extremos dominen el entrenamiento.
+
+El modelo base del punto 1 obtiene un rendimiento predictivo razonable para un subconjunto reducido de variables. Dado que la variable objetivo está fuertemente desbalanceada, la accuracy no debe interpretarse de forma aislada. Por ese motivo se reportan también AUC, balanced accuracy, recall, precision y F1 de la clase minoritaria.
+
+En segundo lugar, se ha añadido el bloque de aprendizaje justo mediante funciones de coste customizadas. La variable `CODE_GENDER` no se utiliza como entrada predictiva del modelo, pero se conserva como variable sensible para auditar y penalizar la dependencia estadística entre las predicciones del modelo y el género. Para ello se han probado formulaciones de FAIR Loss basadas en la correlación de Pearson al cuadrado y en CKA con kernel RBF.
+
+Los resultados muestran el trade-off esperado entre rendimiento predictivo y justicia. El modelo base presenta una dependencia mayor entre las predicciones y la variable sensible. Al introducir penalización FAIR, dicha dependencia se reduce, aunque puede aparecer una ligera pérdida de rendimiento predictivo. Este comportamiento es coherente con el objetivo de la práctica: analizar explícitamente la frontera entre precisión y reducción de dependencia respecto a una variable sensible.
+
+El mejor modelo FAIR se selecciona utilizando el conjunto de validación, no el conjunto de test. El test se reserva para reportar el rendimiento final del modelo elegido. Esta separación evita usar el test como criterio de decisión y hace que la comparación sea metodológicamente más defendible.
+
+Estos resultados no prueban que el modelo sea completamente justo ni eliminan la necesidad de una auditoría más amplia. La reducción de dependencia respecto a `CODE_GENDER` debe interpretarse como una mejora parcial bajo las métricas utilizadas. Por ese motivo se complementan Pearson² y CKA con métricas por grupo, como la probabilidad media predicha por género, la tasa de predicción positiva, el recall por grupo y los gaps entre grupos.
+
+Como conclusión provisional, el notebook ya contiene una arquitectura customizada funcional y una primera estrategia de aprendizaje justo. Las siguientes fases deberían integrar la optimización automática de hiperparámetros con Keras Tuner y la estimación de incertidumbre predictiva, manteniendo la comparación entre rendimiento, justicia e incertidumbre como eje central de la práctica.
+
+============================================================
+14. COMPROBACIONES FINALES
+============================================================
+
+Al terminar, ejecuta o deja preparado el notebook para que se pueda ejecutar de arriba abajo.
+
+Comprueba especialmente:
+
+- No hay referencias a variables inexistentes.
+- No hay clases mencionadas que no estén definidas.
+- No hay markdown que diga que solo se implementa el punto 1.
+- La selección del mejor FAIR se hace con validation.
+- Las métricas de test se reportan después de la selección.
+- `CODE_GENDER` no entra como predictor directo del modelo.
+- `CODE_GENDER` sí se conserva como variable sensible para la loss y la auditoría.
+- `sample_weight` se usa en lugar de `class_weight` cuando `y_true` está extendido con `[TARGET, CODE_GENDER]`.
+- El gráfico Pareto usa validation como criterio principal.
+- La tabla final base vs FAIR se genera correctamente.
+- El notebook final se guarda como `Taller_B4_T1.ipynb`.
+
