@@ -2,11 +2,11 @@
 
 Proyecto de práctica sobre **Diseño de Redes Confiables: Justicia e Incertidumbre** aplicado a un problema de riesgo de crédito con el dataset Home Credit Default Risk.
 
-El trabajo actual cierra el **punto 1** y añade el **punto 2 de aprendizaje justo**: una arquitectura neuronal customizada que incorpora una capa financiera interpretable antes de las capas densas y una FAIR Loss que penaliza la dependencia estadística entre predicción y género.
+El trabajo entregado cierra el **punto 1** y añade el **punto 2 de aprendizaje justo**: una arquitectura neuronal customizada que incorpora una capa financiera interpretable antes de las capas densas y una FAIR Loss que penaliza la dependencia estadística entre predicción y género.
 
-## Objetivo actual
+## Objetivo
 
-El notebook principal implementa una red neuronal binaria para predecir `TARGET`:
+El notebook principal `Taller_B4_T1-Fixed.ipynb` implementa una red neuronal binaria para predecir `TARGET`:
 
 - `TARGET = 0`: cliente sin dificultades de pago.
 - `TARGET = 1`: cliente con dificultades de pago.
@@ -22,8 +22,9 @@ Estos ratios se calculan con variables monetarias imputadas en bruto, no con var
 
 ## Archivos principales
 
-- `Taller_B4_T1.ipynb`: notebook principal final con punto 1 y punto 2.
-- `application_train.csv`: dataset de entrada. No se versiona en Git por tamaño; debe colocarse en la raíz del proyecto o en `data/application_train.csv`.
+- `Taller_B4_T1-Fixed.ipynb`: notebook principal final con punto 1 y punto 2.
+- `Presentacion_Taller_B4_T1.pptx`: presentación final del taller.
+- `application_train.csv`: dataset de entrada. No se versiona en Git por tamaño; debe colocarse en la raíz del proyecto, en `data/application_train.csv` o en Google Drive si se ejecuta desde Colab.
 - `requirements.txt`: dependencias necesarias.
 - `outputs/`: artefactos generados por el notebook.
 
@@ -74,6 +75,36 @@ Para abrir Jupyter:
 jupyter notebook
 ```
 
+## Uso en Google Colab
+
+Si se ejecuta el notebook en Colab, el runtime parte normalmente de `/content` y no puede ver los archivos locales del equipo. El notebook busca automáticamente el dataset en varias ubicaciones y puede montar Google Drive.
+
+La opción recomendada es guardar el CSV con este nombre exacto:
+
+```text
+application_train.csv
+```
+
+Y dejarlo en Google Drive en:
+
+```text
+Mi unidad/data/application_train.csv
+```
+
+En Colab esa ruta se resuelve como:
+
+```text
+/content/drive/MyDrive/data/application_train.csv
+```
+
+También se puede subir temporalmente a:
+
+```text
+/content/data/application_train.csv
+```
+
+o definir la variable de entorno `HOME_CREDIT_DATA` con la ruta completa al CSV.
+
 ## Flujo del notebook
 
 El notebook ejecuta los siguientes pasos:
@@ -118,7 +149,7 @@ Dado que `TARGET` está muy desbalanceada, la `accuracy` no debe interpretarse s
 
 ## Estado actual
 
-Los puntos 1 y 2 quedan preparados para continuar con las siguientes fases de la práctica:
+Los puntos 1 y 2 quedan implementados y documentados en el notebook final. El trabajo queda preparado para continuar con las siguientes fases de la práctica:
 
 - Keras Tuner o AutoML.
 - Incertidumbre predictiva.
@@ -127,3 +158,11 @@ Los puntos 1 y 2 quedan preparados para continuar con las siguientes fases de la
 El punto 2 deja implementada una primera versión de aprendizaje justo mediante FAIR Loss. La selección de `lambda_fair` se realiza con validation y test queda reservado para la comparación final.
 
 La arquitectura actual no debe interpretarse como un sistema final de concesión de crédito, sino como una base experimental para construir modelos más confiables.
+
+## Entrega
+
+Archivos a subir al repositorio remoto:
+
+- `Taller_B4_T1-Fixed.ipynb`
+- `Presentacion_Taller_B4_T1.pptx`
+- `README.md`
